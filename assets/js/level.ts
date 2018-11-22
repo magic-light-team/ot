@@ -269,6 +269,120 @@ let levels: ILevel[] = [
                     }
                 ]
             }, // end section
+            {
+                stageId: 6,
+                sections: [
+                    {
+                        sectionId: 1,
+                        sectionType: SectionType.dialog,
+                        dialogueSection: {
+                            person: "سپهر",
+                            personPic: "",
+                            dialogue: "سینا خیلی ادم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارقالعادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد.چون هیچ وقت نمی تونه صحبت کردن بهتر بشه یا با ادما بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش اینه."
+                        }
+
+                    },
+                    {
+                        sectionId: 2,
+                        sectionType: SectionType.choose,
+                        optionSection: {
+                            name: "و اون موقع",
+                            desc: "",
+                            background: "",
+                            options: [
+                                {
+                                    optionId: 1,
+                                    title: "داد زدم و گفتم اون بهتر میشه",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                },
+                                {
+                                    optionId: 2,
+                                    title: "رفتم یه گوشه و گریه کردم",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                },
+                                {
+                                    optionId: 3,
+                                    title: "داد زدم و گفتم اون بهتر میشه",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }, // end section
+            {
+                stageId: 7,
+                sections: [
+                    {
+                        sectionId: 1,
+                        sectionType: SectionType.dialog,
+                        dialogueSection: {
+                            person: "سپهر",
+                            personPic: "",
+                            dialogue: "ولی اون وقتی بزرگ تر شد تونست یه اسکیت برای خودش بخره.با دوستاش اواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، اواز بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
+                        }
+                    },
+                    {
+                        sectionId: 2,
+                        sectionType: SectionType.choose,
+                        optionSection: {
+                            name: "باعث میشه من...",
+                            desc: "",
+                            background: "",
+                            options: [
+                                {
+                                    optionId: 1,
+                                    title: "هم خوشحال بشم و ادم بهتری باشم",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                },
+                                {
+                                    optionId: 2,
+                                    title: "بهش حسودیم میشه و دلم میخواد منم تاثیر گزار باشم",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                },
+                                {
+                                    optionId: 3,
+                                    title: "خیلی چیزا ازش یادگرفتم",
+                                    color: "",
+                                    event: {
+                                        nextStage: 7,
+                                        score: 0
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        sectionId: 3,
+                        sectionType: SectionType.dialog,
+                        dialogueSection: {
+                            person: "سپهر",
+                            personPic: "",
+                            dialogue: "منونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوری. بینظیره!!!"
+                        }
+                    },
+                ]
+            }, // end section
 
 
 
