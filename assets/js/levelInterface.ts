@@ -8,8 +8,9 @@ export interface IStage {
 }
 
 export interface ISection {
-    sectionType: SectionType,
-
+    sectionType: SectionType;
+    dialogueSection: ISectionDialogue;
+    optionSection: ISectionOption;
 }
 
 export enum SectionType {
