@@ -40,4 +40,7 @@ $(document).ready(function(){
 	updateScore( game.score + 10 );
 	updateStage('مرحله ی اول');
 
+	let gameInitScreen = new startScreen;
+	gameInitScreen.showStartMenu();
+
 });
