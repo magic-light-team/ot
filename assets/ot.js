@@ -6,5 +6,7 @@ $(document).ready(function(){
 	// let tapSFX = new sound('tap.wav');
 	// tapSFX.play();
 
+	new scoreBoard;
+
 
 });
