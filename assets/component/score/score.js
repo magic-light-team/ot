@@ -1,5 +1,16 @@
 function score() {
-	let scoreBoard = document.getElementById('score-board');
+	let score = document.createElement('div');
+		score.id = 'score';
 
-	this.score = document.createElement('div');
+	let scoreText = document.createElement('span');
+		scoreText.id = 'score-text';
+		scoreText.appendChild(document.createTextNode('امتیاز'));
+
+	let scoreNum = document.createElement('span');
+		scoreNum.id = 'score-num';
+
+	score.appendChild(scoreText);
+	score.appendChild(scoreNum);
+
+	return score;
 }

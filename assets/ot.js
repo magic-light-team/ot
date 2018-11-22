@@ -1,3 +1,32 @@
+let game =  {
+	score: 0,
+	stage: ''
+};
+
+const initialGame =  {
+	score: 0,
+	stage: ''
+};
+
+function updateScore( newVal ) {
+	let score = document.getElementById('score-num');
+	game.score = Number(newVal);
+	score.innerHTML = game.score;
+}
+
+function updateStage( newVal ) {
+	let stage = document.getElementById('stage');
+		stage.innerHTML = newVal;
+}
+
+function reset() {
+	game = initialGame;
+	updateScore(game.score);
+	updateStage(game.stage);
+}
+
+
+
 $(document).ready(function(){
 
 	/**
@@ -7,7 +36,8 @@ $(document).ready(function(){
 	// tapSFX.play();
 
 	new scoreBoard;
-	new score;
 
+	updateScore( game.score + 10 );
+	updateStage('مرحله ی اول');
 
 });
