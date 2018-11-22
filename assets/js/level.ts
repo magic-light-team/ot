@@ -1,4 +1,7 @@
-var levels = [
+import { IStage, SectionType, ILevel } from "./levelInterface";
+
+
+let levels: ILevel[] = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
@@ -8,7 +11,7 @@ var levels = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: SectionType.dialog,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -17,7 +20,7 @@ var levels = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: SectionType.choose,
                         optionSection: {
                             name: "من میگم:",
                             desc: "",
@@ -54,13 +57,13 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 2,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: SectionType.dialog,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -69,7 +72,7 @@ var levels = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: SectionType.choose,
                         optionSection: {
                             name: "واقعیتش رو بخواین",
                             desc: "",
@@ -97,22 +100,23 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 3,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: SectionType.dialog,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: SectionType.choose,
                         optionSection: {
                             name: "بعضی وقت ها",
                             desc: "",
@@ -149,22 +153,23 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 4,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: SectionType.dialog,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه.میدونه چکار کنه که بهش توجه کنم. و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: SectionType.choose,
                         optionSection: {
                             name: "من",
                             desc: "",
@@ -201,22 +206,23 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 5,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: SectionType.dialog,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: "ولی در اخر روز اون برادر منه"
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: SectionType.choose,
                         optionSection: {
                             name: "بریم",
                             desc: "",
@@ -262,10 +268,23 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
+
+
+
+
+
+
+
+
+
+
+
         ]
     }
-];
+]
+
+
 /////////////////////////////////////////////////////////
 /*
 let testLevel: ILevel = {
@@ -302,4 +321,4 @@ let testStage: IStage[] = [
     }
 ]
 
-//*/ 
+//*/

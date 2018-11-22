@@ -1,4 +1,6 @@
 export interface ILevel {
+    levelId: number;
+    levelName: string;
     stages: IStage[];
 }
 
@@ -8,9 +10,10 @@ export interface IStage {
 }
 
 export interface ISection {
+    sectionId: number;
     sectionType: SectionType;
-    dialogueSection: ISectionDialogue;
-    optionSection: ISectionOption;
+    dialogueSection?: ISectionDialogue;
+    optionSection?: ISectionOption;
 }
 
 export enum SectionType {
@@ -26,14 +29,12 @@ export interface ISectionDialogue {
 
 export interface ISectionOption {
     // stageId: number,
-    level: number,
-    section: number,
     name: string,
     desc: string,
     background: string,
     options: IOption[],
 
-    setGameTime?: number,
+    //setGameTime?: number,
 }
 
 export interface IOption {
@@ -45,8 +46,8 @@ export interface IOption {
 
 export interface IEvent {
     nextStage: number,
-    addedTime: number,
-    addedEnergy: number,
+    //addedTime: number,
+    //addedEnergy: number,
     score: number,
 
     needOptions?: INeedOption[],
