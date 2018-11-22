@@ -12,12 +12,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 600px;
+	max-height: 1080px;
 	height: 100%;
 }
 
 #frame {
 	display: flex;
 	width: 640px;
-	height: 100%;
+	height: calc( 100% - 20px );
 	background-color: red;
+	border-radius: 10px;
 }
