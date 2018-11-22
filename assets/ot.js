@@ -7,6 +7,7 @@ $(document).ready(function(){
 	// tapSFX.play();
 
 	new scoreBoard;
+	new score;
 
 
 });
