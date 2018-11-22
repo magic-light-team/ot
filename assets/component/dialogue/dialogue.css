@@ -1,0 +1,7 @@
+.dialogue{
+    background-image: url('pic/images\ \(1\).png');
+    /* padding: 1% 12% 18% 13%; */
+    padding: 1em 4em 5em 4em;
+    background-size: cover;
+    background-repeat: round;
+}
