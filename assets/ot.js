@@ -101,6 +101,9 @@ function loadDialogue( stage ){
 	let currentStageScreen = document.getElementById('stage-screen');
 
 	$('.dialogue-box').addClass('fadeout');
+	$('.dialogue-box').addClass('hidden');
+	$('.dialogue-box').remove();
+	$('.btn-wrapper').remove();
 
 	dialogueBox.classList.add('fadein');
 	dialogueBox.classList.add('dialogue-box');
@@ -111,7 +114,28 @@ function loadDialogue( stage ){
 }
 
 function loadOptions( stage ) {
-	let options = stage.optionSection;
+	let desc = stage.optionSection.desc;
+	let options = stage.optionSection.options;
+
+	console.log(options);
+
+	$('.dialogue-box').addClass('fadeout');
+	$('.dialogue-box').addClass('hidden');
+	$('.dialogue-box').remove();
+
+	$('.btn-wrapper').remove();
+
+	let optionWrapper = document.createElement('div');
+	optionWrapper.classList.add('btn-wrapper');
+
+	for( let i = 0; i < options.length; i++ ) {
+		let newBtn = btn(options[i].title, options[i].color);
+		$(optionWrapper).append( newBtn );
+	}
+
+	let currentStageScreen = document.getElementById('stage-screen');
+	currentStageScreen.appendChild(optionWrapper);
+
 }
 
 
