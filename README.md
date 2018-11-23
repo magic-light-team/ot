@@ -17,6 +17,9 @@
 - [x] backround
 - [x] people pic
 - [x] score
+- [ ] add logo
+- [x] add new font
+- [x] add music
 - [ ] menu
     - [ ] button
     - [ ] modal

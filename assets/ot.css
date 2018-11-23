@@ -51,6 +51,14 @@ button {
 	visibility: hidden;
 }
 
+
+.chapters-frame {
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-weight: bold;
+}
+
 .chapters-frame {
 	flex-direction: column;
 }
