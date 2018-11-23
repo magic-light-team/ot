@@ -4,7 +4,7 @@ var levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
-        levelPic: "levels/l1-0.jpg",
+        levelPic: "levels/l1-1.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [
             {
