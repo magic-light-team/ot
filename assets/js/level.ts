@@ -1,11 +1,12 @@
 import { ILevel } from "./levelInterface";
 
+var introMusic = "bensound-tenderness-0.mp3";
 let levels: ILevel[] = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
         levelPic: "levels/l1-1.jpg",
-        backgroundMusic: "",
+        backgroundMusic: "bensound-memories-1.mp3",
         stages: [
             {
                 stageId: 1,
@@ -314,7 +315,7 @@ let levels: ILevel[] = [
         levelId: 2,
         levelName: "دوست ابدی من",
         levelPic: "levels/l1-2.jpg",
-        backgroundMusic: "",
+        backgroundMusic: "bensound-anewbeginning-2.mp3",
         stages: [
             {
                 stageId: 1,
@@ -741,7 +742,7 @@ let levels: ILevel[] = [
         levelId: 3,
         levelName: "حقایق اوتیسم",
         levelPic: "levels/l1-3.jpg",
-        backgroundMusic: "",
+        backgroundMusic: "bensound-creativeminds-3.mp3",
         stages: [
             {
                 stageId: 1,
@@ -1048,7 +1049,7 @@ let levels: ILevel[] = [
         levelId: 4,
         levelName: "نگرانی مادر",
         levelPic: "levels/l1-4.jpg",
-        backgroundMusic: "",
+        backgroundMusic: "bensound-pianomoment-4.mp3",
         stages: [
             {
                 stageId: 1,
