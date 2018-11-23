@@ -1,6 +1,4 @@
-"use strict";
-exports.__esModule = true;
-var levelInterface_1 = require("./levelInterface");
+
 var levels = [
     {
         levelId: 1,
@@ -11,7 +9,8 @@ var levels = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        //sectionType: 0,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -20,10 +19,11 @@ var levels = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        //sectionType: 1,
+                        sectionType: 1,
                         optionSection: {
-                            name: "من میگم:",
-                            desc: "",
+                            header:"",
+                            desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
                             background: "",
                             options: [
                                 {
@@ -57,13 +57,13 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 2,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -72,10 +72,10 @@ var levels = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "واقعیتش رو بخواین",
-                            desc: "",
+                            desc: "واقعیتش رو بخواین",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -100,25 +100,26 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 3,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "بعضی وقت ها",
-                            desc: "",
+                            desc: "بعضی وقت ها",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -152,25 +153,26 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 4,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه.میدونه چکار کنه که بهش توجه کنم. و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "من",
-                            desc: "",
+                            desc: "من",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -204,25 +206,26 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 5,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: "ولی در اخر روز اون برادر منه"
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "بریم",
-                            desc: "",
+                            desc: "بریم",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -265,25 +268,26 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 6,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
                             dialogue: "سینا خیلی ادم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارقالعادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد.چون هیچ وقت نمی تونه صحبت کردن بهتر بشه یا با ادما بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش اینه."
                         }
+
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "و اون موقع",
-                            desc: "",
+                            desc: "و اون موقع",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -317,13 +321,13 @@ var levels = [
                         }
                     }
                 ]
-            },
+            }, // end section
             {
                 stageId: 7,
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -332,10 +336,10 @@ var levels = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: levelInterface_1.SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "باعث میشه من...",
-                            desc: "",
+                            desc: "باعث میشه من...",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -370,7 +374,7 @@ var levels = [
                     },
                     {
                         sectionId: 3,
-                        sectionType: levelInterface_1.SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -378,44 +382,18 @@ var levels = [
                         }
                     },
                 ]
-            },
-        ]
-    }
-];
-/////////////////////////////////////////////////////////
-/*
-let testLevel: ILevel = {
-    levelId: 0,
-    levelName: "",
-    stages: []
-}
+            }, // end section
 
-let testStage: IStage[] = [
-    {
-        stageId: 1,
-        sections: [
-            {
-                sectionId: 1,
-                sectionType: SectionType.dialog,
-                dialogueSection: {
-                    person: "سپهر",
-                    personPic: "",
-                    dialogue: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
-                }
 
-            },
-            {
-                sectionId: 2,
-                sectionType: SectionType.choose,
-                optionSection: {
-                    name: "من میگم:",
-                    desc: "",
-                    background: "",
-                    options: []
-                }
-            }
+
+
+
+
+
+
+
+
+
         ]
     }
 ]
-
-//*/ 

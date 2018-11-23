@@ -1,4 +1,4 @@
-import { IStage, SectionType, ILevel } from "./levelInterface";
+import { SectionType, ILevel } from "./levelInterface";
 
 
 let levels: ILevel[] = [
@@ -11,7 +11,8 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        //sectionType: 0,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -20,10 +21,11 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        //sectionType: 1,
+                        sectionType: 1,
                         optionSection: {
-                            name: "من میگم:",
-                            desc: "",
+                            header:"",
+                            desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
                             background: "",
                             options: [
                                 {
@@ -63,7 +65,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -72,10 +74,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "واقعیتش رو بخواین",
-                            desc: "",
+                            desc: "واقعیتش رو بخواین",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -106,7 +108,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -116,10 +118,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "بعضی وقت ها",
-                            desc: "",
+                            desc: "بعضی وقت ها",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -159,7 +161,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -169,10 +171,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "من",
-                            desc: "",
+                            desc: "من",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -212,7 +214,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -222,10 +224,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "بریم",
-                            desc: "",
+                            desc: "بریم",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -274,7 +276,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -284,10 +286,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "و اون موقع",
-                            desc: "",
+                            desc: "و اون موقع",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -327,7 +329,7 @@ let levels: ILevel[] = [
                 sections: [
                     {
                         sectionId: 1,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -336,10 +338,10 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 2,
-                        sectionType: SectionType.choose,
+                        sectionType: 1,
                         optionSection: {
-                            name: "باعث میشه من...",
-                            desc: "",
+                            desc: "باعث میشه من...",
+                            header:"",
                             background: "",
                             options: [
                                 {
@@ -374,7 +376,7 @@ let levels: ILevel[] = [
                     },
                     {
                         sectionId: 3,
-                        sectionType: SectionType.dialog,
+                        sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
@@ -403,7 +405,7 @@ let levels: ILevel[] = [
 /*
 let testLevel: ILevel = {
     levelId: 0,
-    levelName: "",
+    leveldesc: "",
     stages: []
 }
 
@@ -413,7 +415,7 @@ let testStage: IStage[] = [
         sections: [
             {
                 sectionId: 1,
-                sectionType: SectionType.dialog,
+                sectionType: 0,
                 dialogueSection: {
                     person: "سپهر",
                     personPic: "",
@@ -423,10 +425,10 @@ let testStage: IStage[] = [
             },
             {
                 sectionId: 2,
-                sectionType: SectionType.choose,
+                sectionType: 1,
                 optionSection: {
-                    name: "من میگم:",
-                    desc: "",
+                    desc: "من میگم:",
+                    header:"",
                     background: "",
                     options: []
                 }
