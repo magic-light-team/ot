@@ -25,11 +25,12 @@ export interface ISectionDialogue {
     person: string;
     personPic: string;
     dialogue: string;
+    nextDialogueId?: number
 }
 
 export interface ISectionOption {
     // stageId: number,
-    name: string,
+    header: string,
     desc: string,
     background: string,
     options: IOption[],
