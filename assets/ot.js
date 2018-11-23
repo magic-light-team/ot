@@ -136,7 +136,7 @@ function loadOptions( stage ) {
 
 
 	for( let i = 0; i < options.length; i++ ) {
-		let newBtn = btn(options[i].title, options[i].color);
+		let newBtn = btn(options[i].title, options[i].color, options[i].nextDialogueId || '');
 		$(optionWrapper).append( newBtn );
 	}
 
@@ -157,8 +157,8 @@ function loadOptions( stage ) {
 $(document).ready(function(){
 	let $document = $(document);
 
-	let introSound = new sound('bensound-tenderness-0.mp3');
-		introSound.play();
+	// let introSound = new sound('bensound-tenderness-0.mp3');
+		// introSound.play();
 
 	/**
 	 * Load sounds after document load.
@@ -200,8 +200,15 @@ $(document).ready(function(){
 
 	$document.on('click', '#stage-screen', function(e) {
 		if ( $('.btn-wrapper').length ) {
-			if ( $(e.target).hasClass('btn') )
-			loadStage(game.currentStage.stageId + 1);
+			if ( $(e.target).hasClass('btn') ) {
+				let btn = $(e.target);
+				if ( $(btn).data('level') ) {
+					loadStage($(btn).data('level'));
+				} else {
+					loadStage(game.currentStage.stageId + 1);
+				}
+
+			}
 		} else {
 			loadStage(game.currentStage.stageId + 1);
 		}
