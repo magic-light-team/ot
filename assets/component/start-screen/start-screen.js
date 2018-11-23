@@ -17,23 +17,29 @@ function startScreen() {
 
 	this.showStartMenu = function() {
 		ot.appendChild(startScreen);
-		frame.classList.remove('fadein');
-		frame.classList.add('fadeout');
-		startScreen.classList.remove('fadeout');
-		startScreen.classList.add('fadein');
 	};
 
 	this.pause = function() {
-		frame.classList.remove('fadein').add('fadeout');
-		startScreen.classList.remove('fadeout').add('fadein');
+		startScreen.classList.add('fadein');
+		startScreen.classList.remove('hidden');
+		startScreen.classList.remove('fadeout');
+
+		frame.classList.remove('fadein');
+		frame.classList.add('fadeout');
+		frame.classList.add('hidden');
+
 		this.isPaused = true;
 	};
 
 	this.resume = function() {
-		if ( this.isPaused ) {
-			frame.classList.remove('fadeout').add('fadein');
-			startScreen.classList.remove('fadein').add('fadeout');
-		}
+		frame.classList.remove('fadeout');
+		frame.classList.remove('hidden');
+		frame.classList.add('fadein');
+
+		startScreen.classList.remove('fadein');
+		startScreen.classList.add('fadeout');
+		startScreen.classList.add('hidden');
+
 		this.isPaused = false;
 	};
 

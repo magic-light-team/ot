@@ -1,4 +1,5 @@
-let levels = [
+
+var levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",

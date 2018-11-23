@@ -17,6 +17,7 @@ body {
 	min-height: 600px;
 	max-height: 1080px;
 	height: 100%;
+	position: relative;
 }
 
 #frame {
@@ -26,4 +27,22 @@ body {
 	background-color: red;
 	border-radius: 10px;
 	overflow: hidden;
+}
+
+#ot > div {
+	position: absolute;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.fadeout {
+	animation-duration: 0.3s;
+	animation-name: fadeOut;
+}
+
+.fadein {
+	animation-duration: 0.3s;
+	animation-name: fadeIn;
 }
