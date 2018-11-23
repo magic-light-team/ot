@@ -20,8 +20,14 @@ function startScreen() {
 	};
 
 	this.pause = function() {
-		frame.classList.remove('fadein').add('fadeout');
-		startScreen.classList.remove('fadeout').add('fadein');
+		startScreen.classList.add('fadein');
+		startScreen.classList.remove('hidden');
+		startScreen.classList.remove('fadeout');
+
+		frame.classList.remove('fadein');
+		frame.classList.add('fadeout');
+		frame.classList.add('hidden');
+
 		this.isPaused = true;
 	};
 
@@ -29,8 +35,11 @@ function startScreen() {
 		frame.classList.remove('fadeout');
 		frame.classList.remove('hidden');
 		frame.classList.add('fadein');
+
 		startScreen.classList.remove('fadein');
 		startScreen.classList.add('fadeout');
+		startScreen.classList.add('hidden');
+
 		this.isPaused = false;
 	};
 

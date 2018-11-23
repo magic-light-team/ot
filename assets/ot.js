@@ -28,6 +28,7 @@ function reset() {
 
 
 $(document).ready(function(){
+	let $document = $(document);
 
 	/**
 	 * Load sounds after document load.
@@ -43,9 +44,13 @@ $(document).ready(function(){
 	let gameInitScreen = new startScreen;
 	gameInitScreen.showStartMenu();
 
-	document.on('click', '#start-new-btn', function(){
-		console.log('click');
+
+	$document.on('click', '#start-new-btn', function(){
 		gameInitScreen.resume();
 	});
+
+	$document.on('click', '#menu', function(){
+		gameInitScreen.pause();
+	})
 
 });
