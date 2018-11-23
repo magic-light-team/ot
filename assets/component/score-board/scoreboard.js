@@ -1,12 +1,12 @@
 function scoreBoard() {
-	let game = document.getElementById('frame');
+	let game = document.getElementById('stage-screen');
 
-	this.scoreBoard = document.createElement('div');
-	this.scoreBoard.id = 'score-board';
+	this.scoreBoardScreen = document.createElement('div');
+	this.scoreBoardScreen.id = 'score-board';
 
-	this.scoreBoard.appendChild(new menu);
-	this.scoreBoard.appendChild(new stage);
-	this.scoreBoard.appendChild(new score);
+	this.scoreBoardScreen.appendChild(new menu);
+	this.scoreBoardScreen.appendChild(new stage);
+	this.scoreBoardScreen.appendChild(new score);
 
-	game.appendChild(this.scoreBoard);
+	game.appendChild(this.scoreBoardScreen);
 }

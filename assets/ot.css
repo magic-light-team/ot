@@ -24,7 +24,6 @@ body {
 	display: flex;
 	width: 640px;
 	height: calc( 100% - 20px );
-	background-color: red;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -35,11 +34,6 @@ body {
 
 .hidden {
 	visibility: hidden;
-}
-
-.chapters-frame #score-board {
-	visibility: hidden;
-	opacity: 0;
 }
 
 .chapters-frame {
