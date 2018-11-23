@@ -4,7 +4,7 @@ var levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
-        levelPic: "levels/l1-1.jpg",
+        levelPic: "levels/l1-0.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [
             {
@@ -312,7 +312,7 @@ var levels = [
     {
         levelId: 2,
         levelName: "دوست ابدی من",
-        levelPic: "levels/l1-2.jpg",
+        levelPic: "levels/l2-1.jpg",
         backgroundMusic: "bensound-anewbeginning-2.mp3",
         stages: [
             {
@@ -739,7 +739,7 @@ var levels = [
     {
         levelId: 3,
         levelName: "حقایق اوتیسم",
-        levelPic: "levels/l1-3.jpg",
+        levelPic: "levels/l3-1.jpg",
         backgroundMusic: "bensound-creativeminds-3.mp3",
         stages: [
             {
@@ -1046,7 +1046,7 @@ var levels = [
     {
         levelId: 4,
         levelName: "نگرانی مادر",
-        levelPic: "levels/l1-4.jpg",
+        levelPic: "levels/l4-1.jpg",
         backgroundMusic: "bensound-pianomoment-4.mp3",
         stages: [
             {
