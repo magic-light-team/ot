@@ -127,7 +127,7 @@ var levels = [
                 }
             },
             {
-                stageId: 3,
+                stageId: 8,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -137,7 +137,7 @@ var levels = [
 
             },
             {
-                stageId: 1,
+                stageId: 9,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -147,7 +147,7 @@ var levels = [
 
             },
             {
-                stageId: 2,
+                stageId: 10,
                 stageType: 1,
                 optionSection: {
                     desc: "ولی من",
@@ -176,7 +176,7 @@ var levels = [
                 }
             },
             {
-                stageId: 1,
+                stageId: 11,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -186,7 +186,7 @@ var levels = [
 
             },
             {
-                stageId: 2,
+                stageId: 12,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -219,9 +219,9 @@ var levels = [
                         }
                     ]
                 }
-            }
-        ,{
-                stageId: 1,
+            },
+            {
+                stageId: 13,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -230,7 +230,7 @@ var levels = [
                 }
             },
             {
-                stageId: 2,
+                stageId: 14,
                 stageType: 1,
                 optionSection: {
                     desc: "و اون موقع",
@@ -257,9 +257,9 @@ var levels = [
                         }
                     ]
                 }
-            }
-        ,{
-                stageId: 1,
+            },
+            {
+                stageId: 15,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -268,7 +268,7 @@ var levels = [
                 }
             },
             {
-                stageId: 2,
+                stageId: 16,
                 stageType: 1,
                 optionSection: {
                     desc: "این باعث میشه من ...",
@@ -297,7 +297,7 @@ var levels = [
                 }
             },
             {
-                stageId: 3,
+                stageId: 14,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
