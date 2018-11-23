@@ -1,3 +1,4 @@
+
 var levels = [
     {
         levelId: 1,
@@ -5,7 +6,7 @@ var levels = [
         stages: [
 
             {
-                sectionId: 1,
+                stageId: 1,
                 //stageType: 0,
                 stageType: 0,
                 dialogueSection: {
@@ -15,7 +16,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 //stageType: 1,
                 stageType: 1,
                 optionSection: {
@@ -45,7 +46,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 //stageType: 0,
                 stageType: 0,
                 dialogueSection: {
@@ -55,7 +56,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 4,
+                stageId: 4,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -64,7 +65,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 5,
+                stageId: 5,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -87,7 +88,7 @@ var levels = [
                 }
             }, // end section
             {
-                sectionId: 6,
+                stageId: 6,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -97,7 +98,7 @@ var levels = [
 
             },
             {
-                sectionId: 7,
+                stageId: 7,
                 stageType: 1,
                 optionSection: {
                     desc: "بعضی وقت ها",
@@ -126,7 +127,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -136,7 +137,7 @@ var levels = [
 
             },
             {
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -146,7 +147,7 @@ var levels = [
 
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "ولی من",
@@ -175,7 +176,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -185,7 +186,7 @@ var levels = [
 
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -220,7 +221,7 @@ var levels = [
                 }
             }
         ,{
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -229,7 +230,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "و اون موقع",
@@ -258,7 +259,7 @@ var levels = [
                 }
             }
         ,{
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -267,7 +268,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "این باعث میشه من ...",
@@ -296,7 +297,7 @@ var levels = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -316,7 +317,7 @@ var levels = [
                     stageId: 1,
                     sections: [
                         {
-                            sectionId: 1,
+                            stageId: 1,
                             stageType: 0,
                             dialogueSection: {
                                 person: "دکتر",
@@ -325,7 +326,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 2,
+                            stageId: 2,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -334,7 +335,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 3,
+                            stageId: 3,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -343,7 +344,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 4,
+                            stageId: 4,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -352,7 +353,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 5,
+                            stageId: 5,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -361,7 +362,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 6,
+                            stageId: 6,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -370,7 +371,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 7,
+                            stageId: 7,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -379,7 +380,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 8,
+                            stageId: 8,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -388,7 +389,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 9,
+                            stageId: 9,
                             stageType: 1,
                             optionSection: {
                                 header: "",
@@ -413,7 +414,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 11,
+                            stageId: 11,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -422,7 +423,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 12,
+                            stageId: 12,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -431,7 +432,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 21,
+                            stageId: 21,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -440,7 +441,7 @@ var levels = [
                             }
                         },
                         {
-                            sectionId: 22,
+                            stageId: 22,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",

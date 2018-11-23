@@ -6,7 +6,7 @@ export interface ILevel {
 
 
 export interface IStage {
-    sectionId: number;
+    stageId: number;
     stageType: StageType;
     dialogueSection?: ISectionDialogue;
     optionSection?: ISectionOption;

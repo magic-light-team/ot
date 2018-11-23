@@ -7,7 +7,7 @@ let levels: ILevel[] = [
         stages: [
 
             {
-                sectionId: 1,
+                stageId: 1,
                 //stageType: 0,
                 stageType: 0,
                 dialogueSection: {
@@ -17,7 +17,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 //stageType: 1,
                 stageType: 1,
                 optionSection: {
@@ -47,7 +47,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 //stageType: 0,
                 stageType: 0,
                 dialogueSection: {
@@ -57,7 +57,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 4,
+                stageId: 4,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -66,7 +66,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 5,
+                stageId: 5,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -89,7 +89,7 @@ let levels: ILevel[] = [
                 }
             }, // end section
             {
-                sectionId: 6,
+                stageId: 6,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -99,7 +99,7 @@ let levels: ILevel[] = [
 
             },
             {
-                sectionId: 7,
+                stageId: 7,
                 stageType: 1,
                 optionSection: {
                     desc: "بعضی وقت ها",
@@ -128,7 +128,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -138,7 +138,7 @@ let levels: ILevel[] = [
 
             },
             {
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -148,7 +148,7 @@ let levels: ILevel[] = [
 
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "ولی من",
@@ -177,7 +177,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -187,7 +187,7 @@ let levels: ILevel[] = [
 
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -222,7 +222,7 @@ let levels: ILevel[] = [
                 }
             }
         ,{
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -231,7 +231,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "و اون موقع",
@@ -260,7 +260,7 @@ let levels: ILevel[] = [
                 }
             }
         ,{
-                sectionId: 1,
+                stageId: 1,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -269,7 +269,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 2,
+                stageId: 2,
                 stageType: 1,
                 optionSection: {
                     desc: "این باعث میشه من ...",
@@ -298,7 +298,7 @@ let levels: ILevel[] = [
                 }
             },
             {
-                sectionId: 3,
+                stageId: 3,
                 stageType: 0,
                 dialogueSection: {
                     person: "سپهر",
@@ -318,7 +318,7 @@ let levels: ILevel[] = [
                     stageId: 1,
                     sections: [
                         {
-                            sectionId: 1,
+                            stageId: 1,
                             stageType: 0,
                             dialogueSection: {
                                 person: "دکتر",
@@ -327,7 +327,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 2,
+                            stageId: 2,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -336,7 +336,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 3,
+                            stageId: 3,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -345,7 +345,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 4,
+                            stageId: 4,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -354,7 +354,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 5,
+                            stageId: 5,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -363,7 +363,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 6,
+                            stageId: 6,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -372,7 +372,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 7,
+                            stageId: 7,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -381,7 +381,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 8,
+                            stageId: 8,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -390,7 +390,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 9,
+                            stageId: 9,
                             stageType: 1,
                             optionSection: {
                                 header: "",
@@ -415,7 +415,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 11,
+                            stageId: 11,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -424,7 +424,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 12,
+                            stageId: 12,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
@@ -433,7 +433,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 21,
+                            stageId: 21,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر اول",
@@ -442,7 +442,7 @@ let levels: ILevel[] = [
                             }
                         },
                         {
-                            sectionId: 22,
+                            stageId: 22,
                             stageType: 0,
                             dialogueSection: {
                                 person: "برادر دوم",
