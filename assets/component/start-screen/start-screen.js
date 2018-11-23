@@ -20,6 +20,10 @@ function startScreen() {
 	};
 
 	this.pause = function() {
+		if ( ! $('#resume-btn').length ) {
+			innerScreen.prepend( new menuButton( 'ادامه', { id: 'resume-btn', class: 'resume-btn' } ) );
+		}
+
 		startScreen.classList.add('fadein');
 		startScreen.classList.remove('hidden');
 		startScreen.classList.remove('fadeout');
