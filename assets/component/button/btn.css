@@ -3,6 +3,7 @@
 }
 
 .start-btn,.btn{
+    width:100%;
     padding: 10px;
     color: lightgreen;
     background-color: gray;
@@ -18,6 +19,7 @@
 .start-btn{
     color: lightgreen;
     background-color: gray;
+    margin: 2em 0;
 }
 .start-btn.credits-btn,
 .start-btn.about-btn
