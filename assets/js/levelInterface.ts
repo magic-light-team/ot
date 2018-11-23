@@ -4,19 +4,15 @@ export interface ILevel {
     stages: IStage[];
 }
 
-export interface IStage {
-    stageId: number;
-    sections: ISection[];
-}
 
-export interface ISection {
+export interface IStage {
     sectionId: number;
-    sectionType: SectionType;
+    stageType: StageType;
     dialogueSection?: ISectionDialogue;
     optionSection?: ISectionOption;
 }
 
-export enum SectionType {
+export enum StageType {
     dialog,
     choose
 }
@@ -34,7 +30,6 @@ export interface ISectionOption {
     desc: string,
     background: string,
     options: IOption[],
-    nextDialogueId?: number
 
     //setGameTime?: number,
 }
@@ -45,6 +40,7 @@ export interface IOption {
     color: string,
     score: number,
     needOptions?: INeedOption[]
+    nextDialogueId?: number
 }
 
 
