@@ -1,5 +1,4 @@
-
-var levels = [
+let levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
@@ -22,7 +21,7 @@ var levels = [
                         //sectionType: 1,
                         sectionType: 1,
                         optionSection: {
-                            header:"",
+                            header: "",
                             desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
                             background: "",
                             options: [
@@ -30,30 +29,31 @@ var levels = [
                                     optionId: 1,
                                     title: "نه واقع",
                                     color: "",
-                                    event: {
-                                        nextStage: 2,
-                                        score: 0
-                                    }
+                                    score: 0,
                                 },
                                 {
                                     optionId: 2,
                                     title: "وحشتناکه",
                                     color: "",
-                                    event: {
-                                        nextStage: 2,
-                                        score: 0
-                                    }
+                                    score: 0
                                 },
                                 {
                                     optionId: 3,
                                     title: "وحشتناکه",
                                     color: "مهم نیست برام",
-                                    event: {
-                                        nextStage: 2,
-                                        score: 0
-                                    }
+                                    score: 0
                                 }
                             ]
+                        }
+                    },
+                    {
+                        sectionId: 3,
+                        //sectionType: 0,
+                        sectionType: 0,
+                        dialogueSection: {
+                            person: "سپهر",
+                            personPic: "",
+                            dialogue: "... و میخندم. "
                         }
                     }
                 ]
@@ -74,27 +74,21 @@ var levels = [
                         sectionId: 2,
                         sectionType: 1,
                         optionSection: {
+                            header: "",
                             desc: "واقعیتش رو بخواین",
-                            header:"",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
                                     title: "دوست داشتم اینجوی باشه",
                                     color: "",
-                                    event: {
-                                        nextStage: 3,
-                                        score: 0
-                                    }
+                                    score: 0
                                 },
                                 {
                                     optionId: 2,
                                     title: "مهم نیست برام",
                                     color: "",
-                                    event: {
-                                        nextStage: 3,
-                                        score: 0
-                                    }
+                                    score: 0
                                 }
                             ]
                         }
@@ -119,39 +113,40 @@ var levels = [
                         sectionType: 1,
                         optionSection: {
                             desc: "بعضی وقت ها",
-                            header:"",
+                            header: "",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
                                     title: "وسط راهرو با دستاش بهم تیر میزنه",
                                     color: "",
-                                    event: {
-                                        nextStage: 4,
-                                        score: 0
-                                    }
+                                    score: 0
                                 },
                                 {
                                     optionId: 2,
                                     title: "یهو داد میزنه سپهر رو کوسه خورد",
                                     color: "",
-                                    event: {
-                                        nextStage: 4,
-                                        score: 0
-                                    }
+                                    score: 0
                                 },
                                 {
                                     optionId: 3,
                                     title: "عمو یه دختر",
                                     color: "",
-                                    event: {
-                                        nextStage: 4,
-                                        score: 0
-                                    }
+                                    score: 0
                                 }
                             ]
                         }
-                    }
+                    },
+                    {
+                        sectionId: 3,
+                        sectionType: 0,
+                        dialogueSection: {
+                            person: "سپهر",
+                            personPic: "",
+                            dialogue: "و کارهای عجیب دیگه ای هم می کنه."
+                        }
+
+                    },
                 ]
             }, // end section
             {
@@ -163,7 +158,7 @@ var levels = [
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
-                            dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه.میدونه چکار کنه که بهش توجه کنم. و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
+                            dialogue: "می دونه چه کار کنه که بهش توجه کنم و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                         }
 
                     },
@@ -171,40 +166,41 @@ var levels = [
                         sectionId: 2,
                         sectionType: 1,
                         optionSection: {
-                            desc: "من",
-                            header:"",
+                            desc: "ولی من",
+                            header: "",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
                                     title: "با تمام وجود از برادرم محافظت می کنم",
                                     color: "",
-                                    event: {
-                                        nextStage: 5,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 2,
                                     title: "صمیمانه ترین رابطه رو باهاش دارم",
                                     color: "",
-                                    event: {
-                                        nextStage: 5,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 3,
                                     title: "همیشه اذیتش می کنم",
                                     color: "",
-                                    event: {
-                                        nextStage: 5,
                                         score: 0
-                                    }
                                 }
                             ]
                         }
-                    }
+                    },
+                    // {
+                    //     sectionId: 3,
+                    //     sectionType: 0,
+                    //     dialogueSection: {
+                    //         person: "سپهر",
+                    //         personPic: "",
+                    //         dialogue: "ولی در آخر روز اون برادر منه"
+                    //     }
+
+                    // }
                 ]
             }, // end section
             {
@@ -215,7 +211,7 @@ var levels = [
                         sectionType: 0,
                         dialogueSection: {
                             person: "سپهر",
-                            personPic: "",
+                            personPic: "",// pic with brother
                             dialogue: "ولی در اخر روز اون برادر منه"
                         }
 
@@ -224,45 +220,33 @@ var levels = [
                         sectionId: 2,
                         sectionType: 1,
                         optionSection: {
-                            desc: "بریم",
-                            header:"",
+                            header: "",
+                            desc: "سینا دوست داری بریم...",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
                                     title: "خونه بازی کنیم",
                                     color: "",
-                                    event: {
-                                        nextStage: 6,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 2,
                                     title: "پارک قدم بزنیم",
                                     color: "",
-                                    event: {
-                                        nextStage: 6,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 3,
                                     title: "بریم بیرون غذا بخوریم",
                                     color: "",
-                                    event: {
-                                        nextStage: 6,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 4,
-                                    title: "لب ساحل لذت ببریم",
+                                    title: "لب ساحل",
                                     color: "",
-                                    event: {
-                                        nextStage: 6,
                                         score: 0
-                                    }
                                 }
                             ]
                         }
@@ -278,44 +262,34 @@ var levels = [
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
-                            dialogue: "سینا خیلی ادم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارقالعادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد.چون هیچ وقت نمی تونه صحبت کردن بهتر بشه یا با ادما بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش اینه."
+                            dialogue: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد. چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
                         }
-
                     },
                     {
                         sectionId: 2,
                         sectionType: 1,
                         optionSection: {
                             desc: "و اون موقع",
-                            header:"",
+                            header: "",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
                                     title: "داد زدم و گفتم اون بهتر میشه",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 2,
                                     title: "رفتم یه گوشه و گریه کردم",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 3,
-                                    title: "داد زدم و گفتم اون بهتر میشه",
+                                    title: "منم قبول کردم",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 }
                             ]
                         }
@@ -331,43 +305,34 @@ var levels = [
                         dialogueSection: {
                             person: "سپهر",
                             personPic: "",
-                            dialogue: "ولی اون وقتی بزرگ تر شد تونست یه اسکیت برای خودش بخره.با دوستاش اواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، اواز بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
+                            dialogue: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
                         }
                     },
                     {
                         sectionId: 2,
                         sectionType: 1,
                         optionSection: {
-                            desc: "باعث میشه من...",
-                            header:"",
+                            desc: "این باعث میشه من ...",
+                            header: "",
                             background: "",
                             options: [
                                 {
                                     optionId: 1,
-                                    title: "هم خوشحال بشم و ادم بهتری باشم",
+                                    title: "هم خوشحال بشم و آدم بهتری باشم",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 2,
                                     title: "بهش حسودیم میشه و دلم میخواد منم تاثیر گزار باشم",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 },
                                 {
                                     optionId: 3,
-                                    title: "خیلی چیزا ازش یادگرفتم",
+                                    title: "خیلی چیزا ازش یاد گرفتم",
                                     color: "",
-                                    event: {
-                                        nextStage: 7,
                                         score: 0
-                                    }
                                 }
                             ]
                         }

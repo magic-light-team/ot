@@ -34,6 +34,7 @@ export interface ISectionOption {
     desc: string,
     background: string,
     options: IOption[],
+    nextDialogueId?: number
 
     //setGameTime?: number,
 }
@@ -42,17 +43,10 @@ export interface IOption {
     optionId: number,
     title: string,
     color: string,
-    event: IEvent
-}
-
-export interface IEvent {
-    nextStage: number,
-    //addedTime: number,
-    //addedEnergy: number,
     score: number,
-
-    needOptions?: INeedOption[],
+    needOptions?: INeedOption[]
 }
+
 
 export interface INeedOption {
     stageId: number,
