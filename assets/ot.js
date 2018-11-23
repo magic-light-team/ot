@@ -113,6 +113,9 @@ function loadDialogue( stage ){
 	dialogueBox.classList.add('fadein');
 	dialogueBox.classList.add('dialogue-box');
 	dialogueBox.classList.add('dialogue');
+	if ( dialogue.nextStageId ) {
+		dialogueBox.setAttribute('data-level', dialogue.nextStageId );
+	}
 
 	dialogueBox.appendChild(document.createTextNode(String(dialogue)));
 	currentStageScreen.appendChild(dialogueBox);
@@ -136,7 +139,7 @@ function loadOptions( stage ) {
 
 
 	for( let i = 0; i < options.length; i++ ) {
-		let newBtn = btn(options[i].title, options[i].color, options[i].nextDialogueId || '');
+		let newBtn = btn(options[i].title, options[i].color, options[i].nextDialogueId || '', options[i].score || 0);
 		$(optionWrapper).append( newBtn );
 	}
 
@@ -202,15 +205,20 @@ $(document).ready(function(){
 		if ( $('.btn-wrapper').length ) {
 			if ( $(e.target).hasClass('btn') ) {
 				let btn = $(e.target);
+				updateScore(game.score + Number($(btn).data('score')))
 				if ( $(btn).data('level') ) {
 					loadStage($(btn).data('level'));
+					console.log(Number($(btn).data('score')));
 				} else {
 					loadStage(game.currentStage.stageId + 1);
 				}
-
 			}
 		} else {
-			loadStage(game.currentStage.stageId + 1);
+			if ( $('.dialogue').data('level') ) {
+				loadStage($('.dialogue').data('level'));
+			} else {
+				loadStage(game.currentStage.stageId + 1);
+			}
 		}
 	});
 

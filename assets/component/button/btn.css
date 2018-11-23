@@ -2,7 +2,7 @@
     cursor: pointer;
 }
 
-.start-btn,.btn{
+.start-btn, .btn{
     width:100%;
     padding: 10px;
     color: lightgreen;
@@ -10,16 +10,18 @@
     opacity: 0.85;
     background-image: none;
     border-color: #343a40;
-    text-shadow: 1px 3px black;
-    /* text-shadow: -1px -1px white; */
+	text-shadow: 1px 3px black;
     font-weight: 800;
-    font-size: 2em;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn {
+	font-size: 30px;
 }
 .start-btn{
     color: lightgreen;
     background-color: gray;
-    margin: 10px 0;
+	margin: 10px 0;
+	font-size: 40px;
 }
 .start-btn.credits-btn,
 .start-btn.about-btn
@@ -35,5 +37,4 @@
     border-color: #343a40;
     text-shadow: 1px 3px black;
     font-weight: 800;
-    font-size: 2em;
 }
