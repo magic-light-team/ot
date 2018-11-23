@@ -120,9 +120,16 @@ function loadOptions( stage ) {
 	$('.dialogue-box').remove();
 
 	$('.btn-wrapper').remove();
+	$('.description-wrapper').remove();
 
 	let optionWrapper = document.createElement('div');
 	optionWrapper.classList.add('btn-wrapper');
+
+
+	let descWrapper = document.createElement('div');
+		descWrapper.classList.add('description-wrapper');
+		descWrapper.classList.add('dialogue');
+		descWrapper.appendChild(document.createTextNode(String(desc)));
 
 	for( let i = 0; i < options.length; i++ ) {
 		let newBtn = btn(options[i].title, options[i].color);
@@ -130,6 +137,7 @@ function loadOptions( stage ) {
 	}
 
 	let currentStageScreen = document.getElementById('stage-screen');
+	currentStageScreen.appendChild(descWrapper);
 	currentStageScreen.appendChild(optionWrapper);
 
 }
