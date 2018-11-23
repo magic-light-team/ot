@@ -3,12 +3,13 @@
 	display: flex;
 	width: 640px;
 	height: calc( 100% - 20px );
-	background-color: red;
 	border-radius: 10px;
 	overflow: hidden;
 	flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+	align-items: center;
+	background-image: url(assets/img/levels/s1-1.jpg);
+	background-size: cover;
 }
 
 .chapter {
@@ -23,7 +24,8 @@
 }
 
 .chapter-1 {
-
+	background-image: url(assets/img/levels/l1-1.jpg);
+	background-size: cover;
 }
 
 .chapter-2 {

@@ -2,7 +2,7 @@
 	display: flex;
 	width: 640px;
 	height: calc( 100% - 20px );
-	background-image: url(assets/img/s1-1.jpg);
+	background-image: url(assets/img/levels/s1-1.jpg);
 	background-size: cover;
 	border-radius: 10px;
 	overflow: hidden;
