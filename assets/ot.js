@@ -38,14 +38,21 @@ $(document).ready(function(){
 
 	new scoreBoard;
 
-	updateScore( game.score + 10 );
-	updateStage('مرحله ی اول');
+	// updateScore( game.score + 10 );
+	// updateStage('مرحله ی اول');
 
 	let gameInitScreen = new startScreen;
 	gameInitScreen.showStartMenu();
 
+	let lvlSelectScreen = new chapterScreen;
 
 	$document.on('click', '#start-new-btn', function(){
+		reset();
+		lvlSelectScreen.show();
+		gameInitScreen.resume();
+	});
+
+	$document.on('click', '#resume-btn', function(){
 		gameInitScreen.resume();
 	});
 

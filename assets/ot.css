@@ -37,6 +37,15 @@ body {
 	visibility: hidden;
 }
 
+.chapters-frame #score-board {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.chapters-frame {
+	flex-direction: column;
+}
+
 .fadeout {
 	animation-duration: 0.3s;
 	animation-name: fadeOut;
