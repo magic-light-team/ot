@@ -58,7 +58,7 @@ $(document).ready(function(){
 	 */
 	let tapSFX = new sound('tap.wav');
 
-	$document.on('click', 'btn,start-btn', function(){
+	$document.on('click', 'btn,start-btn,chapter', function(){
 		tapSFX.play();
 	});
 
