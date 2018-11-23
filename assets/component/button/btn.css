@@ -3,6 +3,7 @@
 }
 
 .start-btn,.btn{
+    padding: 10px;
     color: lightgreen;
     background-color: gray;
     opacity: 0.85;
@@ -31,7 +32,6 @@
     background-image: none;
     border-color: #343a40;
     text-shadow: 1px 3px black;
-    /* text-shadow: -1px -1px white; */
     font-weight: 800;
     font-size: 2em;
 }
