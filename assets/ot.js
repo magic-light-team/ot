@@ -26,6 +26,10 @@ function updateLevelPic( newVal ) {
 		stage.styles.backgroundImage = "url(" + newVal + ")";
 }
 
+function updateLevelMusic( newVal ) {
+
+}
+
 
 function reset() {
 	game = initialGame;
@@ -45,6 +49,8 @@ function loadLevel( level ) {
 	game.currentLevel = levels[level];
 
 	updateLevelName(game.currentLevel.levelName);
+	updateLevelPic(game.currentLevel.levelPic);
+	updateLevelName(game.currentLevel.level);
 }
 
 

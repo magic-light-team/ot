@@ -1,0 +1,11 @@
+#stage-screen {
+	display: flex;
+	width: 640px;
+	height: calc( 100% - 20px );
+	border-radius: 10px;
+	overflow: hidden;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+	align-items: center;
+	background-size: cover;
+}
