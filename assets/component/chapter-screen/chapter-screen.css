@@ -29,13 +29,16 @@
 }
 
 .chapter-2 {
-
+	background-image: url(assets/img/levels/l2-1.jpg);
+	background-size: cover;
 }
 
 .chapter-3 {
-
+	background-image: url(assets/img/levels/l3-1.jpg);
+	background-size: cover;
 }
 
 .chapter-4 {
-
+	background-image: url(assets/img/levels/l4-1.jpg);
+	background-size: cover;
 }
