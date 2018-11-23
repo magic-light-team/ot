@@ -14,13 +14,13 @@
 
 ## Todo
 
-- [ ] backround
-- [ ] people pic
-- [ ] score
+- [x] backround
+- [x] people pic
+- [x] score
 - [ ] menu
     - [ ] button
     - [ ] modal
-- [ ] start page
+- [x] start page
 - [ ] score page
 
 ## Suggestion
