@@ -20,7 +20,6 @@ let levels: ILevel[] = [
             },
             {
                 stageId: 2,
-                //stageType: 1,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -29,15 +28,15 @@ let levels: ILevel[] = [
                     options: [
                         {
                             optionId: 1,
-                            title: "نه واقع",
+                            title: "نه واقعا سخت نیست",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                         {
                             optionId: 2,
                             title: "وحشتناکه",
                             color: "",
-                            score: 0
+                            score: -10
                         },
                         {
                             optionId: 3,
@@ -77,7 +76,7 @@ let levels: ILevel[] = [
                     options: [
                         {
                             optionId: 1,
-                            title: "دوست داشتم اینجوی باشه",
+                            title: "دوست داشتم اینجوری باشه",
                             color: "",
                             score: 0
                         },
@@ -85,7 +84,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "مهم نیست برام",
                             color: "",
-                            score: 0
+                            score: 10
                         }
                     ]
                 }
@@ -161,19 +160,19 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "با تمام وجود از برادرم محافظت می کنم",
                             color: "",
-                            score: 0
+                            score: 25
                         },
                         {
                             optionId: 2,
                             title: "صمیمانه ترین رابطه رو باهاش دارم",
                             color: "",
-                            score: 0
+                            score: 10
                         },
                         {
                             optionId: 3,
                             title: "همیشه اذیتش می کنم",
                             color: "",
-                            score: 0
+                            score: -10
                         }
                     ]
                 }
@@ -244,7 +243,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "داد زدم و گفتم اون بهتر میشه",
                             color: "",
-                            score: 0
+                            score: 10
                         },
                         {
                             optionId: 2,
@@ -256,7 +255,7 @@ let levels: ILevel[] = [
                             optionId: 3,
                             title: "منم قبول کردم",
                             color: "",
-                            score: 0
+                            score: -10
                         }
                     ]
                 }
@@ -282,19 +281,19 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "هم خوشحال بشم و آدم بهتری باشم",
                             color: "",
-                            score: 0
+                            score: 10
                         },
                         {
                             optionId: 2,
                             title: "بهش حسودیم میشه و دلم میخواد منم تاثیر گزار باشم",
                             color: "",
-                            score: 0
+                            score: -10
                         },
                         {
                             optionId: 3,
                             title: "خیلی چیزا ازش یاد گرفتم",
                             color: "",
-                            score: 0
+                            score: 25
                         }
                     ]
                 }
@@ -401,14 +400,14 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "آره چرا که نه",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 11
                         },
                         {
                             optionId: 2,
                             title: "میخوام تنهایی رو هم تجربه کنم",
                             color: "",
-                            score: 0,
+                            score: -10,
                             nextDialogueId: 21
                         }
                     ]
@@ -520,14 +519,14 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "کجا",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 37
                         },
                         {
                             optionId: 2,
                             title: "دوباره این بحث نه",
                             color: "",
-                            score: 0,
+                            score: -10,
                             nextDialogueId: 40
                         }
                     ]
@@ -630,14 +629,14 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "منم با کف صابون حباب درست کردم و حسابی همه جا رو بهم ریختیم",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 48
                         },
                         {
                             optionId: 2,
                             title: "از این که خونه رو بهم ریخته ناراحت شدم وسرش داد زدم",
                             color: "",
-                            score: 0,
+                            score: -10,
                             nextDialogueId: 49
                         }
                     ]
@@ -684,14 +683,14 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "من با دستام هر چی رو میز بود رو جمع کردم ",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 52
                         },
                         {
                             optionId: 2,
                             title: "از ناراحتی این که قراره مامان چی بگه سرم رو گزاشتم رو میز",
                             color: "",
-                            score: 0,
+                            score: -10,
                             nextDialogueId: 53
                         }
                     ]
@@ -774,7 +773,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "به یک طیف از اختلالاته",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 4
                         },
                         {
@@ -835,7 +834,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "یک در 88 کودک",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 8
                         },
                         {
@@ -921,7 +920,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "یک در چهار ",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 14
                         },
                         {
@@ -991,7 +990,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "دویست تا چهارصد ژن",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId: 19
                         },
                         {
@@ -1081,7 +1080,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                         {
                             optionId: 2,
@@ -1128,7 +1127,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "آره به خاطر همینه",
                             color: "",
-                            score: 0,
+                            score: 10,
                         }
                     ]
                 }
@@ -1160,7 +1159,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "آره به خاطر همینه",
                             color: "",
-                            score: 0,
+                            score: 10,
                         }
                     ]
                 }
@@ -1186,7 +1185,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                         {
                             optionId: 2,
@@ -1224,7 +1223,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "آره به خاطر همینه",
                             color: "",
-                            score: 0,
+                            score: 10,
                         }
                     ]
                 }
@@ -1250,7 +1249,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "ممکنه خواهر کوچیکترش هم اینطور بشه",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                         {
                             optionId: 2,
@@ -1303,7 +1302,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: "آره به خاطر همینه",
                             color: "",
-                            score: 0,
+                            score: 10,
                         }
                     ]
                 }
@@ -1338,7 +1337,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "هجده ماهگی",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                         {
                             optionId: 2,
@@ -1391,7 +1390,7 @@ let levels: ILevel[] = [
                             optionId: 1,
                             title: "ممکنه بزرگ بشه درمان بشه؟",
                             color: "",
-                            score: 0,
+                            score: 10,
                             nextDialogueId:23
                         },
                         {
@@ -1451,7 +1450,7 @@ let levels: ILevel[] = [
                             optionId: 2,
                             title: " آره مفیده",
                             color: "",
-                            score: 0,
+                            score: 10,
                         },
                     ]
                 }
