@@ -1,11 +1,13 @@
 let game =  {
 	score: 0,
-	stage: ''
+	stage: '',
+	currentLevel: 0
 };
 
 const initialGame =  {
 	score: 0,
-	stage: ''
+	stage: '',
+	currentLevel: 0
 };
 
 function updateScore( newVal ) {
@@ -25,7 +27,20 @@ function reset() {
 	updateStage(game.stage);
 }
 
+/*------------------------------------------*/
 
+function loadLevel( level ) {
+	level = Number(level - 1);
+
+	let frame = document.getElementById('frame');
+	console.log(levels, level);
+	game.currentLevel = levels[level];
+
+	updateStage(game.currentLevel.levelName);
+}
+
+
+/*------------------------------------------*/
 
 $(document).ready(function(){
 	let $document = $(document);
@@ -48,6 +63,7 @@ $(document).ready(function(){
 
 	$document.on('click', '#start-new-btn', function(){
 		reset();
+		updateStage('انتخاب مرحله');
 		lvlSelectScreen.show();
 		gameInitScreen.resume();
 	});
@@ -59,5 +75,10 @@ $(document).ready(function(){
 	$document.on('click', '#menu', function(){
 		gameInitScreen.pause();
 	})
+
+	$document.on('click', '.chapter', function(e){
+		let targetLevel = e.target.getAttribute('data-chapter');
+		loadLevel(targetLevel);
+	});
 
 });
