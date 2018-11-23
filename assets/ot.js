@@ -16,7 +16,7 @@ function updateScore( newVal ) {
 	score.innerHTML = game.score;
 }
 
-function updateStage( newVal ) {
+function updateLevel( newVal ) {
 	let stage = document.getElementById('stage');
 		stage.innerHTML = newVal;
 }
@@ -24,7 +24,7 @@ function updateStage( newVal ) {
 function reset() {
 	game = initialGame;
 	updateScore(game.score);
-	updateStage(game.stage);
+	updateLevel(game.stage);
 }
 
 /*------------------------------------------*/
@@ -38,7 +38,7 @@ function loadLevel( level ) {
 
 	game.currentLevel = levels[level];
 
-	updateStage(game.currentLevel.levelName);
+	updateLevel(game.currentLevel.levelName, game.currentLevel.);
 }
 
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
 	new scoreBoard;
 
 	// updateScore( game.score + 10 );
-	// updateStage('مرحله ی اول');
+	// updateLevel('مرحله ی اول');
 
 	let gameInitScreen = new startScreen;
 	gameInitScreen.showStartMenu();
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 	$document.on('click', '#start-new-btn', function(){
 		reset();
-		updateStage('انتخاب مرحله');
+		updateLevel('انتخاب مرحله');
 		lvlSelectScreen.show();
 		gameInitScreen.resume();
 	});
