@@ -50,3 +50,9 @@ body {
 	animation-duration: 0.3s;
 	animation-name: fadeIn;
 }
+
+.dialogue-box {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}

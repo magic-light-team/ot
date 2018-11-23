@@ -28,6 +28,11 @@ function startScreen() {
 		startScreen.classList.remove('hidden');
 		startScreen.classList.remove('fadeout');
 
+		let stageScreen = document.getElementById('stage-screen');
+		stageScreen.classList.remove('fadein');
+		stageScreen.classList.add('hidden');
+		stageScreen.classList.add('fadeout');
+
 		frame.classList.remove('fadein');
 		frame.classList.add('fadeout');
 		frame.classList.add('hidden');
@@ -39,6 +44,11 @@ function startScreen() {
 		frame.classList.remove('fadeout');
 		frame.classList.remove('hidden');
 		frame.classList.add('fadein');
+
+		let stageScreen = document.getElementById('stage-screen');
+		stageScreen.classList.add('fadein');
+		stageScreen.classList.remove('hidden');
+		stageScreen.classList.remove('fadeout');
 
 		startScreen.classList.remove('fadein');
 		startScreen.classList.add('fadeout');

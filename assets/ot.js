@@ -75,8 +75,6 @@ function loadStage( stage ) {
 
 	game.currentStage = game.currentLevel.stages.find(x => x.stageId === stage);
 
-	console.log(game.currentStage);
-
 	if ( game.currentStage === undefined ) {
 		console.log( 'no next stage.' );
 		document.getElementById('chapter-wrapper').classList.add('fadein');
@@ -96,11 +94,21 @@ function loadStage( stage ) {
 
 
 function loadDialogue( stage ){
+	let dialogue = stage.dialogueSection;
+
+	let dialogueBox = document.createElement('div');
+
+	$('.dialogue-box').addClass('fadeout');
+
+	dialogueBox.classList.add('fadein');
+	dialogueBox.classList.add('dialogue-box');
+
+	dialogueBox.appendChild(document.createTextNode(dialogue));
 
 }
 
 function loadOptions( stage ) {
-
+	let options = stage.optionSection;
 }
 
 
@@ -115,7 +123,7 @@ $(document).ready(function(){
 	 */
 	let tapSFX = new sound('tap.wav');
 
-	$document.on('click', 'btn,start-btn,chapter', function(){
+	$document.on('click', '.btn,.start-btn,.chapter', function(){
 		tapSFX.play();
 	});
 
@@ -126,9 +134,13 @@ $(document).ready(function(){
 
 	new stageScreen;
 	new scoreBoard;
+
 	$document.on('click', '#start-new-btn', function(){
 		lvlSelectScreen.show();
 		gameInitScreen.resume();
+		document.getElementById('chapter-wrapper').classList.remove('hidden');
+		document.getElementById('chapter-wrapper').classList.remove('fadeout');
+		document.getElementById('chapter-wrapper').classList.add('fadein');
 	});
 
 	$document.on('click', '#resume-btn', function(){
