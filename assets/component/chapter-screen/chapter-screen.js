@@ -8,7 +8,7 @@ function chapterScreen() {
 
 	let chapterText = [ 'برادر بزرگتر من', 'دوست ابدی من', 'حقایق اوتیسم', 'نگرانی مادر' ];
 
-	// Fuck programmers. We start from 1 here.
+	// :)
 	for( let i = 0; i <= 3; i++ ) {
 		let chapter = document.createElement('div');
 			chapter.id = 'chapter-' + (i+1);
