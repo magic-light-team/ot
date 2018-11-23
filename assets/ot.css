@@ -86,3 +86,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+.resume-btn {
+	transform: translateY(126px);
+}
