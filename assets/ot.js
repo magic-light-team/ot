@@ -43,4 +43,9 @@ $(document).ready(function(){
 	let gameInitScreen = new startScreen;
 	gameInitScreen.showStartMenu();
 
+	document.on('click', '#start-new-btn', function(){
+		console.log('click');
+		gameInitScreen.resume();
+	});
+
 });

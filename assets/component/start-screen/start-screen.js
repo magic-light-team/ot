@@ -17,10 +17,6 @@ function startScreen() {
 
 	this.showStartMenu = function() {
 		ot.appendChild(startScreen);
-		frame.classList.remove('fadein');
-		frame.classList.add('fadeout');
-		startScreen.classList.remove('fadeout');
-		startScreen.classList.add('fadein');
 	};
 
 	this.pause = function() {
@@ -30,10 +26,11 @@ function startScreen() {
 	};
 
 	this.resume = function() {
-		if ( this.isPaused ) {
-			frame.classList.remove('fadeout').add('fadein');
-			startScreen.classList.remove('fadein').add('fadeout');
-		}
+		frame.classList.remove('fadeout');
+		frame.classList.remove('hidden');
+		frame.classList.add('fadein');
+		startScreen.classList.remove('fadein');
+		startScreen.classList.add('fadeout');
 		this.isPaused = false;
 	};
 
