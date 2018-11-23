@@ -27,3 +27,8 @@ body {
 	border-radius: 10px;
 	overflow: hidden;
 }
+
+
+.fadeOut {
+	animation: fadeOut;
+}

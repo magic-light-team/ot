@@ -1,4 +1,3 @@
-"use strict";
 exports.__esModule = true;
 var levelInterface_1 = require("./levelInterface");
 var levels = [
@@ -418,4 +417,4 @@ let testStage: IStage[] = [
     }
 ]
 
-//*/ 
+//*/
