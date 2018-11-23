@@ -5,6 +5,7 @@ let levels: ILevel[] = [
         levelId: 1,
         levelName: "برادر بزرگتر من",
         levelPic:"levels/l1-1.jpg",
+        backgroundMusic:"",
         stages: [
             {
                 stageId: 1,
@@ -312,6 +313,8 @@ let levels: ILevel[] = [
     {
         levelId: 2,
         levelName: "دوست ابدی من",
+        levelPic:"levels/l1-1.jpg",
+        backgroundMusic:"",
         stages: [
             {
                 stageId: 1,
@@ -506,7 +509,6 @@ let levels: ILevel[] = [
             },
             {
                 stageId: 36,
-                //stageType: 1,
                 stageType: 1,
                 optionSection: {
                     header: "",
@@ -570,7 +572,96 @@ let levels: ILevel[] = [
                     nextDialogueId:42
                 }
             },
-
+            {
+                stageId: 42,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "همیشه دوست داشتم با برادرم دور دنیا بگردم تمام کشور ها رو برم.",
+                }
+            },
+            {
+                stageId: 43,
+                stageType: 0,
+                dialogueSection: {
+                    person: "دکتر",
+                    personPic: "",
+                    dialogue: "از خاطرات قدیمتون برایم بگید.",
+                }
+            },
+            {
+                stageId: 44,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "از خاطرات قدیمتون برایم بگید.",
+                }
+            },
+            {
+                stageId: 45,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "یادمه روز اولی که براش خمیر بازی گرفتیم از خوشحالی فقط جیغ میزد. صبر نمی کرد که میز رو آماده کنم",
+                }
+            },
+            {
+                stageId: 46,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "پشت هم خمیر ها رو چنگ میزد و می کوبیدشون رو میز.",
+                }
+            },
+            {
+                stageId: 47,
+                stageType: 1,
+                optionSection: {
+                    header: "",
+                    desc: "من اون موقع",
+                    background: "",
+                    options: [
+                        {
+                            optionId: 1,
+                            title: "منم با کف صابون حباب درست کردم و حسابی همه جا رو بهم ریختیم",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 48
+                        },
+                        {
+                            optionId: 2,
+                            title: "از این که خونه رو بهم ریخته ناراحت شدم وسرش داد زدم",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 49
+                        }
+                    ]
+                }
+            },
+            {
+                stageId: 48,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "ما برادرای شلوغی هستیم",
+                    nextDialogueId:50
+                }
+            },
+            {
+                stageId: 49,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "اونم شروع به گریه کرد و من یاد گرفتم باید باهاش مهربون تر باشم",
+                    nextDialogueId:50
+                }
+            },
 
 
 
