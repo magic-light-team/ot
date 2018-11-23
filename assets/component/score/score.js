@@ -8,6 +8,7 @@ function score() {
 
 	let scoreNum = document.createElement('span');
 		scoreNum.id = 'score-num';
+		scoreNum.appendChild(document.createTextNode('0'));
 
 	score.appendChild(scoreText);
 	score.appendChild(scoreNum);

@@ -167,7 +167,6 @@ $(document).ready(function(){
 	 * Load sounds after document load.
 	 */
 	let tapSFX = new sound('tap.wav');
-
 	$document.on('click', '.btn,.start-btn,.chapter', function(){
 		tapSFX.play();
 	});
