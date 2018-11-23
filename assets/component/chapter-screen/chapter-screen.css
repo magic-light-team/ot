@@ -20,22 +20,25 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .chapter-1 {
 	background-image: url(assets/img/levels/l1-1.jpg);
 	background-size: cover;
+	background-position: bottom;
 }
 
 .chapter-2 {
 	background-image: url(assets/img/levels/l2-1.jpg);
 	background-size: cover;
+	background-position: bottom;
 }
 
 .chapter-3 {
 	background-image: url(assets/img/levels/l3-1.jpg);
 	background-size: cover;
+	background-position: bottom;
 }
 
 .chapter-4 {
