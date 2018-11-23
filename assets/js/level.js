@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-exports.__esModule = true;
-var levelInterface_1 = require("./levelInterface");
-=======
-
->>>>>>> cf7e78f06f94ae5486aa9b159304bf1bf22d4f7f
 var levels = [
     {
         levelId: 1,
