@@ -4,8 +4,8 @@ let levels: ILevel[] = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
+        levelPic:"levels/l1-1.jpg",
         stages: [
-
             {
                 stageId: 1,
                 //stageType: 0,
@@ -308,160 +308,314 @@ let levels: ILevel[] = [
             },
         ]
     }, // end section
+
+    {
+        levelId: 2,
+        levelName: "دوست ابدی من",
+        stages: [
+            {
+                stageId: 1,
+                stageType: 0,
+                dialogueSection: {
+                    person: "دکتر",
+                    personPic: "",
+                    dialogue: "خوب از خودتون برامون بگید"
+                }
+            },
+            {
+                stageId: 2,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "ما دوقولوییم"
+                }
+            },
+            {
+                stageId: 3,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "همممم"
+                }
+            },
+            {
+                stageId: 4,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "این برادر منه"
+                }
+            },
+            {
+                stageId: 5,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "و.... من باهاش بازی می کنم"
+                }
+            },
+            {
+                stageId: 6,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "کمکش هم می کنم"
+                }
+            },
+            {
+                stageId: 7,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "ما همدیگه رو کمک می کنیم"
+                }
+            },
+            {
+                stageId: 8,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "من اگه بزرگ بشم و خونه بگیرم برادرمم با خودم میبرم"
+                }
+            },
+            {
+                stageId: 9,
+                stageType: 1,
+                optionSection: {
+                    header: "",
+                    desc: "میای؟",
+                    background: "",//"برادر اول"
+                    options: [
+                        {
+                            optionId: 1,
+                            title: "آره چرا که نه",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 11
+                        },
+                        {
+                            optionId: 2,
+                            title: "میخوام تنهایی رو هم تجربه کنم",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 21
+                        }
+                    ]
+                }
+            },
+            {
+                stageId: 11,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "می خوای تو یه خونه با هم زندگی کنیم",
+                    nextDialogueId: 12
+                }
+            },
+            {
+                stageId: 12,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "اوهوم",
+                    nextDialogueId: 30
+                }
+            },
+            {
+                stageId: 21,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "نمی خوای تو یه خونه با هم زندگی کنیم",
+                    nextDialogueId: 22
+                }
+            },
+            {
+                stageId: 22,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "نه همین کافیه",
+                    nextDialogueId: 30
+                }
+            },
+            {
+                stageId: 30,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "اون همیشه پشتم رو داره تحت هر شرایطی که باشه. به همین خاطر دوستش دارم"
+                }
+            },
+            {
+                stageId: 31,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "ما برادرای خوشحالییم"
+                }
+            },
+            {
+                stageId: 32,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "آره هستیم. همیشه با همیم"
+                }
+            },
+            {
+                stageId: 33,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "من دلم می خواد همیشه برم ژاپن"
+                }
+            },
+            {
+                stageId: 34,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "چرا؟"
+                }
+            },
+            {
+                stageId: 35,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "همینجوری ژاپن رو خیلی دوست دارم"
+                }
+            },
+            {
+                stageId: 36,
+                //stageType: 1,
+                stageType: 1,
+                optionSection: {
+                    header: "",
+                    desc: "میدونی دیگه کجا باید بریم؟",
+                    background: "",
+                    options: [
+                        {
+                            optionId: 1,
+                            title: "کجا",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 37
+                        },
+                        {
+                            optionId: 2,
+                            title: "دوباره این بحث نه",
+                            color: "",
+                            score: 0,
+                            nextDialogueId: 40
+                        }
+                    ]
+                }
+            },
+            {
+                stageId: 37,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "شهر بازی",
+                    nextDialogueId:38
+                }
+            },
+            {
+                stageId: 38,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "هر جا که بگی میام",
+                    nextDialogueId:42
+                }
+            },
+            {
+                stageId: 40,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر دوم",
+                    personPic: "",
+                    dialogue: "نمی خوای بریم شهر بازی",
+                    nextDialogueId:41
+                }
+            },
+            {
+                stageId: 41,
+                stageType: 0,
+                dialogueSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogue: "هیچ وقت نمی تونیم بریم",
+                    nextDialogueId:42
+                }
+            },
+
+
+
+
+
+
+        ]
+    }, // end section
+
+
+
+
 ]
+
 /*
 {
-    levelId: 2,
-        levelName: "دوست ابدی من",
-            stages: [
-                {
-                    stageId: 1,
-                    sections: [
+                stageId: 2,
+                //stageType: 1,
+                stageType: 1,
+                optionSection: {
+                    header: "",
+                    desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
+                    background: "",
+                    options: [
                         {
-                            stageId: 1,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "دکتر",
-                                personPic: "",
-                                dialogue: "خوب از خودتون برامون بگید"
-                            }
+                            optionId: 1,
+                            title: "نه واقع",
+                            color: "",
+                            score: 0,
                         },
                         {
-                            stageId: 2,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "ما دوقولوییم"
-                            }
+                            optionId: 2,
+                            title: "وحشتناکه",
+                            color: "",
+                            score: 0
                         },
                         {
-                            stageId: 3,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر دوم",
-                                personPic: "",
-                                dialogue: "همممم"
-                            }
-                        },
-                        {
-                            stageId: 4,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "این برادر منه"
-                            }
-                        },
-                        {
-                            stageId: 5,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر دوم",
-                                personPic: "",
-                                dialogue: "و.... من باهاش بازی می کنم"
-                            }
-                        },
-                        {
-                            stageId: 6,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر دوم",
-                                personPic: "",
-                                dialogue: "کمکش هم می کنم"
-                            }
-                        },
-                        {
-                            stageId: 7,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "ما همدیگه رو کمک می کنیم"
-                            }
-                        },
-                        {
-                            stageId: 8,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "من اگه بزرگ بشم و خونه بگیرم برادرمم با خودم میبرم"
-                            }
-                        },
-                        {
-                            stageId: 9,
-                            stageType: 1,
-                            optionSection: {
-                                header: "",
-                                desc: "میای؟",
-                                background: "",//"برادر اول"
-                                options: [
-                                    {
-                                        optionId: 1,
-                                        title: "آره چرا که نه",
-                                        color: "",
-                                        score: 0,
-                                        nextDialogueId: 11
-                                    },
-                                    {
-                                        optionId: 2,
-                                        title: "میخوام تنهایی رو هم تجربه کنم",
-                                        color: "",
-                                        score: 0,
-                                        nextDialogueId: 21
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            stageId: 11,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "می خوای تو یه خونه با هم زندگی کنیم"
-                            }
-                        },
-                        {
-                            stageId: 12,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر دوم",
-                                personPic: "",
-                                dialogue: "اوهوم"
-                            }
-                        },
-                        {
-                            stageId: 21,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر اول",
-                                personPic: "",
-                                dialogue: "نمی خوای تو یه خونه با هم زندگی کنیم"
-                            }
-                        },
-                        {
-                            stageId: 22,
-                            stageType: 0,
-                            dialogueSection: {
-                                person: "برادر دوم",
-                                personPic: "",
-                                dialogue: "نه همین کافیه"
-                            }
-                        },
-
-
-
+                            optionId: 3,
+                            title: "وحشتناکه",
+                            color: "مهم نیست برام",
+                            score: 0
+                        }
                     ]
-                }, // end section
+                }
+            },
 
 
 
-
-            ]
-},// end level
-
-
-]
-//*/
+*/
