@@ -11,7 +11,7 @@ function startScreen() {
 
 	var DOM_img = document.createElement("img");
 	DOM_img.src = "assets/img/logo.png";
-	DOM_img.setAttribute( 'style', 'width:50%;height:50%;' );
+	DOM_img.setAttribute( 'style', 'width:50%;margin-top: -200px; margin-bottom: 100px;' );
 	//DOM_img.style = "width:50%;height:50%";
 
 	innerScreen.appendChild( DOM_img );
