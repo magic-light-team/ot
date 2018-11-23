@@ -55,7 +55,7 @@ button {
 .chapter{
 	font-size: 30px;
 	color: white;
-	text-shadow: 1px 1px black;
+	text-shadow: 1px 1px 6px black;
 	font-weight: bold;
 }
 
