@@ -38,7 +38,7 @@ function loadLevel( level ) {
 
 	game.currentLevel = levels[level];
 
-	updateLevel(game.currentLevel.levelName, game.currentLevel.);
+	updateLevel(game.currentLevel.levelName);
 }
 
 
