@@ -18,6 +18,7 @@ body {
 	max-height: 1080px;
 	height: 100%;
 	position: relative;
+	border: 1px solid #000000;
 }
 
 #frame {

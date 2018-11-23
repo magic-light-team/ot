@@ -31,7 +31,7 @@ function updateLevelName( newVal ) {
 
 function updateLevelPic( newVal ) {
 	let stage = document.getElementById('stage-screen');
-		stage.style.backgroundImage = "url(" + newVal + ")";
+		stage.style.backgroundImage = "url(assets/img/" + newVal + ")";
 }
 
 function updateLevelMusic( newVal ) {
@@ -64,8 +64,8 @@ function loadLevel( level ) {
 
 	loadStage(1);
 
-	// updateLevelName(game.currentLevel.levelName);
-	// updateLevelPic(game.currentLevel.levelPic);
+	updateLevelName(game.currentLevel.levelName);
+	updateLevelPic(game.currentLevel.levelPic);
 	// updateLevelMusic(game.currentLevel.backgroundMusic);
 }
 

@@ -1,6 +1,8 @@
 #score-board {
 	display: flex;
-	background: #0fdd438a;
+	background: rgba(255, 255, 255, 0.85);
 	width: 100%;
 	height: 60px;
+	position: absolute;
+    top: 0;
 }
