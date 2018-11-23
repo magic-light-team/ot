@@ -35,7 +35,13 @@ function updateLevelPic( newVal ) {
 }
 
 function updateLevelMusic( newVal ) {
-	let music = new sound('assets/audio/' + newVal, true);
+	var sounds = document.getElementsByTagName('audio');
+	for(i=0; i<sounds.length; i++) {
+		if (! sounds[i].paused) {
+			sounds[i].pause();
+		}
+	};
+	let music = new sound(newVal, true);
 	music.play();
 }
 
@@ -64,7 +70,7 @@ function loadLevel( level ) {
 
 	updateLevelName(game.currentLevel.levelName);
 	updateLevelPic(game.currentLevel.levelPic);
-	// updateLevelMusic(game.currentLevel.backgroundMusic);
+	updateLevelMusic(game.currentLevel.backgroundMusic);
 }
 
 function loadStage( stage ) {
@@ -102,6 +108,7 @@ function loadDialogue( stage ){
 	$('.dialogue-box').addClass('hidden');
 	$('.dialogue-box').remove();
 	$('.btn-wrapper').remove();
+	$('.description-wrapper').remove();
 
 	dialogueBox.classList.add('fadein');
 	dialogueBox.classList.add('dialogue-box');
@@ -126,10 +133,7 @@ function loadOptions( stage ) {
 	optionWrapper.classList.add('btn-wrapper');
 
 
-	let descWrapper = document.createElement('div');
-		descWrapper.classList.add('description-wrapper');
-		descWrapper.classList.add('dialogue');
-		descWrapper.appendChild(document.createTextNode(String(desc)));
+
 
 	for( let i = 0; i < options.length; i++ ) {
 		let newBtn = btn(options[i].title, options[i].color);
@@ -137,6 +141,10 @@ function loadOptions( stage ) {
 	}
 
 	let currentStageScreen = document.getElementById('stage-screen');
+	let descWrapper = document.createElement('div');
+	descWrapper.classList.add('description-wrapper');
+	descWrapper.classList.add('dialogue');
+	descWrapper.appendChild(document.createTextNode(String(desc)));
 	currentStageScreen.appendChild(descWrapper);
 	currentStageScreen.appendChild(optionWrapper);
 
@@ -148,6 +156,9 @@ function loadOptions( stage ) {
 
 $(document).ready(function(){
 	let $document = $(document);
+
+	let introSound = new sound('bensound-tenderness-0.mp3');
+		introSound.play();
 
 	/**
 	 * Load sounds after document load.
@@ -187,8 +198,13 @@ $(document).ready(function(){
 		loadLevel(targetLevel);
 	});
 
-	$document.on('click', '#stage-screen', function() {
-		loadStage(game.currentStage.stageId + 1);
+	$document.on('click', '#stage-screen', function(e) {
+		if ( $('.btn-wrapper').length ) {
+			if ( $(e.target).hasClass('btn') )
+			loadStage(game.currentStage.stageId + 1);
+		} else {
+			loadStage(game.currentStage.stageId + 1);
+		}
 	});
 
 });

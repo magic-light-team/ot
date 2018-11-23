@@ -3,6 +3,7 @@ function sound(src, loop = false) {
     this.sound.src =  './assets/audio/'+ src;
     this.sound.setAttribute('preload', 'auto');
 	this.sound.setAttribute('controls', 'none');
+	this.sound.volume = 0.5;
 	if ( loop ) {
 		this.sound.setAttribute('loop', 'true');
 	}
