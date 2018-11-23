@@ -1,6 +1,6 @@
 function menuButton( text, options ) {
 	let btn = document.createElement('button');
-		btn.setAttribute( 'class', 'start-btn btn blue-color' );
+		btn.setAttribute( 'class', 'start-btn btn' );
 
 	if ( options ) {
 		if ( options.id ) {
