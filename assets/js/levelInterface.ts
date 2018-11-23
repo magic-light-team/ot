@@ -2,6 +2,7 @@ export interface ILevel {
     levelId: number;
     levelName: string;
     levelPic:string;
+    backgroundMusic:string,
     stages: IStage[];
 }
 
