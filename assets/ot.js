@@ -60,8 +60,6 @@ function loadLevel( level ) {
 	currentStageScreen.classList.add('fadein');
 	game.currentLevel = levels[level];
 
-	console.log(game.currentLevel);
-
 	loadStage(1);
 
 	updateLevelName(game.currentLevel.levelName);
@@ -116,8 +114,6 @@ function loadDialogue( stage ){
 function loadOptions( stage ) {
 	let desc = stage.optionSection.desc;
 	let options = stage.optionSection.options;
-
-	console.log(options);
 
 	$('.dialogue-box').addClass('fadeout');
 	$('.dialogue-box').addClass('hidden');
