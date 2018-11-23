@@ -9,6 +9,12 @@ function startScreen() {
 	let ot = document.getElementById('ot');
 	let frame = document.getElementById('frame');
 
+	var DOM_img = document.createElement("img");
+	DOM_img.src = "assets/img/logo.png";
+	DOM_img.setAttribute( 'style', 'width:50%;height:50%;' );
+	//DOM_img.style = "width:50%;height:50%";
+
+	innerScreen.appendChild( DOM_img );
 	innerScreen.appendChild( new menuButton( 'شروع', { id: 'start-new-btn', class: 'start-new-btn' } ) );
 	innerScreen.appendChild( new menuButton( 'منابع', { id: 'credits-btn', class: 'credits-btn' } ) );
 	innerScreen.appendChild( new menuButton( 'درباره', { id: 'about-btn', class: 'about-btn' } ) );
