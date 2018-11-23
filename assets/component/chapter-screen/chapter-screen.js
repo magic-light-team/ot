@@ -1,6 +1,6 @@
 function chapterScreen() {
-	let frame = document.getElementById('frame');
-		frame.classList.add('chapters-frame');
+	let ot = document.getElementById('ot');
+		ot.classList.add('chapters-frame');
 
 	let chaptersWrapper = document.createElement('div');
 		chaptersWrapper.id = 'chapter-wrapper';
@@ -20,6 +20,6 @@ function chapterScreen() {
 	}
 
 	this.show = function(){
-		frame.appendChild(chaptersWrapper);
+		ot.appendChild(chaptersWrapper);
 	}
 }

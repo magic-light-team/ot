@@ -32,8 +32,10 @@ function reset() {
 function loadLevel( level ) {
 	level = Number(level - 1);
 
-	let frame = document.getElementById('frame');
-	console.log(levels, level);
+	let chapterScreen = document.getElementById('chapter-wrapper');
+	chapterScreen.classList.add('fadeout');
+	chapterScreen.classList.add('hidden');
+
 	game.currentLevel = levels[level];
 
 	updateStage(game.currentLevel.levelName);
