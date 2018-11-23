@@ -94,17 +94,20 @@ function loadStage( stage ) {
 
 
 function loadDialogue( stage ){
-	let dialogue = stage.dialogueSection;
+	let dialogue = stage.dialogueSection.dialogue;
 
 	let dialogueBox = document.createElement('div');
+
+	let currentStageScreen = document.getElementById('stage-screen');
 
 	$('.dialogue-box').addClass('fadeout');
 
 	dialogueBox.classList.add('fadein');
 	dialogueBox.classList.add('dialogue-box');
+	dialogueBox.classList.add('dialogue');
 
-	dialogueBox.appendChild(document.createTextNode(dialogue));
-
+	dialogueBox.appendChild(document.createTextNode(String(dialogue)));
+	currentStageScreen.appendChild(dialogueBox);
 }
 
 function loadOptions( stage ) {
