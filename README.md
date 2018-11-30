@@ -32,3 +32,8 @@
 - [ ] sorting options
 - [ ] sound for dialogue
 - [ ] dialouge type effect
+
+## React App
+
+- [ ] make [`github page`](https://github.com/gitname/react-gh-pages)
+  - [x] install `npm install gh-pages --save-dev`
