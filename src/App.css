@@ -1,32 +1,92 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+@font-face {
+    font-family: Vazir;
+    src: url('%PUBLIC_URL%/fonts/Vazir.eot');
+    src: url('%PUBLIC_URL%/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('%PUBLIC_URL%/fonts/Vazir.woff2') format('woff2'),
+         url('%PUBLIC_URL%/fonts/Vazir.woff') format('woff'),
+         url('%PUBLIC_URL%/fonts/Vazir.ttf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html,
+body {
+	width: 100%;
+	height: 100%;
+	direction: rtl;
 }
 
-.App-link {
-  color: #61dafb;
+body,
+button {
+	font-family: 'Vazir' !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#ot {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 600px;
+	max-height: 1080px;
+	height: 100%;
+	position: relative;
+	border: 1px solid #000000;
+}
+
+#frame {
+	display: flex;
+	width: 640px;
+	height: calc( 100% - 20px );
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#ot > div {
+	position: absolute;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+.chapter{
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px 6px black;
+	font-weight: bold;
+}
+
+.chapters-frame {
+	flex-direction: column;
+}
+
+.fadeout {
+	animation-duration: 0.3s;
+	animation-name: fadeOut;
+}
+
+.fadein {
+	animation-duration: 0.3s;
+	animation-name: fadeIn;
+}
+
+.dialogue-box {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}
+
+.btn-wrapper {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-btn {
+	transform: translateY(126px);
 }

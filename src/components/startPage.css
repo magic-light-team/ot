@@ -1,0 +1,24 @@
+#start-screen {
+	display: flex;
+	width: 640px;
+	height: calc( 100% - 20px );
+	background-image: url(%PUBLIC_URL%/img/levels/s1-1.jpg);
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#inner-screen {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#inner-screen img{
+	width:50%;
+	margin-top: -200px;
+	margin-bottom: 100px;
+}
