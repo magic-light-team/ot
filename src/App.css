@@ -1,14 +1,15 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Vazir' !important;
 }
 
 @font-face {
     font-family: Vazir;
-    src: url('%PUBLIC_URL%/fonts/Vazir.eot');
-    src: url('%PUBLIC_URL%/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-         url('%PUBLIC_URL%/fonts/Vazir.woff2') format('woff2'),
-         url('%PUBLIC_URL%/fonts/Vazir.woff') format('woff'),
-         url('%PUBLIC_URL%/fonts/Vazir.ttf') format('truetype');
+    src: url('/fonts/Vazir.eot');
+    src: url('/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Vazir.woff2') format('woff2'),
+         url('/fonts/Vazir.woff') format('woff'),
+         url('/fonts/Vazir.ttf') format('truetype');
 }
 
 html,
@@ -18,30 +19,30 @@ body {
 	direction: rtl;
 }
 
-body,
+/* body,
 button {
 	font-family: 'Vazir' !important;
-}
+} */
 
-#ot {
+.App {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	min-height: 600px;
-	max-height: 1080px;
-	height: 100%;
+	min-height: 600px !important;
+	max-height: 1080px !important;
+	height: 100% !important;
 	position: relative;
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 }
 
-#frame {
+/* #frame {
 	display: flex;
 	width: 640px;
 	height: calc( 100% - 20px );
 	border-radius: 10px;
 	overflow: hidden;
-}
+} */
 
 #ot > div {
 	position: absolute;

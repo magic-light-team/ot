@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './startPage.css'
+import BigButton from './bigbutton';
 
 class StartPage extends Component {
     state = {}
@@ -7,10 +8,10 @@ class StartPage extends Component {
         return (
             <div id="start-screen">
                 <div id="inner-screen">
-                    <img src="%PUBLIC_URL%/img/logo.png" alt="logo" />
-                    <button className="start-btn btn start-new-btn" id="start-new-btn">شروع</button>
-                    <button className="start-btn btn credits-btn" id="credits-btn">منابع</button>
-                    <button className="start-btn btn about-btn" id="about-btn">درباره</button>
+                    <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="logo" />
+                    <BigButton id="start-new-btn" text="شروع" color="start-new-btn" score="" attr="232" />
+                    <BigButton id="credits-btn" text="منابع" color="credits-btn" score="" attr="232" />
+                    <BigButton id="about-btn" text="درباره" color="about-btn" score="" attr="232" />
                 </div>
             </div>
         );
