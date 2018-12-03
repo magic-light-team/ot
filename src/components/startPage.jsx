@@ -8,10 +8,10 @@ class StartPage extends Component {
         return (
             <div id="start-screen">
                 <div id="inner-screen">
-                    <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="logo" />
-                    <BigButton id="start-new-btn" text="شروع" color="start-new-btn" score="" attr="232" />
-                    <BigButton id="credits-btn" text="منابع" color="credits-btn" score="" attr="232" />
-                    <BigButton id="about-btn" text="درباره" color="about-btn" score="" attr="232" />
+                    <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
+                    <BigButton id="start-new-btn" text="شروع" newLevel="chapter-page" clickHandle={this.props.changePage} color="start-new-btn" score="" attr="" />
+                    <BigButton id="credits-btn" text="منابع" newLevel="source-page" clickHandle={this.props.changePage} color="credits-btn" score="" attr="" />
+                    <BigButton id="about-btn" text="درباره" newLevel="about-page" clickHandle={this.props.changePage} color="about-btn" score="" attr="" />
                 </div>
             </div>
         );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Dialog extends Component {
+class SourcePage extends Component {
     state = {  }
     render() { 
         return ( 
@@ -9,4 +9,4 @@ class Dialog extends Component {
     }
 }
  
-export default Dialog;
+export default SourcePage;

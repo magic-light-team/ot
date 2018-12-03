@@ -1,0 +1,57 @@
+
+.chapter-selector {
+	display: flex;
+	/* width: 640px; */
+	height: calc( 100% - 20px );
+	border-radius: 10px;
+	overflow: hidden;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+	align-items: center;
+	background-image: url('/img/levels/s1-1.jpg');
+    background-size: cover;
+    position: absolute;
+}
+
+.chapter {
+    font-size: 1.7em;
+	width: 45%;
+	height: 45%;
+	border-radius: 7px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+	opacity: 0.9;
+	
+	background-size: cover;
+	background-position: bottom;
+}
+.chapter:hover{
+    box-shadow: 0 0 10px lightblue;
+    opacity: 1;
+}
+
+/* .chapter-1 {
+	background-image: url('/img/levels/l1-1.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.chapter-2 {
+	background-image: url('/img/levels/l2-1.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.chapter-3 {
+	background-image: url('/img/levels/l3-1.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.chapter-4 {
+	background-image: url('/img/levels/l4-1.jpg');
+	background-size: cover;
+} */

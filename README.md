@@ -37,3 +37,5 @@
 
 - [ ] make [`github page`](https://github.com/gitname/react-gh-pages)
   - [x] install `npm install gh-pages --save-dev`
+
+* for run -> `npm start`
