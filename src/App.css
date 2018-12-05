@@ -31,9 +31,19 @@ button {
 	justify-content: center;
 	min-height: 600px !important;
 	max-height: 1080px !important;
-	height: 100% !important;
+	height: 100vh !important;
 	position: relative;
+	
+	width: 100%;
+	margin: auto;
 	/*border: 1px solid #000000;*/
+}
+
+@media (min-width:640px) {
+	.App, .App > div{
+		width:640px !important;
+	}
+	
 }
 
 /* #frame {
@@ -44,8 +54,13 @@ button {
 	overflow: hidden;
 } */
 
-#ot > div {
+.App > div {
 	position: absolute;
+	overflow: hidden;
+	height: calc( 100% - 10px );
+	border-radius: 10px;
+	display: flex;
+	background-size: cover;
 }
 
 .hidden {

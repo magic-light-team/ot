@@ -1,12 +1,5 @@
 #start-screen {
-	display: flex;
-	/* width: 640px; */
-	height: calc( 100% - 20px );
 	background-image: url('/img/levels/s1-1.jpg');
-	background-size: cover;
-	border-radius: 10px;
-	overflow: hidden;
-	position: absolute;
 }
 
 #inner-screen {
@@ -21,5 +14,5 @@
 #inner-screen img{
 	width:50%;
 	/* margin-top: -200px; */
-	margin-bottom: 50px;
+	margin-bottom: 7%;
 }

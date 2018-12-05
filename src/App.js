@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './bootstrap.min.css'
+//import './bootstrap.min.css'
 
 //import { levels } from './component/levels';
 import StartPage from './components/startPage';
@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App col-xl-4 col-sm-8 col-xs-12 m-auto">
+      <div className="App">
         {this.pageTag()}
       </div>
     );
