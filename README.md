@@ -39,3 +39,5 @@
   - [x] install `npm install gh-pages --save-dev`
 
 * for run -> `npm start`
+
+* graphic effect in lifecycle hook

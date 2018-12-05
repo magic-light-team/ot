@@ -1,0 +1,11 @@
+#game {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    background-color: aqua;
+    border: 1px solid #000000;
+}

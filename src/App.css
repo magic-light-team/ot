@@ -89,7 +89,7 @@ button {
 	animation-name: fadeIn;
 }
 
-.dialogue-box {
+.dialog-box {
 	display: flex;
 	justify-content: center;
 	justify-items: center;

@@ -11,9 +11,8 @@ import { levels } from './components/levels'
 
 const initGame = {
   score: 0,
-  stage: '',
-  //currentLevel: 0,
-  //currentStageId: 1,
+  backgroundPic:'', //because it may change in level
+  
   currentLevel: {},
   currentStage: {},
 
@@ -37,13 +36,23 @@ class App extends Component {
 
   pageTag = () => {
     switch (this.state.page) {
+
       case "start-page":
-        return <StartPage changePage={this.changePage} />;
+        return <StartPage 
+          changePage={this.changePage} />;
+
       case "chapter-page":
-        return <ChapterPage chapters={this.state.levels} changePage={this.changePage} />;
+        return <ChapterPage 
+          chapters={this.state.levels} 
+          changePage={this.changePage} />;
 
       case "game-page":
-        return <GamePage stage={this.state.currentStage} changePage={this.changePage} />;
+        return <GamePage 
+          level={this.state.currentLevel} 
+          backgroundPic={this.state.backgroundPic}
+          score={this.state.score} 
+          stage={this.state.currentStage} 
+          changeStage={this.changeStage} />;
 
       case "source-page":
         return <StartPage />;
@@ -60,18 +69,31 @@ class App extends Component {
     currentState.page = newPage;
     if (levelId) {
       currentState.currentLevel = levels.find(level => level.levelId === levelId);
+      currentState.backgroundPic = currentState.currentLevel.levelPic;
       currentState.currentStage = currentState.currentLevel.stages.find(stage => stage.stageId === 1);
     }
     this.setState(currentState);
   }
 
-  changeStage(stageId) {
+  changeStage = (stageId, score) => {
     const currentState = { ...this.state };
+
+    if(!stageId)
+    {
+      stageId = currentState.currentStage.stageId +1;
+    }
+
     currentState.currentStage = currentState.currentLevel.stages.find(stage => stage.stageId === stageId);
+
+    if(score)
+    {
+      currentState.score += score;
+    }
+
     if(currentState.currentStage){
       this.setState(currentState);
     }else{
-      // can not find stage => result page
+      console.log('can not find stage');
     }
   }
 }

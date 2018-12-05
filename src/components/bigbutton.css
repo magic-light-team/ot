@@ -38,3 +38,10 @@
     text-shadow: 1px 3px black;
     font-weight: 800;
 }
+
+.red-color.active:not(:disabled),
+.red-color:hover:not(:disabled) {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}

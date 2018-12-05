@@ -11,10 +11,10 @@ export let levels = [
                 stageId: 1,
                 //stageType: 0,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
+                    dialog: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
                 }
             },
             {
@@ -50,19 +50,19 @@ export let levels = [
                 stageId: 3,
                 //stageType: 0,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "... و میخندم. "
+                    dialog: "... و میخندم. "
                 }
             },
             {
                 stageId: 4,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "و میخندم. اره متفاوته به عنوان برادر بزرگ ترم نمی تونه پشتم رو داشته باشه و یا در مورد سلیقم تو انتخاب نامزدم گیر بده. نمی تونه موقعی که دارن منو تو کوچه کمک میزنن عین یه قهرمان بیاد و برادر کوچیکترش رو نجات بده."
+                    dialog: "و میخندم. اره متفاوته به عنوان برادر بزرگ ترم نمی تونه پشتم رو داشته باشه و یا در مورد سلیقم تو انتخاب نامزدم گیر بده. نمی تونه موقعی که دارن منو تو کوچه کمک میزنن عین یه قهرمان بیاد و برادر کوچیکترش رو نجات بده."
                 }
             },
             {
@@ -91,10 +91,10 @@ export let levels = [
             {
                 stageId: 6,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
+                    dialog: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
                 }
 
             },
@@ -130,20 +130,20 @@ export let levels = [
             {
                 stageId: 8,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "و کارهای عجیب دیگه ای هم می کنه."
+                    dialog: "و کارهای عجیب دیگه ای هم می کنه."
                 }
 
             },
             {
                 stageId: 9,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "می دونه چه کار کنه که بهش توجه کنم و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
+                    dialog: "می دونه چه کار کنه که بهش توجه کنم و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                 }
 
             },
@@ -179,10 +179,10 @@ export let levels = [
             {
                 stageId: 11,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",// pic with brother
-                    dialogue: "ولی در اخر روز اون برادر منه"
+                    dialog: "ولی در اخر روز اون برادر منه"
                 }
 
             },
@@ -224,10 +224,10 @@ export let levels = [
             {
                 stageId: 13,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد. چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
+                    dialog: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد. چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
                 }
             },
             {
@@ -262,10 +262,10 @@ export let levels = [
             {
                 stageId: 15,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
+                    dialog: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
                 }
             },
             {
@@ -300,10 +300,10 @@ export let levels = [
             {
                 stageId: 17,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogue: "منونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوری. بینظیره!!!"
+                    dialog: "منونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوری. بینظیره!!!"
                 }
             },
         ]
@@ -318,73 +318,73 @@ export let levels = [
             {
                 stageId: 1,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "خوب از خودتون برامون بگید"
+                    dialog: "خوب از خودتون برامون بگید"
                 }
             },
             {
                 stageId: 2,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "ما دوقولوییم"
+                    dialog: "ما دوقولوییم"
                 }
             },
             {
                 stageId: 3,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "همممم"
+                    dialog: "همممم"
                 }
             },
             {
                 stageId: 4,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "این برادر منه"
+                    dialog: "این برادر منه"
                 }
             },
             {
                 stageId: 5,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "و.... من باهاش بازی می کنم"
+                    dialog: "و.... من باهاش بازی می کنم"
                 }
             },
             {
                 stageId: 6,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "کمکش هم می کنم"
+                    dialog: "کمکش هم می کنم"
                 }
             },
             {
                 stageId: 7,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "ما همدیگه رو کمک می کنیم"
+                    dialog: "ما همدیگه رو کمک می کنیم"
                 }
             },
             {
                 stageId: 8,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "من اگه بزرگ بشم و خونه بگیرم برادرمم با خودم میبرم"
+                    dialog: "من اگه بزرگ بشم و خونه بگیرم برادرمم با خودم میبرم"
                 }
             },
             {
@@ -400,14 +400,14 @@ export let levels = [
                             title: "آره چرا که نه",
                             color: "",
                             score: 10,
-                            nextDialogueId: 11
+                            nextDialogId: 11
                         },
                         {
                             optionId: 2,
                             title: "میخوام تنهایی رو هم تجربه کنم",
                             color: "",
                             score: -10,
-                            nextDialogueId: 21
+                            nextDialogId: 21
                         }
                     ]
                 }
@@ -415,95 +415,95 @@ export let levels = [
             {
                 stageId: 11,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "می خوای تو یه خونه با هم زندگی کنیم",
-                    nextDialogueId: 12
+                    dialog: "می خوای تو یه خونه با هم زندگی کنیم",
+                    nextDialogId: 12
                 }
             },
             {
                 stageId: 12,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "اوهوم",
-                    nextDialogueId: 30
+                    dialog: "اوهوم",
+                    nextDialogId: 30
                 }
             },
             {
                 stageId: 21,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "نمی خوای تو یه خونه با هم زندگی کنیم",
-                    nextDialogueId: 22
+                    dialog: "نمی خوای تو یه خونه با هم زندگی کنیم",
+                    nextDialogId: 22
                 }
             },
             {
                 stageId: 22,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "نه همین کافیه",
-                    nextDialogueId: 30
+                    dialog: "نه همین کافیه",
+                    nextDialogId: 30
                 }
             },
             {
                 stageId: 30,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "اون همیشه پشتم رو داره تحت هر شرایطی که باشه. به همین خاطر دوستش دارم"
+                    dialog: "اون همیشه پشتم رو داره تحت هر شرایطی که باشه. به همین خاطر دوستش دارم"
                 }
             },
             {
                 stageId: 31,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "ما برادرای خوشحالییم"
+                    dialog: "ما برادرای خوشحالییم"
                 }
             },
             {
                 stageId: 32,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "آره هستیم. همیشه با همیم"
+                    dialog: "آره هستیم. همیشه با همیم"
                 }
             },
             {
                 stageId: 33,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "من دلم می خواد همیشه برم ژاپن"
+                    dialog: "من دلم می خواد همیشه برم ژاپن"
                 }
             },
             {
                 stageId: 34,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "چرا؟"
+                    dialog: "چرا؟"
                 }
             },
             {
                 stageId: 35,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "همینجوری ژاپن رو خیلی دوست دارم"
+                    dialog: "همینجوری ژاپن رو خیلی دوست دارم"
                 }
             },
             {
@@ -519,14 +519,14 @@ export let levels = [
                             title: "کجا",
                             color: "",
                             score: 10,
-                            nextDialogueId: 37
+                            nextDialogId: 37
                         },
                         {
                             optionId: 2,
                             title: "دوباره این بحث نه",
                             color: "",
                             score: -10,
-                            nextDialogueId: 40
+                            nextDialogId: 40
                         }
                     ]
                 }
@@ -534,86 +534,86 @@ export let levels = [
             {
                 stageId: 37,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "شهر بازی",
-                    nextDialogueId: 38
+                    dialog: "شهر بازی",
+                    nextDialogId: 38
                 }
             },
             {
                 stageId: 38,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "هر جا که بگی میام",
-                    nextDialogueId: 42
+                    dialog: "هر جا که بگی میام",
+                    nextDialogId: 42
                 }
             },
             {
                 stageId: 40,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "نمی خوای بریم شهر بازی",
-                    nextDialogueId: 41
+                    dialog: "نمی خوای بریم شهر بازی",
+                    nextDialogId: 41
                 }
             },
             {
                 stageId: 41,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "هیچ وقت نمی تونیم بریم",
-                    nextDialogueId: 42
+                    dialog: "هیچ وقت نمی تونیم بریم",
+                    nextDialogId: 42
                 }
             },
             {
                 stageId: 42,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "همیشه دوست داشتم با برادرم دور دنیا بگردم تمام کشور ها رو برم.",
+                    dialog: "همیشه دوست داشتم با برادرم دور دنیا بگردم تمام کشور ها رو برم.",
                 }
             },
             {
                 stageId: 43,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "از خاطرات قدیمتون برایم بگید.",
+                    dialog: "از خاطرات قدیمتون برایم بگید.",
                 }
             },
             {
                 stageId: 44,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "از خاطرات قدیمتون برایم بگید.",
+                    dialog: "از خاطرات قدیمتون برایم بگید.",
                 }
             },
             {
                 stageId: 45,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "یادمه روز اولی که براش خمیر بازی گرفتیم از خوشحالی فقط جیغ میزد. صبر نمی کرد که میز رو آماده کنم",
+                    dialog: "یادمه روز اولی که براش خمیر بازی گرفتیم از خوشحالی فقط جیغ میزد. صبر نمی کرد که میز رو آماده کنم",
                 }
             },
             {
                 stageId: 46,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "پشت هم خمیر ها رو چنگ میزد و می کوبیدشون رو میز.",
+                    dialog: "پشت هم خمیر ها رو چنگ میزد و می کوبیدشون رو میز.",
                 }
             },
             {
@@ -629,14 +629,14 @@ export let levels = [
                             title: "منم با کف صابون حباب درست کردم و حسابی همه جا رو بهم ریختیم",
                             color: "",
                             score: 10,
-                            nextDialogueId: 48
+                            nextDialogId: 48
                         },
                         {
                             optionId: 2,
                             title: "از این که خونه رو بهم ریخته ناراحت شدم وسرش داد زدم",
                             color: "",
                             score: -10,
-                            nextDialogueId: 49
+                            nextDialogId: 49
                         }
                     ]
                 }
@@ -644,30 +644,30 @@ export let levels = [
             {
                 stageId: 48,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "ما برادرای شلوغی هستیم",
-                    nextDialogueId: 50
+                    dialog: "ما برادرای شلوغی هستیم",
+                    nextDialogId: 50
                 }
             },
             {
                 stageId: 49,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "اونم شروع به گریه کرد و من یاد گرفتم باید باهاش مهربون تر باشم",
-                    nextDialogueId: 50
+                    dialog: "اونم شروع به گریه کرد و من یاد گرفتم باید باهاش مهربون تر باشم",
+                    nextDialogId: 50
                 }
             },
             {
                 stageId: 50,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر دوم",
                     personPic: "",
-                    dialogue: "کل میز کثیف شد",
+                    dialog: "کل میز کثیف شد",
                 }
             },
             {
@@ -683,14 +683,14 @@ export let levels = [
                             title: "من با دستام هر چی رو میز بود رو جمع کردم ",
                             color: "",
                             score: 10,
-                            nextDialogueId: 52
+                            nextDialogId: 52
                         },
                         {
                             optionId: 2,
                             title: "از ناراحتی این که قراره مامان چی بگه سرم رو گزاشتم رو میز",
                             color: "",
                             score: -10,
-                            nextDialogueId: 53
+                            nextDialogId: 53
                         }
                     ]
                 }
@@ -698,39 +698,39 @@ export let levels = [
             {
                 stageId: 52,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
-                    nextDialogueId: 54
+                    dialog: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
+                    nextDialogId: 54
                 }
             },
             {
                 stageId: 53,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
-                    nextDialogueId: 54
+                    dialog: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
+                    nextDialogId: 54
                 }
             },
             {
                 stageId: 54,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "یادمه یه روز رفتیم آتیش بازی ببینیم",
+                    dialog: "یادمه یه روز رفتیم آتیش بازی ببینیم",
                 }
             },
             {
                 stageId: 55,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "برادر اول",
                     personPic: "",
-                    dialogue: "من آتیش بازی دوست دارم خیلی قشنگن",
+                    dialog: "من آتیش بازی دوست دارم خیلی قشنگن",
                 }
             },
         ]
@@ -745,19 +745,19 @@ export let levels = [
             {
                 stageId: 1,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "همیشه پدر مادرا از من میپرسن: چرا؟چرا بچه من اوتیسم داره؟"
+                    dialog: "همیشه پدر مادرا از من میپرسن: چرا؟چرا بچه من اوتیسم داره؟"
                 }
             },
             {
                 stageId: 2,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "واقعیتش یک جواب ساده نداره به نظر شما چرا؟"
+                    dialog: "واقعیتش یک جواب ساده نداره به نظر شما چرا؟"
                 }
             },
             {
@@ -773,21 +773,21 @@ export let levels = [
                             title: "به یک طیف از اختلالاته",
                             color: "",
                             score: 10,
-                            nextDialogueId: 4
+                            nextDialogId: 4
                         },
                         {
                             optionId: 2,
                             title: "ترکیبی از چند مریضیه",
                             color: "",
                             score: 0,
-                            nextDialogueId: 5
+                            nextDialogId: 5
                         },
                         {
                             optionId: 3,
                             title: "هیچ اطلاعاتی راجع بهش نداریم",
                             color: "",
                             score: 0,
-                            nextDialogueId: 5
+                            nextDialogId: 5
                         },
                     ]
                 }
@@ -795,30 +795,30 @@ export let levels = [
             {
                 stageId: 4,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "درسته ",
-                    nextDialogueId: 6
+                    dialog: "درسته ",
+                    nextDialogId: 6
                 }
             },
             {
                 stageId: 5,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "البته که نه ",
-                    nextDialogueId: 6
+                    dialog: "البته که نه ",
+                    nextDialogId: 6
                 }
             },
             {
                 stageId: 6,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "به نظرتون اوتیسم تا چه حد شایعه ",
+                    dialog: "به نظرتون اوتیسم تا چه حد شایعه ",
                 }
             },
             {
@@ -834,21 +834,21 @@ export let levels = [
                             title: "یک در 88 کودک",
                             color: "",
                             score: 10,
-                            nextDialogueId: 8
+                            nextDialogId: 8
                         },
                         {
                             optionId: 2,
                             title: "یک در 200 کودک ",
                             color: "",
                             score: 0,
-                            nextDialogueId: 9
+                            nextDialogId: 9
                         },
                         {
                             optionId: 3,
                             title: "یک در 500 کودک",
                             color: "",
                             score: 0,
-                            nextDialogueId: 9
+                            nextDialogId: 9
                         },
                     ]
                 }
@@ -856,48 +856,48 @@ export let levels = [
             {
                 stageId: 8,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "دقیقا ",
-                    nextDialogueId: 10
+                    dialog: "دقیقا ",
+                    nextDialogId: 10
                 }
             },
             {
                 stageId: 9,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "متاسفانه اشتباه فکر می کنید ",
-                    nextDialogueId: 10
+                    dialog: "متاسفانه اشتباه فکر می کنید ",
+                    nextDialogId: 10
                 }
             },
             {
                 stageId: 10,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "به خاطر آگاهی که در سال های اخیر پیدا کردیم اوتیسم رو در افراد بیشتری تونستیم تشخیص بدیم ",
+                    dialog: "به خاطر آگاهی که در سال های اخیر پیدا کردیم اوتیسم رو در افراد بیشتری تونستیم تشخیص بدیم ",
                 }
             },
             {
                 stageId: 11,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "البته در طول زمان تعریف اوتیسم تفییر پیدا کرد و گستره بیشتری از افراد رو در بر میگیره ",
+                    dialog: "البته در طول زمان تعریف اوتیسم تفییر پیدا کرد و گستره بیشتری از افراد رو در بر میگیره ",
                 }
             },
             {
                 stageId: 12,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "به نظر شما نسبت ببین پسر ها با دختر ها یی که اوتیسم دارن چقدره ",
+                    dialog: "به نظر شما نسبت ببین پسر ها با دختر ها یی که اوتیسم دارن چقدره ",
                 }
             },
             {
@@ -913,21 +913,21 @@ export let levels = [
                             title: "یک به یک",
                             color: "",
                             score: 0,
-                            nextDialogueId: 15
+                            nextDialogId: 15
                         },
                         {
                             optionId: 2,
                             title: "یک در چهار ",
                             color: "",
                             score: 10,
-                            nextDialogueId: 14
+                            nextDialogId: 14
                         },
                         {
                             optionId: 3,
                             title: "یک در بیست",
                             color: "",
                             score: 0,
-                            nextDialogueId: 15
+                            nextDialogId: 15
                         },
                     ]
                 }
@@ -935,39 +935,39 @@ export let levels = [
             {
                 stageId: 14,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "درست حدس زده اید",
-                    nextDialogueId: 16
+                    dialog: "درست حدس زده اید",
+                    nextDialogId: 16
                 }
             },
             {
                 stageId: 15,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "نه، نسبت درست یک در چهار هست",
-                    nextDialogueId: 16
+                    dialog: "نه، نسبت درست یک در چهار هست",
+                    nextDialogId: 16
                 }
             },
             {
                 stageId: 16,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "ممکنه خیلی علامت های متفاوتی بین دختر ها و پسر ها ببینیم.",
+                    dialog: "ممکنه خیلی علامت های متفاوتی بین دختر ها و پسر ها ببینیم.",
                 }
             },
             {
                 stageId: 17,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "به نظرتون چندین ژن دخیل با اوتیسم شناسایی شدن؟",
+                    dialog: "به نظرتون چندین ژن دخیل با اوتیسم شناسایی شدن؟",
                 }
             },
             {
@@ -983,21 +983,21 @@ export let levels = [
                             title: "یک ژن",
                             color: "",
                             score: 0,
-                            nextDialogueId: 20
+                            nextDialogId: 20
                         },
                         {
                             optionId: 2,
                             title: "دویست تا چهارصد ژن",
                             color: "",
                             score: 10,
-                            nextDialogueId: 19
+                            nextDialogId: 19
                         },
                         {
                             optionId: 3,
                             title: "هزار تا میلیون ها ژن",
                             color: "",
                             score: 0,
-                            nextDialogueId: 20
+                            nextDialogId: 20
                         },
                     ]
                 }
@@ -1005,39 +1005,39 @@ export let levels = [
             {
                 stageId: 19,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "درست حدس زده اید",
-                    nextDialogueId: 21
+                    dialog: "درست حدس زده اید",
+                    nextDialogId: 21
                 }
             },
             {
                 stageId: 20,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "نه، دویست تا چهارصد ژن شناسایی شده اند",
-                    nextDialogueId: 21
+                    dialog: "نه، دویست تا چهارصد ژن شناسایی شده اند",
+                    nextDialogId: 21
                 }
             },
             {
                 stageId: 21,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "چیز جالب تر این که این ها تو مکانیزم های مرتبط به هم عمل می کنن.",
+                    dialog: "چیز جالب تر این که این ها تو مکانیزم های مرتبط به هم عمل می کنن.",
                 }
             },
             {
                 stageId: 22,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "مثل یه الگوریتم محاسباتی که چندین فرمول داره و با تغییر یکی از فرمول ها نتیجه های الگوریتم عوض میشن.",
+                    dialog: "مثل یه الگوریتم محاسباتی که چندین فرمول داره و با تغییر یکی از فرمول ها نتیجه های الگوریتم عوض میشن.",
                 }
             },
         ]
@@ -1052,19 +1052,19 @@ export let levels = [
             {
                 stageId: 1,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "مادری با اضطراب در مطب دکتر نشسته  و کودکش  تشخیص داده شده که اوتیسم داره",
+                    dialog: "مادری با اضطراب در مطب دکتر نشسته  و کودکش  تشخیص داده شده که اوتیسم داره",
                 }
             },
             {
                 stageId: 2,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "اخه چرا ؟ نکنه به خاطر...",
+                    dialog: "اخه چرا ؟ نکنه به خاطر...",
                 }
             },
             {
@@ -1093,19 +1093,19 @@ export let levels = [
             {
                 stageId: 4,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "نه به هیچ وجه. تحقیقی که در اون احتمال تاثیر واکسن در اوتیسم داده شد به خاطر غیر علمی بودن از ژورنال حذف شد و نویسندش مدرک طبابت باطل شد.",
+                    dialog: "نه به هیچ وجه. تحقیقی که در اون احتمال تاثیر واکسن در اوتیسم داده شد به خاطر غیر علمی بودن از ژورنال حذف شد و نویسندش مدرک طبابت باطل شد.",
                 }
             },
             {
                 stageId: 5,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "بعد اون تحقیق های زیادی راجع به این موضوع انجام شد و هیچ کدوم ارتباطی بین اوتیسم و واکسن پیدا نکردن.",
+                    dialog: "بعد اون تحقیق های زیادی راجع به این موضوع انجام شد و هیچ کدوم ارتباطی بین اوتیسم و واکسن پیدا نکردن.",
                 }
             },
             {
@@ -1134,10 +1134,10 @@ export let levels = [
             {
                 stageId: 7,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "آره ممکنه ",
+                    dialog: "آره ممکنه ",
                 }
             },
             {
@@ -1166,10 +1166,10 @@ export let levels = [
             {
                 stageId: 9,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "نمیشه همینجوری نظر داد بستگی به بیماریت و داروی مصرفی داره که بتونیم بگیم اثر داشته یا نه. ",
+                    dialog: "نمیشه همینجوری نظر داد بستگی به بیماریت و داروی مصرفی داره که بتونیم بگیم اثر داشته یا نه. ",
                 }
             },
             {
@@ -1198,10 +1198,10 @@ export let levels = [
             {
                 stageId: 11,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "نه اینا برای دوران بارداریت نیازن",
+                    dialog: "نه اینا برای دوران بارداریت نیازن",
                 }
             },
             {
@@ -1230,10 +1230,10 @@ export let levels = [
             {
                 stageId: 13,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "موقع بارداری وقتی مغز جنین داره شکل میگیره یک سری عوامل شیمیایی و بعضی از بیماری ها می تونن باعث بالا رفتن ریسک اوتیسم بشن",
+                    dialog: "موقع بارداری وقتی مغز جنین داره شکل میگیره یک سری عوامل شیمیایی و بعضی از بیماری ها می تونن باعث بالا رفتن ریسک اوتیسم بشن",
                 }
             },
             {
@@ -1268,19 +1268,19 @@ export let levels = [
             {
                 stageId: 15,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "دوقولو هم سال احتمال داره 77 درصد ، غیر همسان 31 درصد و برادر خواهر حدود بیست درصد ممکنه که دومی هم اوتیسم داشته باشه.",
+                    dialog: "دوقولو هم سال احتمال داره 77 درصد ، غیر همسان 31 درصد و برادر خواهر حدود بیست درصد ممکنه که دومی هم اوتیسم داشته باشه.",
                 }
             },
             {
                 stageId: 16,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "اما حتی برای دقلو های همسان که تمام اطلاعات ژنتیکیشون برابره هم این احتمال صد در صد نیست",
+                    dialog: "اما حتی برای دقلو های همسان که تمام اطلاعات ژنتیکیشون برابره هم این احتمال صد در صد نیست",
                 }
             },
             {
@@ -1309,19 +1309,19 @@ export let levels = [
             {
                 stageId: 18,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "در خیلی از مواد هیچ فردی در خانواده سابقه ژنتیکی نداره و یک بچه به خاطر جهش ژنتیکی اولین نفره که اوتیسم داره",
+                    dialog: "در خیلی از مواد هیچ فردی در خانواده سابقه ژنتیکی نداره و یک بچه به خاطر جهش ژنتیکی اولین نفره که اوتیسم داره",
                 }
             },
             {
                 stageId: 19,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "واقعیتش رو بخوای به بعضی از افراد میتونم با اطمینان بگم به خاطر ژنتیکه اما به بقیه با شک و تردید.",
+                    dialog: "واقعیتش رو بخوای به بعضی از افراد میتونم با اطمینان بگم به خاطر ژنتیکه اما به بقیه با شک و تردید.",
                 }
             },
             {
@@ -1362,19 +1362,19 @@ export let levels = [
             {
                 stageId: 21,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogue: "ممکنه علایم رو تا چهار سالگی تشخیص ندیم.",
+                    dialog: "ممکنه علایم رو تا چهار سالگی تشخیص ندیم.",
                 }
             },
             {
                 stageId: 21,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "احساس می کنم زندگیم تموم شده.چکار می تونم بکنم.",
+                    dialog: "احساس می کنم زندگیم تموم شده.چکار می تونم بکنم.",
                 }
             },
             {
@@ -1390,14 +1390,14 @@ export let levels = [
                             title: "ممکنه بزرگ بشه درمان بشه؟",
                             color: "",
                             score: 10,
-                            nextDialogueId:23
+                            nextDialogId:23
                         },
                         {
                             optionId: 2,
                             title: " همه قراره اذیتش کنن",
                             color: "",
                             score: 0,
-                            nextDialogueId:24
+                            nextDialogId:24
                         },
                     ]
                 }
@@ -1405,30 +1405,30 @@ export let levels = [
             {
                 stageId: 23,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "چیزی به اسم درمان معنی نداره و سبک زندگیتون فقز عوض میشه ولی شاید بتونه تو اجتماع باشه یا حتی تو یه کاری نابغه باشه",
-                    nextDialogueId:25
+                    dialog: "چیزی به اسم درمان معنی نداره و سبک زندگیتون فقز عوض میشه ولی شاید بتونه تو اجتماع باشه یا حتی تو یه کاری نابغه باشه",
+                    nextDialogId:25
                 }
             },
             {
                 stageId: 24,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "باید ادمایی که دوستش دارن کنارش باشن و با صبر و حوصله باهاش رفتار کنین .اما می تونه اروم اروم تو خیلی کارا مستقل بشه",
-                    nextDialogueId:25
+                    dialog: "باید ادمایی که دوستش دارن کنارش باشن و با صبر و حوصله باهاش رفتار کنین .اما می تونه اروم اروم تو خیلی کارا مستقل بشه",
+                    nextDialogId:25
                 }
             },
             {
                 stageId: 25,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "چکار می تونم بکنم که بهتر بشه",
+                    dialog: "چکار می تونم بکنم که بهتر بشه",
                 }
             },
             {
@@ -1457,19 +1457,19 @@ export let levels = [
             {
                 stageId: 26,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "می تونین حتی سراغ جلسات تحلیل رفتار کاربردی (ABA) و یا کلاس های مهارت های اجتماعی برید",
+                    dialog: "می تونین حتی سراغ جلسات تحلیل رفتار کاربردی (ABA) و یا کلاس های مهارت های اجتماعی برید",
                 }
             },
             {
                 stageId: 27,
                 stageType: 0,
-                dialogueSection: {
+                dialogSection: {
                     person: "مادر",
                     personPic: "",
-                    dialogue: "خیلی کارا میشه کرد دنیا تموم نشده هنوز امید به اینده هست",
+                    dialog: "خیلی کارا میشه کرد دنیا تموم نشده هنوز امید به اینده هست",
                 }
             },
         ]
