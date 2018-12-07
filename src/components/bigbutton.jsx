@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './bigbutton.css';
 
-class BigButton extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <button 
-                id={this.props.id } 
-                className={"btn start-btn " + this.props.color } 
-                // data-score={ this.props.score }
-                // data-level={ this.props.attr }
-                onClick={() => this.props.clickHandle(this.props.newPage)}>{ this.props.text }</button>
-         );
-    }
-    
-}
+const BigButton = ({id,color,clickHandle,arg,text}) => {
+    return ( 
+        <button 
+            id={id } 
+            className={"btn start-btn " + color } 
+            onClick={event => clickHandle(event, arg)}>{ text }</button>
+     );
+};
  
 export default BigButton;

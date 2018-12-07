@@ -11,7 +11,7 @@ class ChapterPage extends Component {
                         id={"chapter-" + chapter.levelId}
                         className={"chapter chapter-" + chapter.levelId}
                         style={{ backgroundImage: 'url(/img/' + chapter.levelPic + ')' }}
-                        onClick={() => this.props.changePage("game-page", chapter.levelId)}>{chapter.levelName}</div>)}
+                        onClick={event => this.props.changePage(event,"game-page", chapter.levelId)}>{chapter.levelName}</div>)}
             </div>
         );
     }

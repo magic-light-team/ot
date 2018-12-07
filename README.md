@@ -45,8 +45,11 @@
 - [ ] make credit page
 - [ ] make about page
 - [ ] add graphic effect in lifecycle hook
-- [ ] modal element for pause page
-- [ ] show pause if isPause is true
+  - [ ] mount and unmount effect
+  - [ ] update effect
+- [ ] sound effect
+- [x] modal element for pause page
+- [x] show pause if isPause is true
 
 * pesarak 2 -> 2d -> platformer
 * pesarak 3 -> 3d

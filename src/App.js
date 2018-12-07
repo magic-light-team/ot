@@ -54,8 +54,10 @@ class App extends Component {
           backgroundPic={this.state.backgroundPic}
           score={this.state.score}
           stage={this.state.currentStage}
+          isPaused={this.state.isPaused}
           // Methods
           pauseGame={this.pauseGame}
+          changePage={this.changePage}
           changeStage={this.changeStage} />;
 
       case "credits-page":
@@ -68,7 +70,9 @@ class App extends Component {
     }
   }
 
-  changePage = (newPage, levelId) => {
+  changePage = (event,newPage, levelId) => {
+    event.stopPropagation();
+    console.log(event,newPage,levelId)
     const currentState = { ...this.state };
     currentState.page = newPage;
     if (levelId) {
@@ -99,9 +103,10 @@ class App extends Component {
     }
   }
 
-  pauseGame = () => {
+  pauseGame = (event,show = true) => {
+    event.stopPropagation();
     const currentState = { ...this.state };
-    currentState.isPaused = true;
+    currentState.isPaused = show;
     this.setState(currentState);
   }
 }
