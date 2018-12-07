@@ -6,7 +6,7 @@ class ScoreBoard extends Component {
     render() { 
         return ( 
             <div id="score-board">
-                <div id="menu" onClick={this.clickMenu}>
+                <div id="menu" onClick={() => this.props.pauseGame() }>
                     <img src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu icon" />
                 </div>
                 <div id="stage">{this.props.levelName}</div>
@@ -18,9 +18,6 @@ class ScoreBoard extends Component {
          );
     }
 
-    clickMenu = () => {
-        console.log('click menu', this);
-    }
 }
 
 export default ScoreBoard;

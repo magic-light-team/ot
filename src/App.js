@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 //import './bootstrap.min.css'
 
-//import { levels } from './component/levels';
 import StartPage from './components/startPage';
 import ChapterPage from './components/chapterPage';
 import GamePage from './components/gamePage';
 
-import { levels } from './components/levels'
+import gameData from './components/data'
 
 const initGame = {
   score: 0,
-  backgroundPic:'', //because it may change in level
-  
+  backgroundPic: '', //because it may change in level
+
   currentLevel: {},
   currentStage: {},
 
-  levels: levels,
+  gameData,
   page: "start-page",
   isPaused: false,
 
@@ -38,23 +37,28 @@ class App extends Component {
     switch (this.state.page) {
 
       case "start-page":
-        return <StartPage 
+        return <StartPage
+          startPageSetting={this.state.gameData.startPage}
           changePage={this.changePage} />;
 
       case "chapter-page":
-        return <ChapterPage 
-          chapters={this.state.levels} 
+        return <ChapterPage
+          chapters={this.state.gameData.levels}
+          chapterSetting={this.state.gameData.chapterPage}
           changePage={this.changePage} />;
 
       case "game-page":
-        return <GamePage 
-          level={this.state.currentLevel} 
+        return <GamePage
+          // Properties
+          level={this.state.currentLevel}
           backgroundPic={this.state.backgroundPic}
-          score={this.state.score} 
-          stage={this.state.currentStage} 
+          score={this.state.score}
+          stage={this.state.currentStage}
+          // Methods
+          pauseGame={this.pauseGame}
           changeStage={this.changeStage} />;
 
-      case "source-page":
+      case "credits-page":
         return <StartPage />;
       case "about-page":
         return <StartPage />;
@@ -68,7 +72,7 @@ class App extends Component {
     const currentState = { ...this.state };
     currentState.page = newPage;
     if (levelId) {
-      currentState.currentLevel = levels.find(level => level.levelId === levelId);
+      currentState.currentLevel = currentState.gameData.levels.find(level => level.levelId === levelId);
       currentState.backgroundPic = currentState.currentLevel.levelPic;
       currentState.currentStage = currentState.currentLevel.stages.find(stage => stage.stageId === 1);
     }
@@ -78,23 +82,27 @@ class App extends Component {
   changeStage = (stageId, score) => {
     const currentState = { ...this.state };
 
-    if(!stageId)
-    {
-      stageId = currentState.currentStage.stageId +1;
+    if (!stageId) {
+      stageId = currentState.currentStage.stageId + 1;
     }
 
     currentState.currentStage = currentState.currentLevel.stages.find(stage => stage.stageId === stageId);
 
-    if(score)
-    {
+    if (score) {
       currentState.score += score;
     }
 
-    if(currentState.currentStage){
+    if (currentState.currentStage) {
       this.setState(currentState);
-    }else{
+    } else {
       console.log('can not find stage');
     }
+  }
+
+  pauseGame = () => {
+    const currentState = { ...this.state };
+    currentState.isPaused = true;
+    this.setState(currentState);
   }
 }
 

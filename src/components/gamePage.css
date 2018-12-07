@@ -1,11 +1,14 @@
 #game {
     display: flex;
-    overflow: hidden;
     flex-wrap: wrap;
+    overflow: hidden;
+    
     justify-content: space-evenly;
     align-items: center;
-    background-size: cover;
-    background-position: bottom;
-    background-color: aqua;
     border: 1px solid #000000;
+    
+    background-size: cover;
+    background-color: aqua;
+    background-repeat: round;
+    background-position: bottom;
 }
