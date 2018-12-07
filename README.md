@@ -37,7 +37,8 @@
 
 - [ ] make [`github page`](https://github.com/gitname/react-gh-pages)
   - [x] install `npm install gh-pages --save-dev`
--[x] add redux
+-[ ] add redux
+  - [ ] install redux `npm install --save react-redux`
 
 * for run -> `npm start`
 

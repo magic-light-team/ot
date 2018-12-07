@@ -10,13 +10,13 @@ let startPage = {
     ]
 }
 let chapterPage = {
-    backgroundPic: "levels/s1-1.jpg'",
+    backgroundPic: "levels/s1-1.jpg",
 }
 let aboutPage = {
-    backgroundPic: "levels/s1-1.jpg'",
+    backgroundPic: "levels/s1-1.jpg",
 }
 let creditsPage = {
-    backgroundPic: "levels/s1-1.jpg'",
+    backgroundPic: "levels/s1-1.jpg",
 }
 
 let levels = [

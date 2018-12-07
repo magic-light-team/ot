@@ -96,11 +96,12 @@ button {
 }
 
 .btn-wrapper {
+    display: flex;
+    flex-direction: column;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-    display: flex;
-    flex-direction: column;
+	left: 0;
 }
 
 .resume-btn {

@@ -6,12 +6,12 @@ class StartPage extends Component {
     state = {}
     render() {
         return (
-            <div id="start-screen" style={{}}>
+            <div id="start-screen" style={{ backgroundImage: 'url(/img/' + this.props.startPageSetting.backgroundPic + ')' }}>
                 <div id="inner-screen">
                     <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
-                    <BigButton id="start-new-btn" text="شروع" newLevel="chapter-page" clickHandle={this.props.changePage} color="start-new-btn" score="" attr="" />
-                    <BigButton id="credits-btn" text="منابع" newLevel="credits-page" clickHandle={this.props.changePage} color="credits-btn" score="" attr="" />
-                    <BigButton id="about-btn" text="درباره" newLevel="about-page" clickHandle={this.props.changePage} color="about-btn" score="" attr="" />
+                    {this.props.startPageSetting.options.map(op =>
+                        <BigButton key={op.id} id={op.id} text={op.title} newPage={op.page} clickHandle={this.props.changePage} color={op.id} />
+                    )}
                 </div>
             </div>
         );

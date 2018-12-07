@@ -8,9 +8,9 @@ class BigButton extends Component {
             <button 
                 id={this.props.id } 
                 className={"btn start-btn " + this.props.color } 
-                data-score={ this.props.score }
-                data-level={ this.props.attr }
-                onClick={() => this.props.clickHandle(this.props.newLevel)}>{ this.props.text }</button>
+                // data-score={ this.props.score }
+                // data-level={ this.props.attr }
+                onClick={() => this.props.clickHandle(this.props.newPage)}>{ this.props.text }</button>
          );
     }
     
