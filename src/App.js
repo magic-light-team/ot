@@ -18,7 +18,6 @@ const initGame = {
   gameData,
   page: "start-page",
   isPaused: false,
-
 };
 
 class App extends Component {
