@@ -20,6 +20,26 @@ export default function(state = initialState,action) {
                 ...state,
                 items: action.payload
             }
+        case CHAPTER_PAGE:
+            return {
+                ...state,
+                items: action.payload
+            }
+        case GAME_PAGE:
+            return {
+                ...state,
+                items: action.payload
+            }
+        case RESUME_PAGE:
+            return {
+                ...state,
+                items: action.payload
+            }
+        case SCORE_PAGE:
+            return {
+                ...state,
+                items: action.payload
+            }
         default:
             return state;
     }
