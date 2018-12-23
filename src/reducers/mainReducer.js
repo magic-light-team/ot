@@ -13,7 +13,7 @@ const initialState = {
     isPaused: false,
 }
 
-export default function(state = initialState,action) {
+export default function MainReducer(state = initialState,action) {
     switch(action.type) {
         case START_PAGE:
             return {
