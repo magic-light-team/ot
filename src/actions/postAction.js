@@ -1,4 +1,4 @@
-import { FETCH_POSTS, NEW_POSTS } from '../actions/types';
+// import { FETCH_POSTS, NEW_POSTS } from '../actions/types';
 
 // export const fetchPosts = () => dispatch => {
 //         dispatch({
@@ -6,13 +6,22 @@ import { FETCH_POSTS, NEW_POSTS } from '../actions/types';
 //             payload: []
 //         })
 //     }
-export const showStartPage = () => dispatch => {
-        //...
-        dispatch({
-            type: FETCH_POSTS,
-            payload: []
-        })
-    }
+
+// export const postPage = () => dispatch => {
+//     //...
+//     dispatch({
+//         type: FETCH_POSTS,
+//         payload: []
+//     })
+// }
+
+// export const newPost = () => dispatch => {
+//     //...
+//     dispatch({
+//         type: NEW_POSTS,
+//         payload: []
+//     })
+// }
 
 /* in component
 * import PropTypes from 'prop-types';
