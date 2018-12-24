@@ -1,4 +1,4 @@
-import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE } from '../actions/types';
+import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE, CHANGE_PAGE, CHANGE_STAGE, PAUSE_GAME } from '../actions/types';
 import gameData from './data';
 
 const initialState = {
@@ -46,15 +46,62 @@ export default function MainReducer(state = initialState,action) {
                 items: action.payload
             }
         case RESUME_PAGE:
-            return {
-                ...state,
-                items: action.payload
-            }
+        return {
+            ...state,
+            isPaused:false,
+            //items: action.payload
+        }
         case SCORE_PAGE:
             return {
                 ...state,
                 items: action.payload
             }
+
+
+
+        case CHANGE_PAGE:
+            if(!action.payload.levelId){
+                return {
+                    ...state,
+                    items: action.payload.newPage,
+                    //items: action.payload
+                }
+            }
+            let thisLevel = gameData.levels.levels.find(level => level.levelId === action.payload.levelId);
+            return {
+                ...state,
+                page: action.payload.newPage,
+                currentLevel: thisLevel,
+                backgroundPic: thisLevel.levelPic,
+                currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
+            }
+
+        case CHANGE_STAGE:
+            let stageId = action.payload.stageId;
+            if(!stageId){
+                stageId = state.currentState.currentStage.stageId + 1;
+            }
+
+            let score = state.score;
+            if(action.payload.score){
+                score += action.payload.score;
+            }
+            
+            let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
+            return {
+                ...state,
+                currentStage,
+                score
+            }
+            
+        case PAUSE_GAME:
+            return {
+                ...state,
+                isPaused:true,
+                //items: action.payload
+            }
+
+
         default:
             return state;
     }

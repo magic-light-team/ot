@@ -1,4 +1,4 @@
-import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE  } from '../actions/types';
+import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE, CHANGE_STAGE, PAUSE_GAME, CHANGE_PAGE  } from '../actions/types';
 
 export const showStartPage = () => dispatch => {
     //...
@@ -60,14 +60,14 @@ export const changePage = (event,newPage, levelId) => dispatch => {
     // this.setState(currentState);
 
     dispatch({
-        type: newPage,
-        payload: {levelId}
+        type: CHANGE_PAGE, // newPage,
+        payload: { levelId, newPage }
     })
 }
 
 export const changeStage = (stageId, score) => dispatch => {
     //...
-    let currentStage;
+    // let currentStage;
     // const currentState = { ...this.state };
 
     // if (!stageId) {
@@ -87,22 +87,22 @@ export const changeStage = (stageId, score) => dispatch => {
     // }
 
     dispatch({
-        type: GAME_PAGE,
-        payload: { currentStage, score }
+        type: CHANGE_STAGE,
+        payload: { stageId, score }
     })
 }
 
 export const pauseGame = (event,show = true) => dispatch => {
     //...
-    let page;
+    // let page;
     // let isPaused;
-    // event.stopPropagation();
+    event.stopPropagation();
     // const currentState = { ...this.state };
     // currentState.isPaused = show;
     // this.setState(currentState);
 
     dispatch({
-        type: show?RESUME_PAGE:page,
+        type: show?PAUSE_GAME:RESUME_PAGE,
         payload: {isPaused:show}
     })
 }
