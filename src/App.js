@@ -6,6 +6,9 @@ import StartPage from './components/startPage';
 import ChapterPage from './components/chapterPage';
 import GamePage from './components/gamePage';
 
+import { connect } from 'react-redux';
+//import PropTypes from 'prop-types';
+
 import gameData from './components/data'
 
 const initGame = {
@@ -110,4 +113,8 @@ class App extends Component {
   }
 }
 
-export default App;
+//export default App;
+///App.propTypes = { state: PropTypes.isRequired };
+const mapStateToProps = state => ({ ...state});
+
+export default connect(mapStateToProps)(App);

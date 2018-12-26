@@ -60,10 +60,12 @@ export default function MainReducer(state = initialState,action) {
 
 
         case CHANGE_PAGE:
+            console.log('change page reducer',action.payload);
+            
             if(!action.payload.levelId){
                 return {
                     ...state,
-                    items: action.payload.newPage,
+                    page: action.payload.newPage,
                     //items: action.payload
                 }
             }
@@ -77,6 +79,7 @@ export default function MainReducer(state = initialState,action) {
             }
 
         case CHANGE_STAGE:
+            console.log('change page reducer');
             let stageId = action.payload.stageId;
             if(!stageId){
                 stageId = state.currentState.currentStage.stageId + 1;
@@ -95,6 +98,7 @@ export default function MainReducer(state = initialState,action) {
             }
             
         case PAUSE_GAME:
+            console.log('change page reducer');
             return {
                 ...state,
                 isPaused:true,

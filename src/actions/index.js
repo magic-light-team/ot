@@ -48,7 +48,7 @@ export const scorePage = () => dispatch => {
 export const changePage = (event,newPage, levelId) => dispatch => {
 
     event.stopPropagation();
-    console.log('actions',event,newPage,levelId);
+    console.log('changePage actions',event,newPage,levelId);
 
     // const currentState = { ...this.state };
     // currentState.page = newPage;
