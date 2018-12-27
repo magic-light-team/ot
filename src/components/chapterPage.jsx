@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './chapterPage.css';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { changePage  } from '../actions/index';
+
 class ChapterPage extends Component {
     state = {}
     render() {
         return (
-            <div id="chapter-wrapper" className="chapter-selector" style={{ backgroundImage: 'url(/img/' + this.props.chapterSetting.backgroundPic + ')' }}>
+            <div id="chapter-wrapper" className="chapter-selector" style={{ backgroundImage: 'url(/img/' + this.props.pageSetting.backgroundPic + ')' }}>
                 {this.props.chapters.map(chapter =>
                     <div key={chapter.levelId}
                         id={"chapter-" + chapter.levelId}
@@ -17,5 +21,8 @@ class ChapterPage extends Component {
     }
 }
 
+ChapterPage.propTypes = { changePage: PropTypes.func.isRequired };
+const mapStateToProps = state => ({ pageSetting: state.state.gameData.chapterPage, chapters: state.state.gameData.levels });
+export default connect(mapStateToProps,{changePage})(ChapterPage);
 
-export default ChapterPage;
+// export default ChapterPage;

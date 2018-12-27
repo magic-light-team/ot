@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './startPage.css'
 import BigButton from './bigbutton';
-
 import { connect } from 'react-redux';
 
 class StartPage extends Component {

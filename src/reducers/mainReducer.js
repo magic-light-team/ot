@@ -70,7 +70,7 @@ export default function MainReducer(state = initialState,action) {
                     //items: action.payload
                 }
             }
-            let thisLevel = gameData.levels.levels.find(level => level.levelId === action.payload.levelId);
+            let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId);
             return {
                 ...state,
                 page: action.payload.newPage,

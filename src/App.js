@@ -36,7 +36,8 @@ class App extends Component {
   }
 
   pageTag = () => {
-    console.log('old state',this.state,'new store state',this.props.state);
+    console.log('old state',this.state);
+    console.log('new store state',this.props.state);
 
     switch (this.props.state.page) {
 
@@ -46,10 +47,10 @@ class App extends Component {
           //changePage={this.changePage} />;
 
       case "chapter-page":
-        return <ChapterPage
-          chapters={this.state.gameData.levels}
-          chapterSetting={this.state.gameData.chapterPage}
-          changePage={this.changePage} />;
+        return <ChapterPage />;
+          //chapters={this.state.gameData.levels}
+          //chapterSetting={this.state.gameData.chapterPage}
+          // changePage={this.changePage} />;
 
       case "game-page":
         return <GamePage
