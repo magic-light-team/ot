@@ -36,6 +36,8 @@ class App extends Component {
   }
 
   pageTag = () => {
+    console.log('old state',this.state,'new store state',this.props.state);
+
     switch (this.state.page) {
 
       case "start-page":
