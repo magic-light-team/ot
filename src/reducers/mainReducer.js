@@ -11,8 +11,9 @@ const initialState = {
     currentLevel: {},
     currentStage: {},
 
-    gameData: {},
+    gameData: gameData,
     achievment: {},
+    saveChoise:{},
 
     page: "start-page",
     isPaused: false,

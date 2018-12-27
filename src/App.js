@@ -38,12 +38,12 @@ class App extends Component {
   pageTag = () => {
     console.log('old state',this.state,'new store state',this.props.state);
 
-    switch (this.state.page) {
+    switch (this.props.state.page) {
 
       case "start-page":
-        return <StartPage
-          startPageSetting={this.state.gameData.startPage}
-          changePage={this.changePage} />;
+        return <StartPage />;
+          //startPageSetting={this.state.gameData.startPage}
+          //changePage={this.changePage} />;
 
       case "chapter-page":
         return <ChapterPage
