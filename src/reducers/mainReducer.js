@@ -29,6 +29,7 @@ export default function MainReducer(state = initialState, action) {
 
     case CHANGE_PAGE:
       console.log('change page reducer');//, action.payload);
+      saveChoise.push({action:CHANGE_PAGE,page:action.payload.newPage,levelId:action.payload.levelId});
 
       if (!action.payload.levelId) {
         return {
@@ -37,6 +38,7 @@ export default function MainReducer(state = initialState, action) {
           //items: action.payload
         }
       }
+
       let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId);
       return {
         ...state,
@@ -48,6 +50,7 @@ export default function MainReducer(state = initialState, action) {
 
     case CHANGE_STAGE:
        console.log('change stage reducer');
+       saveChoise.push({action:CHANGE_STAGE,stageId: action.payload.stageId,score:action.payload.score});
 
       let stageId = action.payload.stageId;
       if (!stageId) {
