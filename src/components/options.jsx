@@ -1,23 +1,38 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { changeStage } from '../actions/index';
+
 class Options extends Component {
-    state = {  }
-    render() { 
-        return ( 
+    state = {}
+    render() {
+        return (
             <div>
                 <div className="description-wrapper dialog">
-                    { this.props.stage.optionSection.desc }</div>
+                    {this.props.desc}</div>
                 <div className="btn-wrapper">
-                    { this.props.stage.optionSection.options.map(op => 
+                    {this.props.options.map(op =>
                         <button
-                            onClick={() => this.props.changeStage(op.nextDialogId, op.score) }
+                            onClick={() => this.props.changeStage(op.nextDialogId, op.score)}
                             key={op.optionId}
                             data-score={op.score}
-                            className="btn red-color">{op.title}</button>) }
+                            className="btn red-color">{op.title}</button>)}
                 </div>
             </div>
-         );
+        );
     }
 }
- 
-export default Options;
+
+Options.propTypes = {
+    changeStage: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+    options: state.state.currentStage.optionSection.options,
+    desc: state.state.currentStage.optionSection.desc,
+});
+
+export default connect(mapStateToProps, { changeStage })(Options);
+
+// export default Options;

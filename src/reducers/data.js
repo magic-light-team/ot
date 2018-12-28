@@ -2,11 +2,11 @@
 let startPage = {
     backgroundPic: "levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
-    options:[
-        {id:"start-new-btn", title:"شروع", color:"start-new-btn", page:"chapter-page"},
+    options: [
+        { id: "start-new-btn", title: "شروع", color: "start-new-btn", page: "chapter-page" },
         // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
-        {id:"credits-btn", title:"منابع",color:"credits-btn", page:"credits-page"},
-        {id:"about-btn", title:"درباره",color:"about-btn", page:"about-page"},
+        { id: "credits-btn", title: "منابع", color: "credits-btn", page: "credits-page" },
+        { id: "about-btn", title: "درباره", color: "about-btn", page: "about-page" },
     ]
 }
 let chapterPage = {
@@ -1409,14 +1409,14 @@ let levels = [
                             title: "ممکنه بزرگ بشه درمان بشه؟",
                             color: "",
                             score: 10,
-                            nextDialogId:23
+                            nextDialogId: 23
                         },
                         {
                             optionId: 2,
                             title: " همه قراره اذیتش کنن",
                             color: "",
                             score: 0,
-                            nextDialogId:24
+                            nextDialogId: 24
                         },
                     ]
                 }
@@ -1428,7 +1428,7 @@ let levels = [
                     person: "مادر",
                     personPic: "",
                     dialog: "چیزی به اسم درمان معنی نداره و سبک زندگیتون فقز عوض میشه ولی شاید بتونه تو اجتماع باشه یا حتی تو یه کاری نابغه باشه",
-                    nextDialogId:25
+                    nextDialogId: 25
                 }
             },
             {
@@ -1438,7 +1438,7 @@ let levels = [
                     person: "مادر",
                     personPic: "",
                     dialog: "باید ادمایی که دوستش دارن کنارش باشن و با صبر و حوصله باهاش رفتار کنین .اما می تونه اروم اروم تو خیلی کارا مستقل بشه",
-                    nextDialogId:25
+                    nextDialogId: 25
                 }
             },
             {

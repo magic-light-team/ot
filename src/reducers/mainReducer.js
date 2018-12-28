@@ -1,4 +1,4 @@
-import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE, CHANGE_PAGE, CHANGE_STAGE, PAUSE_GAME } from '../actions/types';
+import { CHANGE_PAGE, CHANGE_STAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/types';
 import gameData from './data';
 
 const initialState = {
@@ -6,64 +6,26 @@ const initialState = {
     // item:{},
     score: 0,
     backgroundPic: '',
-    music:'',
+    music: '',
 
     currentLevel: {},
     currentStage: {},
 
     gameData: gameData,
     achievment: {},
-    saveChoise:{},
+    saveChoise: {},
 
     page: "start-page",
     isPaused: false,
 }
 
-export default function MainReducer(state = initialState,action) {
-    let page;
-    switch(action.type) {
-        case START_PAGE:
-            page = gameData.startPage;
-            return {
-                ...state,
-                score:0,
-                backgroundPic: page.backgroundPic,
-                music: page.music,
-                //...page
-            }
-            // return Object.assign({}, state, {
-            //     articles: state.articles.concat(action.payload)
-            //   });
-        case CHAPTER_PAGE:
-            page= gameData.chapterPage;
-            return {
-                ...state,
-                backgroundPic: page.backgroundPic,
-                //...page
-            }
-        case GAME_PAGE:
-            return {
-                ...state,
-                items: action.payload
-            }
-        case RESUME_PAGE:
-        return {
-            ...state,
-            isPaused:false,
-            //items: action.payload
-        }
-        case SCORE_PAGE:
-            return {
-                ...state,
-                items: action.payload
-            }
-
-
+export default function MainReducer(state = initialState, action) {
+    switch (action.type) {
 
         case CHANGE_PAGE:
-            console.log('change page reducer',action.payload);
-            
-            if(!action.payload.levelId){
+            console.log('change page reducer', action.payload);
+
+            if (!action.payload.levelId) {
                 return {
                     ...state,
                     page: action.payload.newPage,
@@ -80,32 +42,47 @@ export default function MainReducer(state = initialState,action) {
             }
 
         case CHANGE_STAGE:
-            console.log('change page reducer');
+            console.log('change stage reducer');
+            
             let stageId = action.payload.stageId;
-            if(!stageId){
-                stageId = state.currentState.currentStage.stageId + 1;
+            if (!stageId) {
+                stageId = state.currentStage.stageId + 1;
             }
 
             let score = state.score;
-            if(action.payload.score){
+            if (action.payload.score) {
                 score += action.payload.score;
             }
-            
+
             let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
+            if(!currentStage){
+                return{
+                    ...state,
+                    page:'chapter-page' // or end stage score page
+                }
+            }
+
             return {
                 ...state,
                 currentStage,
                 score
             }
-            
+
         case PAUSE_GAME:
-            console.log('change page reducer');
+            console.log('pause game reducer');
             return {
                 ...state,
-                isPaused:true,
+                isPaused: true,
                 //items: action.payload
             }
 
+        case RESUME_PAGE:
+            console.log('resume game reducer');
+            return {
+                ...state,
+                isPaused: false,
+                //items: action.payload
+            }
 
         default:
             return state;

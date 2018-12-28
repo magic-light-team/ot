@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './scoreBoard.css'
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { pauseGame } from '../actions/index';
+
 class ScoreBoard extends Component {
     state = {  }
     render() { 
@@ -17,7 +21,14 @@ class ScoreBoard extends Component {
             </div>
          );
     }
-
 }
 
-export default ScoreBoard;
+ScoreBoard.propTypes = { pauseGame: PropTypes.func.isRequired };
+const mapStateToProps = state => ({
+    levelName: state.state.currentLevel.levelName,
+    score: state.state.score
+});
+
+export default connect(mapStateToProps, { pauseGame })(ScoreBoard);
+
+// export default ScoreBoard;

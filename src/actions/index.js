@@ -1,54 +1,17 @@
-import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE, CHANGE_STAGE, PAUSE_GAME, CHANGE_PAGE  } from '../actions/types';
+import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/types';
 
-export const showStartPage = () => dispatch => {
-    //...
-    dispatch({
-        type: START_PAGE,
-        payload: []
-    })
-}
+// export const scorePage = () => dispatch => {
+//     //...
+//     dispatch({
+//         type: SCORE_PAGE,
+//         payload: []
+//     })
+// }
 
-export const showChapterPage = () => dispatch => {
-    //...
-    dispatch({
-        type: CHAPTER_PAGE,
-        payload: []
-    })
-}
-
-export const startGame = () => dispatch => {
-    //...
-    dispatch({
-        type: GAME_PAGE,
-        payload: []
-    })
-}
-
-export const resumeGame = () => dispatch => {
-    //...
-    dispatch({
-        type: RESUME_PAGE,
-        payload: []
-    })
-}
-
-export const scorePage = () => dispatch => {
-    //...
-    dispatch({
-        type: SCORE_PAGE,
-        payload: []
-    })
-}
-
-
-
-
-//--------------------------------------------------
-
-export const changePage = (event,newPage, levelId) => dispatch => {
+export const changePage = (event, newPage, levelId) => dispatch => {
 
     event.stopPropagation();
-    console.log('changePage actions',event,newPage,levelId);
+    console.log('changePage actions', event, newPage, levelId);
 
     // const currentState = { ...this.state };
     // currentState.page = newPage;
@@ -92,7 +55,7 @@ export const changeStage = (stageId, score) => dispatch => {
     })
 }
 
-export const pauseGame = (event,show = true) => dispatch => {
+export const pauseGame = (event, show = true) => dispatch => {
     //...
     // let page;
     // let isPaused;
@@ -102,7 +65,7 @@ export const pauseGame = (event,show = true) => dispatch => {
     // this.setState(currentState);
 
     dispatch({
-        type: show?PAUSE_GAME:RESUME_PAGE,
-        payload: {isPaused:show}
+        type: show ? PAUSE_GAME : RESUME_PAGE,
+        payload: { isPaused: show }
     })
 }
