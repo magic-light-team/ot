@@ -29,12 +29,12 @@ export default function MainReducer(state = initialState, action) {
 
     case CHANGE_PAGE:
       console.log('change page reducer');//, action.payload);
-      saveChoise.push({action:CHANGE_PAGE,page:action.payload.newPage,levelId:action.payload.levelId});
 
       if (!action.payload.levelId) {
         return {
           ...state,
           page: action.payload.newPage,
+          saveChoise:{...state.saveChoise,choise:{action:CHANGE_PAGE,page: action.payload.newPage}},
           //items: action.payload
         }
       }
@@ -46,11 +46,11 @@ export default function MainReducer(state = initialState, action) {
         currentLevel: thisLevel,
         backgroundPic: thisLevel.levelPic,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
+        saveChoise:{...state.saveChoise,choise:{action:CHANGE_PAGE, page: action.payload.newPage,levelId:action.payload.levelId}},
       }
 
     case CHANGE_STAGE:
        console.log('change stage reducer');
-       saveChoise.push({action:CHANGE_STAGE,stageId: action.payload.stageId,score:action.payload.score});
 
       let stageId = action.payload.stageId;
       if (!stageId) {
@@ -66,14 +66,16 @@ export default function MainReducer(state = initialState, action) {
       if (!currentStage) {
         return {
           ...state,
-          page: 'chapter-page' // or end stage score page
+          page: 'chapter-page', // or end stage score page
+          saveChoise:{...state.saveChoise,choise:{action:CHANGE_STAGE,stage:'cannot find stage. maybe end of stage'}},
         }
       }
 
       return {
         ...state,
         currentStage,
-        score
+        score,
+        saveChoise:{...state.saveChoise,choise:{action:CHANGE_STAGE,stageId:stageId}},
       }
 
     case PAUSE_GAME:
