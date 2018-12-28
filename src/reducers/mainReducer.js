@@ -28,7 +28,7 @@ export default function MainReducer(state = initialState, action) {
   switch (action.type) {
 
     case CHANGE_PAGE:
-      console.log('change page reducer');//, action.payload);
+      // console.log('change page reducer');//, action.payload);
 
       if (!action.payload.levelId) {
         return {
@@ -50,7 +50,7 @@ export default function MainReducer(state = initialState, action) {
       }
 
     case CHANGE_STAGE:
-       console.log('change stage reducer');
+      //  console.log('change stage reducer');
 
       let stageId = action.payload.stageId;
       if (!stageId) {

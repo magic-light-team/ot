@@ -1,6 +1,6 @@
 # OT
 
-- [ ] find name
+- [x] find name
 
 
 ## levels
@@ -17,7 +17,7 @@
 - [x] backround
 - [x] people pic
 - [x] score
-- [ ] add logo
+- [x] add logo
 - [x] add new font
 - [x] add music
 - [ ] menu
@@ -25,22 +25,17 @@
     - [ ] modal
 - [x] start page
 - [ ] score page
+- [ ] about page
 
 ## Suggestion
 
 - [ ] sorting options
-- [ ] sorting options
+- [ ] color for options
 - [ ] sound for dialogue
 - [ ] dialouge type effect
+- [ ] achievment page
 
 ## React App
-
-- [ ] make [`github page`](https://github.com/gitname/react-gh-pages)
-  - [x] install `npm install gh-pages --save-dev`
--[ ] add redux
-  - [ ] install redux `npm install --save react-redux`
-
-* for run -> `npm start`
 
 - [ ] make credit page
 - [ ] make about page
@@ -50,6 +45,37 @@
 - [ ] sound effect
 - [x] modal element for pause page
 - [x] show pause if isPause is true
+- [x] make [`github page`](https://github.com/gitname/react-gh-pages)
+  - [x] install `npm install gh-pages --save-dev`
+-[x] add redux
+  - [x] install redux `npm install --save react-redux`
+
+* `npm start` for run in local
+* `npm run deploy` for deploy directly to github
+
+
+
+### lifecycle
+
+[React.Component](https://reactjs.org/docs/react-component.html)
+
+* Mounting
+  * constructor()
+  * static getDerivedStateFromProps()
+  * render()
+  * componentDidMount()
+* Updating
+  * static getDerivedStateFromProps()
+  * shouldComponentUpdate()
+  * render()
+  * getSnapshotBeforeUpdate()
+  * componentDidUpdate()
+* Unmounting
+  * componentWillUnmount()
+
+[react-transition-group](https://github.com/reactjs/react-transition-group/tree/master)
+
+## other
 
 * pesarak 2 -> 2d -> platformer
 * pesarak 3 -> 3d
