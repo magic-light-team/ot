@@ -1,6 +1,6 @@
 
 let startPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
     options: [
         { id: "start-new-btn", title: "شروع", color: "start-new-btn", page: "chapter-page" },
@@ -10,20 +10,20 @@ let startPage = {
     ]
 }
 let chapterPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 let aboutPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 let creditsPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 
 let levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
-        levelPic: "levels/l1-1.jpg",
+        levelPic: "/img/levels/l1-1.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [
             {
@@ -331,7 +331,7 @@ let levels = [
     {
         levelId: 2,
         levelName: "دوست ابدی من",
-        levelPic: "levels/l2-1.jpg",
+        levelPic: "/img/levels/l2-1.jpg",
         backgroundMusic: "bensound-anewbeginning-2.mp3",
         stages: [
             {
@@ -758,7 +758,7 @@ let levels = [
     {
         levelId: 3,
         levelName: "حقایق اوتیسم",
-        levelPic: "levels/l3-1.jpg",
+        levelPic: "/img/levels/l3-1.jpg",
         backgroundMusic: "bensound-creativeminds-3.mp3",
         stages: [
             {
@@ -1065,7 +1065,7 @@ let levels = [
     {
         levelId: 4,
         levelName: "نگرانی مادر",
-        levelPic: "levels/l4-1.jpg",
+        levelPic: "/img/levels/l4-1.jpg",
         backgroundMusic: "bensound-pianomoment-4.mp3",
         stages: [
             {
