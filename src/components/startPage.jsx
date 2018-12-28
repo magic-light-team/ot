@@ -10,7 +10,7 @@ class StartPage extends Component {
     state = {}
     render() {
         return (
-            <div id="start-screen" style={{ backgroundImage: 'url(/img/' + this.props.pageSetting.backgroundPic + ')' }}>
+            <div id="start-screen" style={{ backgroundImage: 'url(img/' + this.props.pageSetting.backgroundPic + ')' }}>
                 <div id="inner-screen">
                     <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
                     {this.props.pageSetting.options.map(op =>
