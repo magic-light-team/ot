@@ -8,7 +8,7 @@ class Dialog extends Component {
     render() {
         return (
             <div>
-                <div className="dialog-box dialog">
+                <div className="dialog-box dialog" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + '/img/dialouge.png)' }}>
                     {this.props.stageDialog}</div>
             </div>
         );
