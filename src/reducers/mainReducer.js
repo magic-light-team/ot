@@ -18,7 +18,7 @@ const initialState = {
 
   gameData: gameData,
   achievment: {},
-  saveChoise: {},
+  saveChoise: [],
 
   page: "start-page",
   isPaused: false,
@@ -34,7 +34,7 @@ export default function MainReducer(state = initialState, action) {
         return {
           ...state,
           page: action.payload.newPage,
-          saveChoise:{...state.saveChoise,choise:{action:CHANGE_PAGE,page: action.payload.newPage}},
+          saveChoise:[...state.saveChoise,{action:CHANGE_PAGE,page: action.payload.newPage}],
           //items: action.payload
         }
       }
@@ -46,7 +46,7 @@ export default function MainReducer(state = initialState, action) {
         currentLevel: thisLevel,
         backgroundPic: thisLevel.levelPic,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
-        saveChoise:{...state.saveChoise,choise:{action:CHANGE_PAGE, page: action.payload.newPage,levelId:action.payload.levelId}},
+        saveChoise: [...state.saveChoise,{ action:CHANGE_PAGE, page: action.payload.newPage, levelId:action.payload.levelId}],
       }
 
     case CHANGE_STAGE:
@@ -67,7 +67,7 @@ export default function MainReducer(state = initialState, action) {
         return {
           ...state,
           page: 'chapter-page', // or end stage score page
-          saveChoise:{...state.saveChoise,choise:{action:CHANGE_STAGE,stage:'cannot find stage. maybe end of stage'}},
+          saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stage:'cannot find stage. maybe end of stage'}],
         }
       }
 
@@ -75,7 +75,7 @@ export default function MainReducer(state = initialState, action) {
         ...state,
         currentStage,
         score,
-        saveChoise:{...state.saveChoise,choise:{action:CHANGE_STAGE,stageId:stageId}},
+        saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stageId:stageId}],
       }
 
     case PAUSE_GAME:
