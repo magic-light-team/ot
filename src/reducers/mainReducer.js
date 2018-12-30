@@ -35,6 +35,7 @@ export default function MainReducer(state = initialState, action) {
           ...state,
           page: action.payload.newPage,
           saveChoise:[...state.saveChoise,{action:CHANGE_PAGE,page: action.payload.newPage}],
+          isPaused:false,
           //items: action.payload
         }
       }

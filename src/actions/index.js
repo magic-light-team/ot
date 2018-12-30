@@ -24,7 +24,7 @@ export const changePage = (event, newPage, levelId) => dispatch => {
 
     dispatch({
         type: CHANGE_PAGE, // newPage,
-        payload: { levelId, newPage }
+        payload: { levelId, newPage },
     })
 }
 

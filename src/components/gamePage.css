@@ -9,6 +9,6 @@
     
     background-size: cover;
     background-color: aqua;
-    background-repeat: round;
+    background-repeat: round;/*no-repeat*/
     background-position: bottom;
 }
