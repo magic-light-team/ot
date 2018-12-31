@@ -1,112 +1,101 @@
-import { START_PAGE, CHAPTER_PAGE, GAME_PAGE, RESUME_PAGE, SCORE_PAGE, CHANGE_PAGE, CHANGE_STAGE, PAUSE_GAME } from '../actions/types';
+import {
+  CHANGE_PAGE,
+  CHANGE_STAGE,
+  PAUSE_GAME,
+  RESUME_PAGE
+} from '../actions/types';
 import gameData from './data';
 
 const initialState = {
-    // items: [],
-    // item:{},
-    score: 0,
-    backgroundPic: '',
-    music:'',
+  // items: [],
+  // item:{},
+  score: 0,
+  backgroundPic: '',
+  music: '',
 
-    currentLevel: {},
-    currentStage: {},
+  currentLevel: {},
+  currentStage: {},
 
-    gameData: {},
-    achievment: {},
+  gameData: gameData,
+  achievment: {},
+  saveChoise: [],
 
-    page: "start-page",
-    isPaused: false,
+  page: "start-page",
+  isPaused: false,
 }
 
-export default function MainReducer(state = initialState,action) {
-    let page;
-    switch(action.type) {
-        case START_PAGE:
-            page = gameData.startPage;
-            return {
-                ...state,
-                score:0,
-                backgroundPic: page.backgroundPic,
-                music: page.music,
-                //...page
-            }
-            // return Object.assign({}, state, {
-            //     articles: state.articles.concat(action.payload)
-            //   });
-        case CHAPTER_PAGE:
-            page= gameData.chapterPage;
-            return {
-                ...state,
-                backgroundPic: page.backgroundPic,
-                //...page
-            }
-        case GAME_PAGE:
-            return {
-                ...state,
-                items: action.payload
-            }
-        case RESUME_PAGE:
+export default function MainReducer(state = initialState, action) {
+  switch (action.type) {
+
+    case CHANGE_PAGE:
+      // console.log('change page reducer');//, action.payload);
+
+      if (!action.payload.levelId) {
         return {
-            ...state,
-            isPaused:false,
-            //items: action.payload
+          ...state,
+          page: action.payload.newPage,
+          saveChoise:[...state.saveChoise,{action:CHANGE_PAGE,page: action.payload.newPage}],
+          isPaused:false,
+          //items: action.payload
         }
-        case SCORE_PAGE:
-            return {
-                ...state,
-                items: action.payload
-            }
+      }
 
+      let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId);
+      return {
+        ...state,
+        page: action.payload.newPage,
+        currentLevel: thisLevel,
+        backgroundPic: thisLevel.levelPic,
+        currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
+        saveChoise: [...state.saveChoise,{ action:CHANGE_PAGE, page: action.payload.newPage, levelId:action.payload.levelId}],
+      }
 
+    case CHANGE_STAGE:
+      //  console.log('change stage reducer');
 
-        case CHANGE_PAGE:
-            console.log('change page reducer',action.payload);
-            
-            if(!action.payload.levelId){
-                return {
-                    ...state,
-                    page: action.payload.newPage,
-                    //items: action.payload
-                }
-            }
-            let thisLevel = gameData.levels.levels.find(level => level.levelId === action.payload.levelId);
-            return {
-                ...state,
-                page: action.payload.newPage,
-                currentLevel: thisLevel,
-                backgroundPic: thisLevel.levelPic,
-                currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
-            }
+      let stageId = action.payload.stageId;
+      if (!stageId) {
+        stageId = state.currentStage.stageId + 1;
+      }
 
-        case CHANGE_STAGE:
-            console.log('change page reducer');
-            let stageId = action.payload.stageId;
-            if(!stageId){
-                stageId = state.currentState.currentStage.stageId + 1;
-            }
+      let score = state.score;
+      if (action.payload.score) {
+        score += action.payload.score;
+      }
 
-            let score = state.score;
-            if(action.payload.score){
-                score += action.payload.score;
-            }
-            
-            let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
-            return {
-                ...state,
-                currentStage,
-                score
-            }
-            
-        case PAUSE_GAME:
-            console.log('change page reducer');
-            return {
-                ...state,
-                isPaused:true,
-                //items: action.payload
-            }
+      let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
+      if (!currentStage) {
+        return {
+          ...state,
+          page: 'chapter-page', // or end stage score page
+          saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stage:'cannot find stage. maybe end of stage'}],
+        }
+      }
 
+      return {
+        ...state,
+        currentStage,
+        score,
+        saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stageId:stageId}],
+      }
 
-        default:
-            return state;
-    }
+    case PAUSE_GAME:
+      console.log('pause game reducer');
+      return {
+        ...state,
+        isPaused: true,
+        //items: action.payload
+      }
+
+    case RESUME_PAGE:
+      console.log('resume game reducer');
+      return {
+        ...state,
+        isPaused: false,
+        //items: action.payload
+      }
+
+    default:
+      return state;
+  }
 }

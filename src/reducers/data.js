@@ -1,29 +1,29 @@
 
 let startPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
-    options:[
-        {id:"start-new-btn", title:"شروع", color:"start-new-btn", page:"chapter-page"},
+    options: [
+        { id: "start-new-btn", title: "شروع", color: "start-new-btn", page: "chapter-page" },
         // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
-        {id:"credits-btn", title:"منابع",color:"credits-btn", page:"credits-page"},
-        {id:"about-btn", title:"درباره",color:"about-btn", page:"about-page"},
+        { id: "credits-btn", title: "منابع", color: "credits-btn", page: "credits-page" },
+        { id: "about-btn", title: "درباره", color: "about-btn", page: "about-page" },
     ]
 }
 let chapterPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 let aboutPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 let creditsPage = {
-    backgroundPic: "levels/s1-1.jpg",
+    backgroundPic: "/img/levels/s1-1.jpg",
 }
 
 let levels = [
     {
         levelId: 1,
         levelName: "برادر بزرگتر من",
-        levelPic: "levels/l1-1.jpg",
+        levelPic: "/img/levels/l1-1.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [
             {
@@ -331,7 +331,7 @@ let levels = [
     {
         levelId: 2,
         levelName: "دوست ابدی من",
-        levelPic: "levels/l2-1.jpg",
+        levelPic: "/img/levels/l2-1.jpg",
         backgroundMusic: "bensound-anewbeginning-2.mp3",
         stages: [
             {
@@ -758,7 +758,7 @@ let levels = [
     {
         levelId: 3,
         levelName: "حقایق اوتیسم",
-        levelPic: "levels/l3-1.jpg",
+        levelPic: "/img/levels/l3-1.jpg",
         backgroundMusic: "bensound-creativeminds-3.mp3",
         stages: [
             {
@@ -1065,7 +1065,7 @@ let levels = [
     {
         levelId: 4,
         levelName: "نگرانی مادر",
-        levelPic: "levels/l4-1.jpg",
+        levelPic: "/img/levels/l4-1.jpg",
         backgroundMusic: "bensound-pianomoment-4.mp3",
         stages: [
             {
@@ -1409,14 +1409,14 @@ let levels = [
                             title: "ممکنه بزرگ بشه درمان بشه؟",
                             color: "",
                             score: 10,
-                            nextDialogId:23
+                            nextDialogId: 23
                         },
                         {
                             optionId: 2,
                             title: " همه قراره اذیتش کنن",
                             color: "",
                             score: 0,
-                            nextDialogId:24
+                            nextDialogId: 24
                         },
                     ]
                 }
@@ -1428,7 +1428,7 @@ let levels = [
                     person: "مادر",
                     personPic: "",
                     dialog: "چیزی به اسم درمان معنی نداره و سبک زندگیتون فقز عوض میشه ولی شاید بتونه تو اجتماع باشه یا حتی تو یه کاری نابغه باشه",
-                    nextDialogId:25
+                    nextDialogId: 25
                 }
             },
             {
@@ -1438,7 +1438,7 @@ let levels = [
                     person: "مادر",
                     personPic: "",
                     dialog: "باید ادمایی که دوستش دارن کنارش باشن و با صبر و حوصله باهاش رفتار کنین .اما می تونه اروم اروم تو خیلی کارا مستقل بشه",
-                    nextDialogId:25
+                    nextDialogId: 25
                 }
             },
             {
