@@ -20,15 +20,10 @@ class App extends Component {
   }
 
   pageTag = () => {
-<<<<<<< HEAD
-    console.log('main state',this.state,'store state',this.props.state)
-    //switch (this.state.page) {
-    switch (this.props.state.page) {
-=======
+    //console.log('main state',this.state,'store state',this.props.state)
+    //switch (this.props.state.page) {
 
-    switch (this.props.page) {
->>>>>>> ec9644ac4021ec9b2db2d6473e047bc50e587bb1
-
+    switch (this.state.page) {
       case "start-page":
         return <StartPage />;
 
