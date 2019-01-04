@@ -23,7 +23,7 @@ class App extends Component {
     //console.log('main state',this.state,'store state',this.props.state)
     //switch (this.props.state.page) {
 
-    switch (this.state.page) {
+    switch (this.props.page) {
       case "start-page":
         return <StartPage />;
 
