@@ -2,7 +2,6 @@
 
 - [x] find name
 
-
 ## levels
 
 - [ ] Speech
@@ -21,8 +20,8 @@
 - [x] add new font
 - [x] add music
 - [ ] menu
-    - [ ] button
-    - [ ] modal
+  - [ ] button
+  - [ ] modal
 - [x] start page
 - [ ] score page
 - [ ] about page
@@ -39,6 +38,8 @@
 
 - [ ] make credit page
 - [ ] make about page
+- [ ] intro & outro for every stage
+- [ ] loading icon untill all image load
 - [ ] add graphic effect in lifecycle hook
   - [ ] mount and unmount effect
   - [ ] update effect
