@@ -21,8 +21,8 @@
 - [x] add new font
 - [x] add music
 - [ ] menu
-    - [ ] button
-    - [ ] modal
+  - [ ] button
+  - [ ] modal
 - [x] start page
 - [ ] score page
 - [ ] about page
@@ -47,13 +47,12 @@
 - [x] show pause if isPause is true
 - [x] make [`github page`](https://github.com/gitname/react-gh-pages)
   - [x] install `npm install gh-pages --save-dev`
+
 -[x] add redux
   - [x] install redux `npm install --save react-redux`
 
 * `npm start` for run in local
 * `npm run deploy` for deploy directly to github
-
-
 
 ### lifecycle
 
