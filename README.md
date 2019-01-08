@@ -48,8 +48,9 @@
 - [x] show pause if isPause is true
 - [x] make [`github page`](https://github.com/gitname/react-gh-pages)
   - [x] install `npm install gh-pages --save-dev`
-
--[x] add redux
+- [x] install [`type.js`](https://github.com/mattboldt/typed.js/)
+  - [x] install `npm install typed.js --save`
+- [x] add redux
   - [x] install redux `npm install --save react-redux`
 
 * `npm start` for run in local
