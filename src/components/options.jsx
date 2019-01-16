@@ -9,7 +9,7 @@ class Options extends Component {
     render() {
         return (
             <div>
-                <div className={"description-wrapper dialog " + (this.props.dialogType || '')} >
+                <div className={"description-wrapper dialog " + (this.props.dialogType || '')} style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + '/img/dialog/'+(this.props.dialogType || 'left')+'.png)'}}>
                     {this.props.desc}</div>
                 <div className="btn-wrapper">
                     {this.props.options.map(op =>
