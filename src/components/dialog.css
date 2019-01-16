@@ -1,5 +1,5 @@
 .dialog {
-	background-image: url('/img/dialog/left.png') !important;
+	background-image: url('/ot/img/dialog/left.png') !important;
 	/* padding: 1% 12% 18% 13%; */
 	padding: 1em 3em 5em 3em !important;
 	background-size: cover !important;
@@ -15,20 +15,20 @@
 }
 
 .dialog.right {
-	background-image: url('/img/dialog/right.png') !important;
+	background-image: url('/ot/img/dialog/right.png') !important;
 }
 
 .dialog.up {
-	background-image: url('/img/dialog/up.png') !important;
+	background-image: url('/ot/img/dialog/up.png') !important;
 	padding: 4em 3em 1em 3em !important;
 }
 
 .dialog.up-right {
-	background-image: url('/img/dialog/up-right.png') !important;
+	background-image: url('/ot/img/dialog/up-right.png') !important;
 	padding: 4em 3em 1em 3em !important;
 }
 
 .dialog.center {
-	background-image: url('/img/dialog/center.png') !important;
+	background-image: url('/ot/img/dialog/center.png') !important;
 	padding: 2em 3em 2em 3em !important;
 }

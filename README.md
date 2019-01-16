@@ -1,5 +1,7 @@
 # OT
 
+[play game](https://magic-light-team.github.io/ot/)
+
 - [x] find name
 
 ## levels
@@ -9,7 +11,6 @@
 - [ ] Home
 - [ ] School
 - [ ] Park
-
 
 ## Todo
 
