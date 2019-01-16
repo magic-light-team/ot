@@ -16,7 +16,7 @@ class GamePage extends Component {
     render() {
         return (
             <div id="game"
-                onClick={(this.props.stageType && !this.props.isPaused) ? null : () => this.props.changeStage(this.props.extDialogId)}
+                onClick={(this.props.stageType && !this.props.isPaused) ? null : () => this.props.changeStage(this.props.nextDialogId)}
                 style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
                 <ScoreBoard />
                 {this.props.stageType === 0 ?

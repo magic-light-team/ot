@@ -65,6 +65,7 @@ export default function MainReducer(state = initialState, action) {
 
       let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
       if (!currentStage) {
+        console.log('can not find');
         return {
           ...state,
           page: 'chapter-page', // or end stage score page
