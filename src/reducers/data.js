@@ -376,6 +376,7 @@ let levels = [{
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "center",
                     dialog: "خوب از خودتون برامون بگید"
                 }
             },
@@ -385,6 +386,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "ما دوقولوییم"
                 }
             },
@@ -403,6 +405,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "این برادر منه"
                 }
             },
@@ -430,6 +433,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "ما همدیگه رو کمک می کنیم"
                 }
             },
@@ -439,6 +443,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "من اگه بزرگ بشم و خونه بگیرم برادرمم با خودم میبرم"
                 }
             },
@@ -472,8 +477,9 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "می خوای تو یه خونه با هم زندگی کنیم",
-                    nextDialogId: 12
+                    nextDialogId: 21
                 }
             },
             {
@@ -492,6 +498,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "نمی خوای تو یه خونه با هم زندگی کنیم",
                     nextDialogId: 22
                 }
@@ -512,6 +519,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "اون همیشه پشتم رو داره تحت هر شرایطی که باشه. به همین خاطر دوستش دارم"
                 }
             },
@@ -530,6 +538,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "آره هستیم. همیشه با همیم"
                 }
             },
@@ -539,6 +548,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "من دلم می خواد همیشه برم ژاپن"
                 }
             },
@@ -557,6 +567,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "همینجوری ژاپن رو خیلی دوست دارم"
                 }
             },
@@ -600,6 +611,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "هر جا که بگی میام",
                     nextDialogId: 42
                 }
@@ -620,6 +632,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "هیچ وقت نمی تونیم بریم",
                     nextDialogId: 42
                 }
@@ -648,6 +661,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "از خاطرات قدیمتون برایم بگید.",
                 }
             },
@@ -657,6 +671,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "یادمه روز اولی که براش خمیر بازی گرفتیم از خوشحالی فقط جیغ میزد. صبر نمی کرد که میز رو آماده کنم",
                 }
             },
@@ -666,6 +681,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "پشت هم خمیر ها رو چنگ میزد و می کوبیدشون رو میز.",
                 }
             },
@@ -752,6 +768,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
                     nextDialogId: 54
                 }
@@ -762,6 +779,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
                     nextDialogId: 54
                 }
@@ -772,6 +790,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "یادمه یه روز رفتیم آتیش بازی ببینیم",
                 }
             },
@@ -781,6 +800,7 @@ let levels = [{
                 dialogSection: {
                     person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "من آتیش بازی دوست دارم خیلی قشنگن",
                 }
             },

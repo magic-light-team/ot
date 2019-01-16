@@ -27,3 +27,8 @@
 	background-image: url('/img/dialog/up-right.png') !important;
 	padding: 4em 3em 1em 3em !important;
 }
+
+.dialog.center {
+	background-image: url('/img/dialog/center.png') !important;
+	padding: 2em 3em 2em 3em !important;
+}
