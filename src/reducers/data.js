@@ -1,32 +1,46 @@
-
 let startPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
-    options: [
-        { id: "start-new-btn", title: "شروع", color: "start-new-btn", page: "chapter-page" },
+    options: [{
+            id: "start-new-btn",
+            title: "شروع",
+            color: "start-new-btn",
+            page: "chapter-page"
+        },
         // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
-        { id: "credits-btn", title: "منابع", color: "credits-btn", page: "credits-page" },
-        { id: "about-btn", title: "درباره", color: "about-btn", page: "about-page" },
+        {
+            id: "credits-btn",
+            title: "منابع",
+            color: "credits-btn",
+            page: "credits-page"
+        },
+        {
+            id: "about-btn",
+            title: "درباره",
+            color: "about-btn",
+            page: "about-page"
+        },
     ]
 }
+
 let chapterPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
+
 let aboutPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
+
 let creditsPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
 
-let levels = [
-    {
+let levels = [{
         levelId: 1,
         levelName: "برادر بزرگتر من",
         levelPic: "/img/levels/l1-1.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
-        stages: [
-            {
+        stages: [{
                 stageId: 1,
                 //stageType: 0,
                 stageType: 0,
@@ -44,8 +58,7 @@ let levels = [
                     header: "",
                     desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه واقعا سخت نیست",
                             color: "",
@@ -73,6 +86,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "... و میخندم. "
                 }
             },
@@ -82,6 +96,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "و میخندم. اره متفاوته به عنوان برادر بزرگ ترم نمی تونه پشتم رو داشته باشه و یا در مورد سلیقم تو انتخاب نامزدم گیر بده. نمی تونه موقعی که دارن منو تو کوچه کمک میزنن عین یه قهرمان بیاد و برادر کوچیکترش رو نجات بده."
                 }
             },
@@ -92,8 +107,7 @@ let levels = [
                     header: "",
                     desc: "واقعیتش رو بخواین",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "دوست داشتم اینجوری باشه",
                             color: "",
@@ -114,6 +128,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
                 }
 
@@ -125,8 +140,7 @@ let levels = [
                     desc: "بعضی وقت ها",
                     header: "",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "وسط راهرو با دستاش بهم تیر میزنه",
                             color: "",
@@ -153,6 +167,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "و کارهای عجیب دیگه ای هم می کنه."
                 }
 
@@ -163,6 +178,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "می دونه چه کار کنه که بهش توجه کنم و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                 }
 
@@ -174,8 +190,7 @@ let levels = [
                     desc: "ولی من",
                     header: "",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "با تمام وجود از برادرم محافظت می کنم",
                             color: "",
@@ -201,7 +216,8 @@ let levels = [
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
-                    personPic: "",// pic with brother
+                    personPic: "", // pic with brother
+                    dialogType: "right",
                     dialog: "ولی در اخر روز اون برادر منه"
                 }
 
@@ -213,8 +229,7 @@ let levels = [
                     header: "",
                     desc: "سینا دوست داری بریم...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "خونه بازی کنیم",
                             color: "",
@@ -247,6 +262,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد..."
                 }
             },
@@ -256,6 +272,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "... چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
                 }
             },
@@ -266,8 +283,7 @@ let levels = [
                     desc: "و اون موقع",
                     header: "",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "داد زدم و گفتم اون بهتر میشه",
                             color: "",
@@ -294,16 +310,18 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره..."
                 }
             },
-            
+
             {
                 stageId: 17,
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "... میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
                 }
             },
@@ -314,8 +332,7 @@ let levels = [
                     desc: "این باعث میشه من ...",
                     header: "",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "هم خوشحال بشم و آدم بهتری باشم",
                             color: "",
@@ -342,19 +359,18 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "منونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوری. بینظیره!!!"
                 }
             },
         ]
-    }, // end section
-
+    }, // end section my big brother
     {
         levelId: 2,
         levelName: "دوست ابدی من",
         levelPic: "/img/levels/l2-1.jpg",
         backgroundMusic: "bensound-anewbeginning-2.mp3",
-        stages: [
-            {
+        stages: [{
                 stageId: 1,
                 stageType: 0,
                 dialogSection: {
@@ -432,9 +448,8 @@ let levels = [
                 optionSection: {
                     header: "",
                     desc: "میای؟",
-                    background: "",//"برادر اول"
-                    options: [
-                        {
+                    background: "", //"برادر اول"
+                    options: [{
                             optionId: 1,
                             title: "آره چرا که نه",
                             color: "",
@@ -552,8 +567,7 @@ let levels = [
                     header: "",
                     desc: "میدونی دیگه کجا باید بریم؟",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "کجا",
                             color: "",
@@ -662,8 +676,7 @@ let levels = [
                     header: "",
                     desc: "من اون موقع",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "منم با کف صابون حباب درست کردم و حسابی همه جا رو بهم ریختیم",
                             color: "",
@@ -716,8 +729,7 @@ let levels = [
                     header: "",
                     desc: "بعدش",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "من با دستام هر چی رو میز بود رو جمع کردم ",
                             color: "",
@@ -773,15 +785,13 @@ let levels = [
                 }
             },
         ]
-    }, // end section
-
+    }, // end section my forever friend
     {
         levelId: 3,
         levelName: "حقایق اوتیسم",
         levelPic: "/img/levels/l3-1.jpg",
         backgroundMusic: "bensound-creativeminds-3.mp3",
-        stages: [
-            {
+        stages: [{
                 stageId: 1,
                 stageType: 0,
                 dialogSection: {
@@ -808,8 +818,7 @@ let levels = [
                     header: "",
                     desc: "چون اوتیسم...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "به یک طیف از اختلالاته",
                             color: "",
@@ -872,8 +881,7 @@ let levels = [
                     header: "",
                     desc: "میشه گفت امروزه در حد ...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "یک در 88 کودک",
                             color: "",
@@ -956,8 +964,7 @@ let levels = [
                     header: "",
                     desc: "نسبت بین دختر ها به پسر ها  ...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "یک به یک",
                             color: "",
@@ -1030,8 +1037,7 @@ let levels = [
                     header: "",
                     desc: "حدود ...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "یک ژن",
                             color: "",
@@ -1098,15 +1104,13 @@ let levels = [
                 }
             },
         ]
-    }, // end section
-
+    }, // end section otism fact
     {
         levelId: 4,
         levelName: "نگرانی مادر",
         levelPic: "/img/levels/l4-1.jpg",
         backgroundMusic: "bensound-pianomoment-4.mp3",
-        stages: [
-            {
+        stages: [{
                 stageId: 1,
                 stageType: 0,
                 dialogSection: {
@@ -1134,8 +1138,7 @@ let levels = [
                     dialogType: "up-right",
                     desc: "؟به خاطر واکسنی که تو بچگی بهش زدیمه",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1177,8 +1180,7 @@ let levels = [
                     header: "",
                     desc: "سن باباش زیاده شندیم تو این موضوع تاثیر داره",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1210,8 +1212,7 @@ let levels = [
                     header: "",
                     desc: "موقع بارداری به خاطر بیماریم دارو مصرف میکردم",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1243,8 +1244,7 @@ let levels = [
                     header: "",
                     desc: "ویتامین و فولیک اسید مصرف میکردم",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1276,8 +1276,7 @@ let levels = [
                     header: "",
                     desc: "چون صرع داشتم ، والپروات مصرف میکنم",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1309,8 +1308,7 @@ let levels = [
                     header: "",
                     desc: "من خیلی نگرانم ...",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "ممکنه خواهر کوچیکترش هم اینطور بشه",
                             color: "",
@@ -1358,8 +1356,7 @@ let levels = [
                     header: "",
                     desc: "یعنی ممکنه به خاطر جهش ژنتیکی اتفاق افتاده باشه",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1401,8 +1398,7 @@ let levels = [
                     header: "",
                     desc: "خواهرش رو کی بیارم برای معاینه",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "هجده ماهگی",
                             color: "",
@@ -1456,8 +1452,7 @@ let levels = [
                     header: "",
                     desc: "احساس می کنم زندگیم تموم شده.چکار می تونم بکنم؟",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "ممکنه بزرگ بشه درمان بشه؟",
                             color: "",
@@ -1513,8 +1508,7 @@ let levels = [
                     header: "",
                     desc: "گفتار درمانی و کار در مانی باعث بهبود توانایی هاش میشه",
                     background: "",
-                    options: [
-                        {
+                    options: [{
                             optionId: 1,
                             title: "نه فکر نکنم",
                             color: "",
@@ -1550,9 +1544,8 @@ let levels = [
                 }
             },
         ]
-    }, // end section
-
-]
+    }, // end section sad mother
+];
 
 const gameData = {
     startPage,
