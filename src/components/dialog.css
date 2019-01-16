@@ -1,9 +1,9 @@
-.dialog{
-    /* background-image: url('/img/dialouge.png') !important; */
-    /* padding: 1% 12% 18% 13%; */
-    padding: 1em 3em 5em 3em !important;
-    background-size: cover!important;
-	background-repeat: round!important;
+.dialog {
+	background-image: url('/img/dialog-left.png') !important;
+	/* padding: 1% 12% 18% 13%; */
+	padding: 1em 3em 5em 3em !important;
+	background-size: cover !important;
+	background-repeat: round !important;
 	font-size: 26px;
 	line-height: normal;
 }
@@ -12,4 +12,18 @@
 	display: flex;
 	justify-content: center;
 	justify-items: center;
+}
+
+.dialog.right {
+	background-image: url('/img/dialog-right.png') !important;
+}
+
+.dialog.up {
+	background-image: url('/img/dialog-up.png') !important;
+	padding: 4em 3em 1em 3em !important;
+}
+
+.dialog.up-right {
+	background-image: url('/img/dialog-up-right.png') !important;
+	padding: 4em 3em 1em 3em !important;
 }

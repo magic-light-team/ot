@@ -9,7 +9,7 @@ class Options extends Component {
     render() {
         return (
             <div>
-                <div className="description-wrapper dialog" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + '/img/dialouge.png)' }}>
+                <div className={"description-wrapper dialog " + (this.props.dialogType || '')} >
                     {this.props.desc}</div>
                 <div className="btn-wrapper">
                     {this.props.options.map(op =>
@@ -31,6 +31,7 @@ Options.propTypes = {
 const mapStateToProps = state => ({
     options: state.state.currentStage.optionSection.options,
     desc: state.state.currentStage.optionSection.desc,
+    dialogType: state.state.currentStage.optionSection.dialogType,
 });
 
 export default connect(mapStateToProps, { changeStage })(Options);

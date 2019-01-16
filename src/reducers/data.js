@@ -33,6 +33,7 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
                 }
             },
@@ -246,11 +247,20 @@ let levels = [
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialog: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد. چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
+                    dialog: "سینا خیلی آدم خاصیه. نه بخاطر این که اوتیسم داره. چون واقعا خارق العادس. مامانم وقتی سینا نه سالش بود بهش گفتن  که دیگه به جلسات درمانی نیاد..."
                 }
             },
             {
                 stageId: 14,
+                stageType: 0,
+                dialogSection: {
+                    person: "سپهر",
+                    personPic: "",
+                    dialog: "... چون هیچ وقت نمی تونه تو صحبت کردن بهتر بشه یا با آدم ها بتونه ارتباط برقرار کنه. دیگه اخرین حد ظرفیتش همینه."
+                }
+            },
+            {
+                stageId: 15,
                 stageType: 1,
                 optionSection: {
                     desc: "و اون موقع",
@@ -279,16 +289,26 @@ let levels = [
                 }
             },
             {
-                stageId: 15,
+                stageId: 16,
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialog: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
+                    dialog: "ولی وقتی که بزرگ تر شد تونست یه اسکیت برای خودش بخره. با دوستاش آواز بخونه و حتی تو مسابقات کشوری مقام بیاره..."
+                }
+            },
+            
+            {
+                stageId: 17,
+                stageType: 0,
+                dialogSection: {
+                    person: "سپهر",
+                    personPic: "",
+                    dialog: "... میتونه نقاشی کنه، آهنگ بخونه، اسکیت سوار شه و حتی شنا کنه. تمام کار های که من می کنم. ولی به خاطر این خاص نیست اون می تونه هر کسی که اطرافشه رو خوشحال کنه. خانوادش ، جمع دوستامون و حتی همکاراش!"
                 }
             },
             {
-                stageId: 16,
+                stageId: 18,
                 stageType: 1,
                 optionSection: {
                     desc: "این باعث میشه من ...",
@@ -317,7 +337,7 @@ let levels = [
                 }
             },
             {
-                stageId: 17,
+                stageId: 19,
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
@@ -767,6 +787,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "همیشه پدر مادرا از من میپرسن: چرا؟چرا بچه من اوتیسم داره؟"
                 }
             },
@@ -776,6 +797,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "واقعیتش یک جواب ساده نداره به نظر شما چرا؟"
                 }
             },
@@ -817,6 +839,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "درسته ",
                     nextDialogId: 6
                 }
@@ -827,6 +850,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "البته که نه ",
                     nextDialogId: 6
                 }
@@ -837,6 +861,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "به نظرتون اوتیسم تا چه حد شایعه ",
                 }
             },
@@ -878,6 +903,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "دقیقا ",
                     nextDialogId: 10
                 }
@@ -888,6 +914,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "متاسفانه اشتباه فکر می کنید ",
                     nextDialogId: 10
                 }
@@ -898,6 +925,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "به خاطر آگاهی که در سال های اخیر پیدا کردیم اوتیسم رو در افراد بیشتری تونستیم تشخیص بدیم ",
                 }
             },
@@ -907,6 +935,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "البته در طول زمان تعریف اوتیسم تفییر پیدا کرد و گستره بیشتری از افراد رو در بر میگیره ",
                 }
             },
@@ -916,6 +945,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "به نظر شما نسبت ببین پسر ها با دختر ها یی که اوتیسم دارن چقدره ",
                 }
             },
@@ -957,6 +987,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "درست حدس زده اید",
                     nextDialogId: 16
                 }
@@ -967,6 +998,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "نه، نسبت درست یک در چهار هست",
                     nextDialogId: 16
                 }
@@ -977,6 +1009,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "ممکنه خیلی علامت های متفاوتی بین دختر ها و پسر ها ببینیم.",
                 }
             },
@@ -986,6 +1019,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "به نظرتون چندین ژن دخیل با اوتیسم شناسایی شدن؟",
                 }
             },
@@ -1027,6 +1061,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "درست حدس زده اید",
                     nextDialogId: 21
                 }
@@ -1037,6 +1072,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "نه، دویست تا چهارصد ژن شناسایی شده اند",
                     nextDialogId: 21
                 }
@@ -1047,6 +1083,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "چیز جالب تر این که این ها تو مکانیزم های مرتبط به هم عمل می کنن.",
                 }
             },
@@ -1056,6 +1093,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "مثل یه الگوریتم محاسباتی که چندین فرمول داره و با تغییر یکی از فرمول ها نتیجه های الگوریتم عوض میشن.",
                 }
             },
@@ -1074,6 +1112,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "مادری با اضطراب در مطب دکتر نشسته  و کودکش  تشخیص داده شده که اوتیسم داره",
                 }
             },
@@ -1083,6 +1122,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "اخه چرا ؟ نکنه به خاطر...",
                 }
             },
@@ -1091,6 +1131,7 @@ let levels = [
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "؟به خاطر واکسنی که تو بچگی بهش زدیمه",
                     background: "",
                     options: [
@@ -1115,6 +1156,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "نه به هیچ وجه. تحقیقی که در اون احتمال تاثیر واکسن در اوتیسم داده شد به خاطر غیر علمی بودن از ژورنال حذف شد و نویسندش مدرک طبابت باطل شد.",
                 }
             },
@@ -1124,6 +1166,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "بعد اون تحقیق های زیادی راجع به این موضوع انجام شد و هیچ کدوم ارتباطی بین اوتیسم و واکسن پیدا نکردن.",
                 }
             },
@@ -1156,6 +1199,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "آره ممکنه ",
                 }
             },
@@ -1188,6 +1232,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "نمیشه همینجوری نظر داد بستگی به بیماریت و داروی مصرفی داره که بتونیم بگیم اثر داشته یا نه. ",
                 }
             },
@@ -1220,6 +1265,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "نه اینا برای دوران بارداریت نیازن",
                 }
             },
@@ -1252,6 +1298,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "موقع بارداری وقتی مغز جنین داره شکل میگیره یک سری عوامل شیمیایی و بعضی از بیماری ها می تونن باعث بالا رفتن ریسک اوتیسم بشن",
                 }
             },
@@ -1290,6 +1337,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "دوقولو هم سال احتمال داره 77 درصد ، غیر همسان 31 درصد و برادر خواهر حدود بیست درصد ممکنه که دومی هم اوتیسم داشته باشه.",
                 }
             },
@@ -1299,6 +1347,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "اما حتی برای دقلو های همسان که تمام اطلاعات ژنتیکیشون برابره هم این احتمال صد در صد نیست",
                 }
             },
@@ -1331,6 +1380,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "در خیلی از مواد هیچ فردی در خانواده سابقه ژنتیکی نداره و یک بچه به خاطر جهش ژنتیکی اولین نفره که اوتیسم داره",
                 }
             },
@@ -1340,6 +1390,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "واقعیتش رو بخوای به بعضی از افراد میتونم با اطمینان بگم به خاطر ژنتیکه اما به بقیه با شک و تردید.",
                 }
             },
@@ -1384,6 +1435,7 @@ let levels = [
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "up",
                     dialog: "ممکنه علایم رو تا چهار سالگی تشخیص ندیم.",
                 }
             },
@@ -1393,6 +1445,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "احساس می کنم زندگیم تموم شده.چکار می تونم بکنم.",
                 }
             },
@@ -1427,6 +1480,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "چیزی به اسم درمان معنی نداره و سبک زندگیتون فقز عوض میشه ولی شاید بتونه تو اجتماع باشه یا حتی تو یه کاری نابغه باشه",
                     nextDialogId: 25
                 }
@@ -1437,6 +1491,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "باید ادمایی که دوستش دارن کنارش باشن و با صبر و حوصله باهاش رفتار کنین .اما می تونه اروم اروم تو خیلی کارا مستقل بشه",
                     nextDialogId: 25
                 }
@@ -1447,6 +1502,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "چکار می تونم بکنم که بهتر بشه",
                 }
             },
@@ -1479,6 +1535,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "می تونین حتی سراغ جلسات تحلیل رفتار کاربردی (ABA) و یا کلاس های مهارت های اجتماعی برید",
                 }
             },
@@ -1488,6 +1545,7 @@ let levels = [
                 dialogSection: {
                     person: "مادر",
                     personPic: "",
+                    dialogType: "up-right",
                     dialog: "خیلی کارا میشه کرد دنیا تموم نشده هنوز امید به اینده هست",
                 }
             },

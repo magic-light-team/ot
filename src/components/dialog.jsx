@@ -8,15 +8,17 @@ class Dialog extends Component {
     render() {
         return (
             <div>
-                <div className="dialog-box dialog" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + '/img/dialouge.png)' }}>
+                <div className={"dialog-box dialog "+ (this.props.dialogType || '') }>
                     {this.props.stageDialog}</div>
             </div>
         );
     }
+
 }
 
 const mapStateToProps = state => ({
     stageDialog: state.state.currentStage.dialogSection.dialog,
+    dialogType: state.state.currentStage.dialogSection.dialogType
 });
 
 export default connect(mapStateToProps)(Dialog);

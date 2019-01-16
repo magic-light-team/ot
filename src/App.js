@@ -22,7 +22,8 @@ class App extends Component {
   pageTag = () => {
     //console.log('main state',this.state,'store state',this.props.state)
     //switch (this.props.state.page) {
-
+    //console.log(this.props.page);
+    
     switch (this.props.page) {
       case "start-page":
         return <StartPage />;

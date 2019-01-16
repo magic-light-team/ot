@@ -6,13 +6,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { changePage } from '../actions/index';
 
-import Transition from 'react-transition-group/Transition';
+//import Transition from 'react-transition-group/Transition';
 
 class StartPage extends Component {
     state = {}
     render() {
         return (
-            <Transition timeout={3000} mountOnEnter>
+            
                 <div id="start-screen" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
                     <div id="inner-screen">
                         <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
@@ -22,7 +22,7 @@ class StartPage extends Component {
                         )}
                     </div>
                 </div>
-            </Transition>
+            
         );
     }
 }
