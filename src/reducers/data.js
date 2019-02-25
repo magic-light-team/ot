@@ -38,7 +38,7 @@ let creditsPage = {
 let levels = [{
         levelId: 1,
         levelName: "برادر بزرگتر من",
-        levelPic: "/img/levels/l1-1.jpg",
+        levelPic: "/img/levels/l1-0.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [{
                 stageId: 1,
@@ -47,7 +47,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
                 }
             },
@@ -56,8 +56,9 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
-                    desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟                            ",
+                    desc: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟ چقدر فرق داره؟",
                     background: "",
+                    dialogType: "center",
                     options: [{
                             optionId: 1,
                             title: "نه واقعا سخت نیست",
@@ -86,7 +87,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: "... و میخندم. "
                 }
             },
@@ -96,8 +97,8 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
-                    dialog: "و میخندم. اره متفاوته به عنوان برادر بزرگ ترم نمی تونه پشتم رو داشته باشه و یا در مورد سلیقم تو انتخاب نامزدم گیر بده. نمی تونه موقعی که دارن منو تو کوچه کمک میزنن عین یه قهرمان بیاد و برادر کوچیکترش رو نجات بده."
+                    dialogType: "left",
+                    dialog: "و میخندم. آره متفاوته به عنوان برادر بزرگ ترم نمی تونه پشتم رو داشته باشه و یا در مورد سلیقم تو انتخاب نامزدم گیر بده. نمی تونه موقعی که دارن منو تو کوچه کمک میزنن عین یه قهرمان بیاد و برادر کوچیکترش رو نجات بده."
                 }
             },
             {
@@ -106,6 +107,7 @@ let levels = [{
                 optionSection: {
                     header: "",
                     desc: "واقعیتش رو بخواین",
+                    dialogType: "left",
                     background: "",
                     options: [{
                             optionId: 1,
@@ -128,7 +130,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: " ولی ما صمیمیت خاص خودمون رو داریم. سینا میفهمه که اون برادر بزرگ تر منه."
                 }
 
@@ -140,6 +142,7 @@ let levels = [{
                     desc: "بعضی وقت ها",
                     header: "",
                     background: "",
+                    dialogType: "left",
                     options: [{
                             optionId: 1,
                             title: "وسط راهرو با دستاش بهم تیر میزنه",
@@ -167,7 +170,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: "و کارهای عجیب دیگه ای هم می کنه."
                 }
 
@@ -178,7 +181,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "",
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: "می دونه چه کار کنه که بهش توجه کنم و بعضی مواقع منو با تمام زورش بقل می کنه. عین خیلی از برادر خواهرا رو مخ هم میریم و باهام کشتی میگیره که حق با کیه."
                 }
 
@@ -190,6 +193,7 @@ let levels = [{
                     desc: "ولی من",
                     header: "",
                     background: "",
+                    dialogType: "left",
                     options: [{
                             optionId: 1,
                             title: "با تمام وجود از برادرم محافظت می کنم",
@@ -217,7 +221,7 @@ let levels = [{
                 dialogSection: {
                     person: "سپهر",
                     personPic: "", // pic with brother
-                    dialogType: "right",
+                    dialogType: "left",
                     dialog: "ولی در اخر روز اون برادر منه"
                 }
 
@@ -228,29 +232,34 @@ let levels = [{
                 optionSection: {
                     header: "",
                     desc: "سینا دوست داری بریم...",
-                    background: "",
+                    background: "/img/levels/l1-1.jpg",
+                    dialogType: "right",
                     options: [{
                             optionId: 1,
                             title: "خونه بازی کنیم",
                             color: "",
+                            backgroundPic:"/img/levels/l1-1.jpg",
                             score: 0
                         },
                         {
                             optionId: 2,
                             title: "پارک قدم بزنیم",
                             color: "",
+                            backgroundPic:"/img/levels/l1-2.jpg",
                             score: 0
                         },
                         {
                             optionId: 3,
                             title: "بریم بیرون غذا بخوریم",
                             color: "",
+                            backgroundPic:"/img/levels/l1-3.jpg",
                             score: 0
                         },
                         {
                             optionId: 4,
                             title: "لب ساحل",
                             color: "",
+                            backgroundPic:"/img/levels/l1-4.jpg",
                             score: 0
                         }
                     ]
@@ -283,6 +292,7 @@ let levels = [{
                     desc: "و اون موقع",
                     header: "",
                     background: "",
+                    dialogType: "right",
                     options: [{
                             optionId: 1,
                             title: "داد زدم و گفتم اون بهتر میشه",
@@ -332,6 +342,7 @@ let levels = [{
                     desc: "این باعث میشه من ...",
                     header: "",
                     background: "",
+                    dialogType: "right",
                     options: [{
                             optionId: 1,
                             title: "هم خوشحال بشم و آدم بهتری باشم",
@@ -652,6 +663,7 @@ let levels = [{
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "از خاطرات قدیمتون برایم بگید.",
                 }
             },
@@ -1136,7 +1148,7 @@ let levels = [{
                 dialogSection: {
                     person: "دکتر",
                     personPic: "",
-                    dialogType: "up",
+                    dialogType: "center",
                     dialog: "مادری با اضطراب در مطب دکتر نشسته  و کودکش  تشخیص داده شده که اوتیسم داره",
                 }
             },
@@ -1177,9 +1189,9 @@ let levels = [{
                 stageId: 4,
                 stageType: 0,
                 dialogSection: {
-                    person: "مادر",
+                    person: "دکتر",
                     personPic: "",
-                    dialogType: "up-right",
+                    dialogType: "up",
                     dialog: "نه به هیچ وجه. تحقیقی که در اون احتمال تاثیر واکسن در اوتیسم داده شد به خاطر غیر علمی بودن از ژورنال حذف شد و نویسندش مدرک طبابت باطل شد.",
                 }
             },
@@ -1187,9 +1199,9 @@ let levels = [{
                 stageId: 5,
                 stageType: 0,
                 dialogSection: {
-                    person: "مادر",
+                    person: "دکتر",
                     personPic: "",
-                    dialogType: "up-right",
+                    dialogType: "up",
                     dialog: "بعد اون تحقیق های زیادی راجع به این موضوع انجام شد و هیچ کدوم ارتباطی بین اوتیسم و واکسن پیدا نکردن.",
                 }
             },
@@ -1219,9 +1231,9 @@ let levels = [{
                 stageId: 7,
                 stageType: 0,
                 dialogSection: {
-                    person: "مادر",
+                    person: "دکتر",
                     personPic: "",
-                    dialogType: "up-right",
+                    dialogType: "up",
                     dialog: "آره ممکنه ",
                 }
             },
@@ -1547,9 +1559,9 @@ let levels = [{
                 stageId: 26,
                 stageType: 0,
                 dialogSection: {
-                    person: "مادر",
+                    person: "دکتر",
                     personPic: "",
-                    dialogType: "up-right",
+                    dialogType: "up",
                     dialog: "می تونین حتی سراغ جلسات تحلیل رفتار کاربردی (ABA) و یا کلاس های مهارت های اجتماعی برید",
                 }
             },
@@ -1557,9 +1569,9 @@ let levels = [{
                 stageId: 27,
                 stageType: 0,
                 dialogSection: {
-                    person: "مادر",
+                    person: "دکتر",
                     personPic: "",
-                    dialogType: "up-right",
+                    dialogType: "up",
                     dialog: "خیلی کارا میشه کرد دنیا تموم نشده هنوز امید به اینده هست",
                 }
             },

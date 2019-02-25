@@ -19,11 +19,11 @@ export const changePage = (event, newPage, levelId) => dispatch => {
     })
 }
 
-export const changeStage = (stageId, score) => dispatch => {
+export const changeStage = (stageId, score, backgroundPic) => dispatch => {
 
     dispatch({
         type: CHANGE_STAGE,
-        payload: { stageId, score }
+        payload: { stageId, score,backgroundPic }
     })
 }
 

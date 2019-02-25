@@ -73,10 +73,21 @@ export default function MainReducer(state = initialState, action) {
         }
       }
 
+      let backgroundPic = state.backgroundPic;
+      if(action.payload.backgroundPic && action.payload.backgroundPic!==''){
+        backgroundPic=action.payload.backgroundPic;
+      }
+
+      if(currentStage.optionSection && currentStage.optionSection.background && currentStage.optionSection.background!==''){
+        console.log("change");
+        backgroundPic=currentStage.optionSection.background;
+      }
+
       return {
         ...state,
         currentStage,
         score,
+        backgroundPic,
         saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stageId:stageId}],
       }
 

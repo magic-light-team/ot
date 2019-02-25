@@ -14,9 +14,10 @@ class Options extends Component {
                 <div className="btn-wrapper">
                     {this.props.options.map(op =>
                         <button
-                            onClick={() => this.props.changeStage(op.nextDialogId, op.score)}
+                            onClick={() => this.props.changeStage(op.nextDialogId, op.score,(op.backgroundPic||'') )}
                             key={op.optionId}
                             data-score={op.score}
+                            //data-backgroundPic={(op.backgroundPic || '')}
                             className="btn red-color">{op.title}</button>)}
                 </div>
             </div>

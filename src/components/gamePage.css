@@ -9,7 +9,14 @@
     
     background-size: cover;
     background-color: aqua;
-    background-repeat: no-repeat;
-    background-repeat: round;/*no-repeat*/
-    background-position: bottom;
+    /*background-repeat: no-repeat;*/
+    background-repeat: round;
+    /*background-position: bottom;*/
+}
+
+@media (min-height:641px) {
+    #game {
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
 }
