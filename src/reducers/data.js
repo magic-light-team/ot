@@ -9,14 +9,14 @@ let startPage = {
         },
         // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
         {
-            id: "credits-btn",
+            id: "source-btn",
             title: "منابع",
-            color: "credits-btn",
-            page: "credits-page"
+            color: "source-btn",
+            page: "source-page"
         },
         {
             id: "about-btn",
-            title: "درباره",
+            title: "درباره ما",
             color: "about-btn",
             page: "about-page"
         },

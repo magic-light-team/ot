@@ -6,6 +6,9 @@ import StartPage from './components/startPage';
 import ChapterPage from './components/chapterPage';
 import GamePage from './components/gamePage';
 
+import AboutPage from './components/aboutPage';
+import SourcePage from './components/sourcePage';
+
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -34,10 +37,10 @@ class App extends Component {
       case "game-page":
         return <GamePage />;
 
-      case "credits-page":
-        return <StartPage />;
+      case "source-page":
+        return <SourcePage />;
       case "about-page":
-        return <StartPage />;
+        return <AboutPage />;
 
       default:
         break;
