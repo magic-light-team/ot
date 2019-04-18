@@ -9,6 +9,7 @@ class SourcePage extends Component {
                 <div class="header-info">
                     <h4> منابع </h4>
                     <p> لیست منابع مورد استفاده در طراحی این بازی </p>
+                    <div style="position: absolute;left: 10px;top: 14px;"><h1>&gt;&gt;</h1><div></div></div>
                 </div>
             </div>
         );

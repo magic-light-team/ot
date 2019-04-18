@@ -34,8 +34,11 @@ export default function MainReducer(state = initialState, action) {
         return {
           ...state,
           page: action.payload.newPage,
-          saveChoise:[...state.saveChoise,{action:CHANGE_PAGE,page: action.payload.newPage}],
-          isPaused:false,
+          saveChoise: [...state.saveChoise, {
+            action: CHANGE_PAGE,
+            page: action.payload.newPage
+          }],
+          isPaused: false,
           //items: action.payload
         }
       }
@@ -47,7 +50,11 @@ export default function MainReducer(state = initialState, action) {
         currentLevel: thisLevel,
         backgroundPic: thisLevel.levelPic,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
-        saveChoise: [...state.saveChoise,{ action:CHANGE_PAGE, page: action.payload.newPage, levelId:action.payload.levelId}],
+        saveChoise: [...state.saveChoise, {
+          action: CHANGE_PAGE,
+          page: action.payload.newPage,
+          levelId: action.payload.levelId
+        }],
       }
 
     case CHANGE_STAGE:
@@ -69,18 +76,21 @@ export default function MainReducer(state = initialState, action) {
         return {
           ...state,
           page: 'chapter-page', // or end stage score page
-          saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stage:'cannot find stage. maybe end of stage'}],
+          saveChoise: [...state.saveChoise, {
+            action: CHANGE_STAGE,
+            stage: 'cannot find stage. maybe end of stage'
+          }],
         }
       }
 
       let backgroundPic = state.backgroundPic;
-      if(action.payload.backgroundPic && action.payload.backgroundPic!==''){
-        backgroundPic=action.payload.backgroundPic;
+      if (action.payload.backgroundPic && action.payload.backgroundPic !== '') {
+        backgroundPic = action.payload.backgroundPic;
       }
 
-      if(currentStage.optionSection && currentStage.optionSection.background && currentStage.optionSection.background!==''){
+      if (currentStage.optionSection && currentStage.optionSection.background && currentStage.optionSection.background !== '') {
         console.log("change");
-        backgroundPic=currentStage.optionSection.background;
+        backgroundPic = currentStage.optionSection.background;
       }
 
       return {
@@ -88,7 +98,10 @@ export default function MainReducer(state = initialState, action) {
         currentStage,
         score,
         backgroundPic,
-        saveChoise:[...state.saveChoise,{action:CHANGE_STAGE,stageId:stageId}],
+        saveChoise: [...state.saveChoise, {
+          action: CHANGE_STAGE,
+          stageId: stageId
+        }],
       }
 
     case PAUSE_GAME:
