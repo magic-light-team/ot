@@ -1,0 +1,26 @@
+#source-page {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    overflow: hidden;
+    border: none;
+    color: #fff !important;
+
+    overflow: scroll;
+}
+
+#source-page .header-info {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    background: rgba(255, 255, 255, 0.75);
+    color: #696969;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 18px;*/
+}
