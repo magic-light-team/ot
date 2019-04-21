@@ -92,5 +92,6 @@
 #about-page-back-btn {
     position: absolute;
     left: 10px;
-    top: 24px;
+    top: 60px;
+    cursor: pointer;
 }
