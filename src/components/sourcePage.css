@@ -24,3 +24,9 @@
     text-align: center;
     /* font-size: 18px;*/
 }
+
+#source-page-back-btn {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}

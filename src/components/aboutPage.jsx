@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './aboutPage.css';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { changePage } from '../actions/index';
+
 class AboutPage extends Component {
     state = {}
     render() {
@@ -11,6 +15,7 @@ class AboutPage extends Component {
                     <h4> تیم توسعه بازی </h4>
                     <p><a href="http://magiclight.ir">سایت استدیو مجیک لایت</a></p>
                     <p> معرفی اعضای تیم مجیک لایت </p>
+                    <div id="about-page-back-btn" onClick="changePage('Start-Page')"><h1>&gt;&gt;</h1><div></div></div>
                 </div>
                 <div className="body">
 
@@ -56,4 +61,8 @@ class AboutPage extends Component {
     }
 }
 
-export default AboutPage;
+AboutPage.propTypes = { changePage: PropTypes.func.isRequired };
+const mapStateToProps = state => ({ pageSetting: state.state.gameData.startPage });
+export default connect(mapStateToProps, { changePage })(AboutPage);
+
+// export default AboutPage;

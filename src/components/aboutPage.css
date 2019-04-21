@@ -83,12 +83,14 @@
     color: inherit;
 }
 
-
-
-
-
 #about-page .card-text:last-child {
     margin-bottom: 0;
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+#about-page-back-btn {
+    position: absolute;
+    left: 10px;
+    top: 24px;
 }
