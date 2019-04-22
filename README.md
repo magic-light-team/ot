@@ -26,10 +26,10 @@
 - [x] start page
 - [x] about page
 - [x] source page
-- [ ] score page
-- [ ] achievment
+- [ ] score page -> https://github.com/MAfzalKhan1997/React_Quiz_app
+- [ ] achievment -> https://github.com/fkhadra/react-toastify
 - [ ] play sound
-- [ ] sorting option answer -> otism fact
+- [ ] sorting option answer -> otism fact -> https://react-dnd.github.io/react-dnd/examples/sortable/simple
 - [ ] true/false question -> otism fact
 
 ## Suggestion
