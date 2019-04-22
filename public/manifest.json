@@ -1,6 +1,9 @@
 {
   "short_name": "پاییز بهاری",
-  "name": "یک بازی در مورد اوتیسم",
+  "name": "پاییز بهاری: یک بازی در مورد اوتیسم",
+  "default_locale": "fa",
+  "description": "یک بازی در مورد بیماری اوتیسم, علایم بیماری, ملاحظات و سایر اطلاعات",
+
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +11,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/img/icons-192.png",
+      "src": "icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/icons-512.png",
+      "src": "icons-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
