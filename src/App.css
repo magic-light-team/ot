@@ -57,7 +57,7 @@ button {
 .App > div {
 	position: absolute;
 	overflow: hidden;
-	height: calc( 100% - 10px );
+	height: calc( 100% - 3px );
 	border-radius: 10px;
 	display: flex;
 	background-size: cover;

@@ -35,14 +35,14 @@ let creditsPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
 
-let levels = [{
+let levels = [
+    {
         levelId: 1,
         levelName: "برادر بزرگتر من",
         levelPic: "/img/levels/l1-0.jpg",
         backgroundMusic: "bensound-memories-1.mp3",
         stages: [{
                 stageId: 1,
-                //stageType: 0,
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
@@ -82,7 +82,6 @@ let levels = [{
             },
             {
                 stageId: 3,
-                //stageType: 0,
                 stageType: 0,
                 dialogSection: {
                     person: "سپهر",
@@ -370,9 +369,20 @@ let levels = [{
                     person: "سپهر",
                     personPic: "",
                     dialogType: "right",
-                    dialog: "ممنونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوریه؟ بینظیره!!!"
+                    dialog: "ممنونم سینا.برای همه چیز. پس می خواین بدونین داشتن یه برادر اوتیسمی چجوریه؟!!!"
                 }
             },
+            {
+                stageId: 20,
+                stageType: 0,
+                dialogSection: {
+                    person: "سپهر",
+                    personPic: "",
+                    dialogType: "right",
+                    dialog: "بینظیره!!!"
+                }
+            },
+            // score page
         ]
     }, // end section my big brother
     {
@@ -394,9 +404,8 @@ let levels = [{
                 stageId: 2,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "ما دوقولوییم"
                 }
             },
@@ -404,8 +413,9 @@ let levels = [{
                 stageId: 3,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "همممم"
                 }
             },
@@ -423,8 +433,9 @@ let levels = [{
                 stageId: 5,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "و.... من باهاش بازی می کنم"
                 }
             },
@@ -432,8 +443,9 @@ let levels = [{
                 stageId: 6,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "کمکش هم می کنم"
                 }
             },
@@ -441,9 +453,8 @@ let levels = [{
                 stageId: 7,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "ما همدیگه رو کمک می کنیم"
                 }
             },
@@ -463,6 +474,7 @@ let levels = [{
                 optionSection: {
                     header: "",
                     desc: "میای؟",
+                    dialogType: "right",
                     background: "", //"برادر اول"
                     options: [{
                             optionId: 1,
@@ -527,9 +539,8 @@ let levels = [{
                 stageId: 30,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "اون همیشه پشتم رو داره تحت هر شرایطی که باشه. به همین خاطر دوستش دارم"
                 }
             },
@@ -537,8 +548,9 @@ let levels = [{
                 stageId: 31,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "ما برادرای خوشحالییم"
                 }
             },
@@ -546,9 +558,8 @@ let levels = [{
                 stageId: 32,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "آره هستیم. همیشه با همیم"
                 }
             },
@@ -556,9 +567,8 @@ let levels = [{
                 stageId: 33,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "من دلم می خواد همیشه برم ژاپن"
                 }
             },
@@ -566,8 +576,9 @@ let levels = [{
                 stageId: 34,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "چرا؟"
                 }
             },
@@ -575,9 +586,8 @@ let levels = [{
                 stageId: 35,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "همینجوری ژاپن رو خیلی دوست دارم"
                 }
             },
@@ -588,6 +598,7 @@ let levels = [{
                     header: "",
                     desc: "میدونی دیگه کجا باید بریم؟",
                     background: "",
+                    // dialogType: "right",
                     options: [{
                             optionId: 1,
                             title: "کجا",
@@ -609,8 +620,9 @@ let levels = [{
                 stageId: 37,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "شهر بازی",
                     nextDialogId: 38
                 }
@@ -619,9 +631,8 @@ let levels = [{
                 stageId: 38,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "هر جا که بگی میام",
                     nextDialogId: 42
                 }
@@ -630,8 +641,9 @@ let levels = [{
                 stageId: 40,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "نمی خوای بریم شهر بازی",
                     nextDialogId: 41
                 }
@@ -640,9 +652,8 @@ let levels = [{
                 stageId: 41,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
                     dialog: "هیچ وقت نمی تونیم بریم",
                     nextDialogId: 42
                 }
@@ -651,8 +662,9 @@ let levels = [{
                 stageId: 42,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "همیشه دوست داشتم با برادرم دور دنیا بگردم تمام کشور ها رو برم.",
                 }
             },
@@ -664,16 +676,7 @@ let levels = [{
                     personPic: "",
                     dialogType: "center",
                     dialog: "از خاطرات قدیمتون برایم بگید.",
-                }
-            },
-            {
-                stageId: 44,
-                stageType: 0,
-                dialogSection: {
-                    person: "برادر اول",
-                    personPic: "",
-                    dialogType: "right",
-                    dialog: "از خاطرات قدیمتون برایم بگید.",
+                    nextDialogId: 45
                 }
             },
             {
@@ -701,7 +704,8 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
-                    desc: "من اون موقع",
+                    desc: "من اون موقع ...",
+                    dialogType: "right",
                     background: "",
                     options: [{
                             optionId: 1,
@@ -734,8 +738,9 @@ let levels = [{
                 stageId: 49,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر دوم",
+                    person: "برادر اول",
                     personPic: "",
+                    dialogType: "right",
                     dialog: "اونم شروع به گریه کرد و من یاد گرفتم باید باهاش مهربون تر باشم",
                     nextDialogId: 50
                 }
@@ -756,6 +761,7 @@ let levels = [{
                     header: "",
                     desc: "بعدش",
                     background: "",
+                    dialogType: "center",
                     options: [{
                             optionId: 1,
                             title: "من با دستام هر چی رو میز بود رو جمع کردم ",
@@ -788,10 +794,9 @@ let levels = [{
                 stageId: 53,
                 stageType: 0,
                 dialogSection: {
-                    person: "برادر اول",
+                    person: "برادر دوم",
                     personPic: "",
-                    dialogType: "right",
-                    dialog: "بعد دیدم داره از من تقلید می کنه و داره کمک می کنه",
+                    dialog: "منم بغلش کردم",
                     nextDialogId: 54
                 }
             },
@@ -815,6 +820,17 @@ let levels = [{
                     dialog: "من آتیش بازی دوست دارم خیلی قشنگن",
                 }
             },
+            {
+                stageId: 54,
+                stageType: 0,
+                dialogSection: {
+                    person: "برادر اول",
+                    personPic: "",
+                    dialogType: "right",
+                    dialog: "پس بیا بریم امشب جشنه و حتما آتیش بازی محشری راه میندازن. مطمئینم خوشت میاد",
+                }
+            },
+            // score page
         ]
     }, // end section my forever friend
     {
@@ -849,9 +865,10 @@ let levels = [{
                     header: "",
                     desc: "چون اوتیسم...",
                     background: "",
+                    dialogType: "up",
                     options: [{
                             optionId: 1,
-                            title: "به یک طیف از اختلالاته",
+                            title: "یک طیف از اختلالاته",
                             color: "",
                             score: 10,
                             nextDialogId: 4
@@ -943,7 +960,7 @@ let levels = [{
                     person: "دکتر",
                     personPic: "",
                     dialogType: "up",
-                    dialog: "دقیقا ",
+                    dialog: "دقیقا! ",
                     nextDialogId: 10
                 }
             },
@@ -985,7 +1002,7 @@ let levels = [{
                     person: "دکتر",
                     personPic: "",
                     dialogType: "up",
-                    dialog: "به نظر شما نسبت ببین پسر ها با دختر ها یی که اوتیسم دارن چقدره ",
+                    dialog: "به نظر شما نسبت ببین پسر ها با دختر هایی که اوتیسم دارن چقدره ",
                 }
             },
             {
@@ -1134,6 +1151,17 @@ let levels = [{
                     dialog: "مثل یه الگوریتم محاسباتی که چندین فرمول داره و با تغییر یکی از فرمول ها نتیجه های الگوریتم عوض میشن.",
                 }
             },
+            {
+                stageId: 22,
+                stageType: 0,
+                dialogSection: {
+                    person: "دکتر",
+                    personPic: "",
+                    dialogType: "up",
+                    dialog: "با تشکر از حضار که در جلسه امروز حظور داشتن. امید وارم که اطلاعاتتون از اوتیسم بیشتر شده باشه.",
+                }
+            },
+            // score page
         ]
     }, // end section otism fact
     {
@@ -1148,7 +1176,7 @@ let levels = [{
                     person: "دکتر",
                     personPic: "",
                     dialogType: "center",
-                    dialog: "مادری با اضطراب در مطب دکتر نشسته  و کودکش  تشخیص داده شده که اوتیسم داره",
+                    dialog: "مادری با اضطراب در مطب دکتر نشسته و کودکش  تشخیص داده شده که اوتیسم داره",
                 }
             },
             {
@@ -1209,6 +1237,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "سن باباش زیاده شندیم تو این موضوع تاثیر داره",
                     background: "",
                     options: [{
@@ -1241,6 +1270,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "موقع بارداری به خاطر بیماریم دارو مصرف میکردم",
                     background: "",
                     options: [{
@@ -1273,6 +1303,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "ویتامین و فولیک اسید مصرف میکردم",
                     background: "",
                     options: [{
@@ -1305,6 +1336,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "چون صرع داشتم ، والپروات مصرف میکنم",
                     background: "",
                     options: [{
@@ -1337,6 +1369,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "من خیلی نگرانم ...",
                     background: "",
                     options: [{
@@ -1385,6 +1418,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "یعنی ممکنه به خاطر جهش ژنتیکی اتفاق افتاده باشه",
                     background: "",
                     options: [{
@@ -1427,6 +1461,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "خواهرش رو کی بیارم برای معاینه",
                     background: "",
                     options: [{
@@ -1537,6 +1572,7 @@ let levels = [{
                 stageType: 1,
                 optionSection: {
                     header: "",
+                    dialogType: "up-right",
                     desc: "گفتار درمانی و کار در مانی باعث بهبود توانایی هاش میشه",
                     background: "",
                     options: [{
@@ -1574,6 +1610,7 @@ let levels = [{
                     dialog: "خیلی کارا میشه کرد دنیا تموم نشده هنوز امید به اینده هست",
                 }
             },
+            // score page
         ]
     }, // end section sad mother
 ];

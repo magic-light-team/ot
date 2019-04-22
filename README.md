@@ -19,13 +19,18 @@
 - [x] score
 - [x] add logo
 - [x] add new font
-- [x] add music
-- [ ] menu
-  - [ ] button
-  - [ ] modal
+- [ ] add music
+- [x] menu
+  - [x] button
+  - [x] modal
 - [x] start page
+- [x] about page
+- [x] source page
 - [ ] score page
-- [ ] about page
+- [ ] achievment
+- [ ] play sound
+- [ ] sorting option answer -> otism fact
+- [ ] true/false question -> otism fact
 
 ## Suggestion
 
@@ -37,8 +42,8 @@
 
 ## React App
 
-- [ ] make credit page
-- [ ] make about page
+- [x] make credit page
+- [x] make about page
 - [ ] intro & outro for every stage
 - [ ] loading icon untill all image load
 - [ ] add graphic effect in lifecycle hook
