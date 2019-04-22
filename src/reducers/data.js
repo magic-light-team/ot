@@ -5,20 +5,20 @@ let startPage = {
             id: "start-new-btn",
             title: "شروع",
             color: "start-new-btn",
-            page: "chapter-page"
+            page: "chapterPage"
         },
         // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
         {
             id: "source-btn",
             title: "منابع",
             color: "source-btn",
-            page: "source-page"
+            page: "sourcePage"
         },
         {
             id: "about-btn",
             title: "درباره ما",
             color: "about-btn",
-            page: "about-page"
+            page: "aboutPage"
         },
     ]
 }

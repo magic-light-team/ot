@@ -9,13 +9,13 @@ class AboutPage extends Component {
     state = {}
     render() {
         return (
-            <div id="about-page" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + "/img/levels/s1-1.jpg" + ')' }}>
+            <div id="aboutPage" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + "/img/levels/s1-1.jpg" + ')' }}>
                 <div className="header-info">
                     <div><img src={process.env.PUBLIC_URL + "/img/about/mglogo.png"} alt="Magic Light logo" /></div>
                     <h4> تیم توسعه بازی </h4>
                     <p><a href="http://magiclight.ir">سایت استدیو مجیک لایت</a></p>
                     <p> معرفی اعضای تیم مجیک لایت </p>
-                    <div id="about-page-back-btn" onClick={event => this.props.changePage(event,"start-page") }><h1>&gt;&gt;</h1></div>
+                    <div id="aboutPage-back-btn" onClick={event => this.props.changePage(event,"startPage") }><h1>&gt;&gt;</h1></div>
                 </div>
                 <div className="body">
 

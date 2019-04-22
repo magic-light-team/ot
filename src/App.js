@@ -18,6 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.pageTag()}
+        <audio src={process.env.PUBLIC_URL+'/audio/'+this.props.music} preload="auto" controls="none" autoPlay></audio>
       </div>
     );
   }
@@ -27,19 +28,30 @@ class App extends Component {
     //switch (this.props.state.page) {
     //console.log(this.props.page);
     
+    
+    // if(this.props.restartMusic){
+    //   //let audioTag = document.getElementsByTagName("audio")[0].play();
+    //   //audioTag.src = process.env.PUBLIC_URL+'/audio/' + this.props.music;
+    //   //audioTag.setAttribute('preload', 'auto');
+    //   //audioTag.setAttribute('controls', 'none');
+    //   //audioTag.setAttribute('loop', 'true');
+    //   audioTag.volume = 0.5;
+    //   audioTag.play()
+    // }
+
     switch (this.props.page) {
-      case "start-page":
+      case "startPage":
         return <StartPage />;
 
-      case "chapter-page":
+      case "chapterPage":
         return <ChapterPage />;
 
-      case "game-page":
+      case "gamePage":
         return <GamePage />;
 
-      case "source-page":
+      case "sourcePage":
         return <SourcePage />;
-      case "about-page":
+      case "aboutPage":
         return <AboutPage />;
 
       default:
@@ -48,6 +60,10 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({ page: state.state.page });
+const mapStateToProps = state => ({ 
+  page: state.state.page,
+  music: state.state.music,
+  restartMusic: state.state.restartMusic,
+ });
 
 export default connect(mapStateToProps)(App);

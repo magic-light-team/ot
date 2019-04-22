@@ -9,11 +9,11 @@ class SourcePage extends Component {
     state = {}
     render() {
         return (
-            <div id="source-page" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + "/img/levels/s1-1.jpg" + ')' }}>
+            <div id="sourcePage" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + "/img/levels/s1-1.jpg" + ')' }}>
                 <div className="header-info">
                     <h4> منابع </h4>
                     <p> لیست منابع مورد استفاده در طراحی این بازی </p>
-                    <div id="source-page-back-btn" onClick={event => this.props.changePage(event, "start-page")}><h1>&gt;&gt;</h1></div>
+                    <div id="sourcePage-back-btn" onClick={event => this.props.changePage(event, "startPage")}><h1>&gt;&gt;</h1></div>
                 </div>
                 <div className="body">
 

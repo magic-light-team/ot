@@ -1,4 +1,4 @@
-#source-page {
+#sourcePage {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -16,7 +16,7 @@
     overflow: scroll;
 }
 
-#source-page .header-info {
+#sourcePage .header-info {
     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
     background: rgba(255, 255, 255, 0.75);
     color: #696969;
@@ -25,21 +25,21 @@
     /* font-size: 18px;*/
 }
 
-#source-page-back-btn {
+#sourcePage-back-btn {
     position: absolute;
     left: 10px;
     top: 14px;
     cursor: pointer;
 }
 
-#source-page .body {
+#sourcePage .body {
     align-items: flex-end !important;
     flex: 1 1 auto;
     padding: 1.25rem;
 }
 
 
-#source-page .team-card {
+#sourcePage .team-card {
     margin: 0 auto;
     color: black;
     -ms-flex-align: center !important;
@@ -51,7 +51,7 @@
     margin-bottom: 1rem;
 }
 
-#source-page .card {
+#sourcePage .card {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -68,18 +68,18 @@
     border-radius: .25rem;
 }
 
-#source-page .card-header:first-child {
+#sourcePage .card-header:first-child {
     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
 }
 
-#source-page .card-header {
+#sourcePage .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, .03);
     border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
-#source-page .list-group {
+#sourcePage .list-group {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -90,11 +90,11 @@
     padding-right: 0;
 }
 
-#source-page .card-header+.list-group .list-group-item:first-child {
+#sourcePage .card-header+.list-group .list-group-item:first-child {
     border-top: 0;
 }
 
-#source-page .list-group-item {
+#sourcePage .list-group-item {
     border-right: 0;
     border-left: 0;
     border-radius: 0;
@@ -109,21 +109,21 @@
     direction: ltr;
 }
 
-#source-page .list-group-item a {
+#sourcePage .list-group-item a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
-#source-page .list-group-item a h4 {
+#sourcePage .list-group-item a h4 {
     -ms-flex-item-align: center !important;
     align-self: center !important;
     margin-left: 1rem;
 }
-#source-page .list-group-item a img{
+#sourcePage .list-group-item a img{
     max-width: 50%;
 }
-#source-page .list-group-item a img.mt-5{
+#sourcePage .list-group-item a img.mt-5{
     margin-top: 5px;
 }

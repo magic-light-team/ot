@@ -11,7 +11,8 @@ const initialState = {
   // item:{},
   score: 0,
   backgroundPic: '',
-  music: '',
+  music: gameData.startPage.music,//'',
+  restartMusic:true,
 
   currentLevel: {},
   currentStage: {},
@@ -20,7 +21,7 @@ const initialState = {
   achievment: {},
   saveChoise: [],
 
-  page: "start-page",
+  page: "startPage",
   isPaused: false,
 }
 
@@ -31,9 +32,13 @@ export default function MainReducer(state = initialState, action) {
       // console.log('change page reducer');//, action.payload);
 
       if (!action.payload.levelId) {
+        
+        // TODO: need change music?
+
         return {
           ...state,
           page: action.payload.newPage,
+          restartMusic: true, // temp
           saveChoise: [...state.saveChoise, {
             action: CHANGE_PAGE,
             page: action.payload.newPage
@@ -49,6 +54,8 @@ export default function MainReducer(state = initialState, action) {
         page: action.payload.newPage,
         currentLevel: thisLevel,
         backgroundPic: thisLevel.levelPic,
+        music: thisLevel.backgroundMusic,
+        restartMusic: true,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
         saveChoise: [...state.saveChoise, {
           action: CHANGE_PAGE,
@@ -75,7 +82,7 @@ export default function MainReducer(state = initialState, action) {
         console.log('can not find');
         return {
           ...state,
-          page: 'chapter-page', // or end stage score page
+          page: 'chapterPage', // or end stage score page
           saveChoise: [...state.saveChoise, {
             action: CHANGE_STAGE,
             stage: 'cannot find stage. maybe end of stage'

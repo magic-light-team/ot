@@ -8,8 +8,8 @@ const Modal = ({ pauseGame, changePage }) => {
             <div className="modal">
                 <h1>منو</h1>
                 <BigButton id="1" text="ادامه بازی"  arg="" clickHandle={pauseGame} color="" />
-                <BigButton id="2" text="شروع دوباره" arg="chapter-page" clickHandle={changePage} color="" />
-                <BigButton id="3" text="منوی بازی"   arg="start-page" clickHandle={changePage} color="" />
+                <BigButton id="2" text="شروع دوباره" arg="chapterPage" clickHandle={changePage} color="" />
+                <BigButton id="3" text="منوی بازی"   arg="startPage" clickHandle={changePage} color="" />
             </div>
         </div>
     );

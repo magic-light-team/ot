@@ -108,3 +108,7 @@ button {
 .resume-btn {
 	transform: translateY(126px);
 }
+
+audio{
+	display: none;
+}
