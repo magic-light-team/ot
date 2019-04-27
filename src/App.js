@@ -18,7 +18,8 @@ class App extends Component {
     return (
       <div className="App">
         {this.pageTag()}
-        <audio src={process.env.PUBLIC_URL+'/audio/'+this.props.music} preload="auto" controls="none" autoPlay></audio>
+        
+        {/* <audio src={process.env.PUBLIC_URL+'/audio/'+this.props.music} preload="auto" controls="none" autoPlay></audio> */}
       </div>
     );
   }

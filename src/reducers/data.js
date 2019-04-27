@@ -31,7 +31,7 @@ let aboutPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
 
-let creditsPage = {
+let sourcePage = {
     backgroundPic: "/img/levels/s1-1.jpg",
 }
 
@@ -1619,7 +1619,7 @@ const gameData = {
     startPage,
     chapterPage,
     aboutPage,
-    creditsPage,
+    sourcePage,
     levels
 }
 
