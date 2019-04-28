@@ -1,88 +1,44 @@
-# OT
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[play game](https://magic-light-team.github.io/ot/)
+## Available Scripts
 
-- [x] find name
+In the project directory, you can run:
 
-## levels
+### `npm start`
 
-- [ ] Speech
-- [ ] Clinic
-- [ ] Home
-- [ ] School
-- [ ] Park
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Todo
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-- [x] backround
-- [x] people pic
-- [x] score
-- [x] add logo
-- [x] add new font
-- [ ] add music
-- [x] menu
-  - [x] button
-  - [x] modal
-- [x] start page
-- [x] about page
-- [x] source page
-- [ ] score page -> https://github.com/MAfzalKhan1997/React_Quiz_app
-- [ ] achievment -> https://github.com/fkhadra/react-toastify
-- [ ] play sound
-- [ ] sorting option answer -> otism fact -> https://react-dnd.github.io/react-dnd/examples/sortable/simple
-- [ ] true/false question -> otism fact
+### `npm test`
 
-## Suggestion
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [ ] sorting options
-- [ ] color for options
-- [ ] sound for dialogue
-- [ ] dialouge type effect
-- [ ] achievment page
+### `npm run build`
 
-## React App
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- [x] make credit page
-- [x] make about page
-- [ ] intro & outro for every stage
-- [ ] loading icon untill all image load
-- [ ] add graphic effect in lifecycle hook
-  - [ ] mount and unmount effect
-  - [ ] update effect
-- [ ] sound effect
-- [x] modal element for pause page
-- [x] show pause if isPause is true
-- [x] make [`github page`](https://github.com/gitname/react-gh-pages)
-  - [x] install `npm install gh-pages --save-dev`
-- [x] install [`type.js`](https://github.com/mattboldt/typed.js/)
-  - [x] install `npm install typed.js --save`
-- [x] add redux
-  - [x] install redux `npm install --save react-redux`
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-* `npm start` for run in local
-* `npm run deploy` for deploy directly to github
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### lifecycle
+### `npm run eject`
 
-[React.Component](https://reactjs.org/docs/react-component.html)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* Mounting
-  * constructor()
-  * static getDerivedStateFromProps()
-  * render()
-  * componentDidMount()
-* Updating
-  * static getDerivedStateFromProps()
-  * shouldComponentUpdate()
-  * render()
-  * getSnapshotBeforeUpdate()
-  * componentDidUpdate()
-* Unmounting
-  * componentWillUnmount()
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-[react-transition-group](https://github.com/reactjs/react-transition-group/tree/master)
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## other
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-* pesarak 2 -> 2d -> platformer
-* pesarak 3 -> 3d
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

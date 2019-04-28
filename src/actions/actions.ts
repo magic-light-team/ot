@@ -1,4 +1,4 @@
-import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/types';
+import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/actionTypes';
 
 // export const scorePage = () => dispatch => {
 //     //...

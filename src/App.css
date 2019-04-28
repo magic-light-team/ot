@@ -1,114 +1,33 @@
-* {
-	box-sizing: border-box;
-	font-family: 'Vazir' !important;
-}
-
-@font-face {
-    font-family: Vazir;
-    src: url('/ot/fonts/Vazir.eot'),url('/fonts/Vazir.eot');
-    src: url('/ot/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-         url('/ot/fonts/Vazir.woff2') format('woff2'),url('/fonts/Vazir.woff2') format('woff2'),
-         url('/ot/fonts/Vazir.woff') format('woff'),url('/fonts/Vazir.woff') format('woff'),
-         url('/ot/fonts/Vazir.ttf') format('truetype');
-}
-
-html,
-body {
-	width: 100%;
-	height: 100%;
-	direction: rtl;
-}
-
-/* body,
-button {
-	font-family: 'Vazir' !important;
-} */
-
 .App {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	min-height: 600px !important;
-	max-height: 1080px !important;
-	height: 100vh !important;
-	position: relative;
-	
-	width: 100%;
-	margin: auto;
-	/*border: 1px solid #000000;*/
+  text-align: center;
 }
 
-@media (min-width:640px) {
-	.App, .App > div{
-		width:640px !important;
-	}
-	
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
 }
 
-/* #frame {
-	display: flex;
-	width: 640px;
-	height: calc( 100% - 20px );
-	border-radius: 10px;
-	overflow: hidden;
-} */
-
-.App > div {
-	position: absolute;
-	overflow: hidden;
-	height: calc( 100% - 3px );
-	border-radius: 10px;
-	display: flex;
-	background-size: cover;
-	width: 100%;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.hidden {
-	visibility: hidden;
+.App-link {
+  color: #61dafb;
 }
 
-
-.chapter{
-	font-size: 30px;
-	color: white;
-	text-shadow: 1px 1px 6px black;
-	font-weight: bold;
-}
-
-.chapters-frame {
-	flex-direction: column;
-}
-
-.fadeout {
-	animation-duration: 0.3s;
-	animation-name: fadeOut;
-}
-
-.fadein {
-	animation-duration: 0.3s;
-	animation-name: fadeIn;
-}
-
-.dialog-box {
-	display: flex;
-	justify-content: center;
-	justify-items: center;
-}
-
-.btn-wrapper {
-    display: flex;
-    flex-direction: column;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-.resume-btn {
-	transform: translateY(126px);
-}
-
-audio{
-	display: none;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
