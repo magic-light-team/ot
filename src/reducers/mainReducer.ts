@@ -1,34 +1,15 @@
+import initialState from './initialState';
+
 import {
   CHANGE_PAGE,
   CHANGE_STAGE,
   PAUSE_GAME,
   RESUME_PAGE
-} from '../actions/types';
-import gameData from './data';
+} from '../actions/actionTypes';
+import gameData from '../info/data';
 
-const initialState = {
-  // items: [],
-  // item:{},
-  score: 0,
-  backgroundPic: '',
 
-  music: '',//gameData.startPage.music,//'',
-  // restartMusic:true,
-  audio:null,
-
-  currentLevel: {},
-  currentStage: {},
-
-  gameData: gameData,
-  achievment: {},
-  saveChoise: [],
-
-  page: "startPage",
-  isPaused: false,
-  // muteMusic: false
-}
-
-export default function MainReducer(state = initialState, action) {
+export default function MainReducer(state = initialState, action: { type: any; payload: any }) {
   switch (action.type) {
 
     case CHANGE_PAGE:
@@ -38,24 +19,24 @@ export default function MainReducer(state = initialState, action) {
 
         let newPage = action.payload.newPage;
         //console.log('new page --- ',newPage ,gameData[newPage] , gameData[newPage].music)
-        if(gameData[newPage] && gameData[newPage].music){
+        // if(gameData[newPage] && gameData[newPage].music){
 
-          let newMusic = process.env.PUBLIC_URL+'/audio/'+gameData[newPage].music;
-          if(newMusic !== state.music){
+        //   let newMusic = process.env.PUBLIC_URL+'/audio/'+gameData[newPage].music;
+        //   if(newMusic !== state.music){
 
-            let audio = state.audio;
-            if(audio === null) {
-              // console.log('new audio');
-              audio = new Audio(newMusic);
-              audio.play();
-            }else{
-              audio.pause();
-              audio.src = newMusic;
-              console.log('have audio',audio,audio.src);
-              // audio.play();
-            }
-          }
-        }
+        //     let audio = state.audio;
+        //     if(audio === null) {
+        //       // console.log('new audio');
+        //       audio = new Audio(newMusic);
+        //       audio.play();
+        //     }else{
+        //       audio.pause();
+        //       audio.src = newMusic;
+        //       console.log('have audio',audio,audio.src);
+        //       // audio.play();
+        //     }
+        //   }
+        // }
 
         return {
           ...state,
@@ -70,22 +51,22 @@ export default function MainReducer(state = initialState, action) {
         }
       }
 
-      let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId);
+      let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId) || gameData.levels[0];
 
-      let music = process.env.PUBLIC_URL+'/audio/'+thisLevel.backgroundMusic;
+      let music = process.env.PUBLIC_URL + '/audio/' + thisLevel.backgroundMusic;
       let audio = state.audio;
 
-      if(audio === null) {
-        // console.log('new audio');
-        audio = new Audio(music);
-        audio.play();
-      }else{
-        audio.pause();
+      // if (audio === null) {
+      //   // console.log('new audio');
+      //   audio = new Audio(music);
+      //   audio.play();
+      // } else {
+      //   audio.pause();
 
-        audio.src = music;
-        console.log('have audio',audio,audio.src,'is paused',audio.paused,' readyState:',audio.readyState);
-        // audio.play();
-      }
+      //   audio.src = music;
+      //   console.log('have audio', audio, audio.src, 'is paused', audio.paused, ' readyState:', audio.readyState);
+      //   // audio.play();
+      // }
 
       return {
         ...state,
@@ -109,7 +90,7 @@ export default function MainReducer(state = initialState, action) {
 
       let stageId = action.payload.stageId;
       if (!stageId) {
-        stageId = state.currentStage.stageId + 1;
+        stageId = state.currentStage? state.currentStage.stageId:0 + 1;
       }
 
       let score = state.score;
@@ -117,7 +98,7 @@ export default function MainReducer(state = initialState, action) {
         score += action.payload.score;
       }
 
-      let currentStage = state.currentLevel.stages.find(stage => stage.stageId === stageId);
+      let currentStage = state.currentLevel? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
       if (!currentStage) {
         console.log('can not find');
         return {
@@ -135,9 +116,9 @@ export default function MainReducer(state = initialState, action) {
         backgroundPic = action.payload.backgroundPic;
       }
 
-      if (currentStage.optionSection && currentStage.optionSection.background && currentStage.optionSection.background !== '') {
+      if (currentStage.optionSection && currentStage.backgroundPic && currentStage.backgroundPic !== '') {
         console.log("change");
-        backgroundPic = currentStage.optionSection.background;
+        backgroundPic = currentStage.backgroundPic;
       }
 
       return {
@@ -169,18 +150,18 @@ export default function MainReducer(state = initialState, action) {
 
     default:
       // start audio at first
-      if(state.audio === null){
+      if (state.audio === null) {
         // console.log('play music at starting app')
-        let music = process.env.PUBLIC_URL+'/audio/'+gameData[state.page].music;
+        let music = process.env.PUBLIC_URL + '/audio/'; //+ gameData[state.page].music;
         let audio = new Audio(music);
-        audio.loop=true;
+        audio.loop = true;
         // console.log('new audio',audio);
         audio.play();
 
         audio.style.display = "none";
         document.body.appendChild(audio);
 
-        return {...state,music,audio};
+        return { ...state, music, audio };
       }
 
       return state;
