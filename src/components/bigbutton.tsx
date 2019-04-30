@@ -27,7 +27,15 @@
 import React from 'react';
 import './bigbutton.css';
 
-const BigButton = ({id,color,clickHandle,arg,text}) => {
+interface BigButtonProps{
+    id:string,
+    color:string,
+    clickHandle:Function,
+    arg:any,
+    text:string
+}
+
+const BigButton:React.FC<BigButtonProps> = ({id,color,clickHandle,arg,text}) => {
     return ( 
         <button 
             id={id } 

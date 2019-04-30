@@ -3,7 +3,8 @@ import { appPage, level, StageType, DialogType } from './interfaces';
 let startPage: appPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
-    options: [{
+    pageButtons: 
+    [{
         id: "start-new-btn",
         title: "شروع",
         color: "start-new-btn",

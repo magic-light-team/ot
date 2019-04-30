@@ -2,7 +2,15 @@
 export interface appPage {
     backgroundPic: string,
     music: string,
-    options?: any[]
+    pageButtons?: pageButton[]
+}
+
+export interface pageButton{
+    id:string,
+    title:string,
+    page:string,
+    clickHandle?:Function,
+    color?:string
 }
 
 export interface level {

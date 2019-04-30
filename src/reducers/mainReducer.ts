@@ -150,19 +150,19 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
     default:
       // start audio at first
-      if (state.audio === null) {
-        // console.log('play music at starting app')
-        let music = process.env.PUBLIC_URL + '/audio/'; //+ gameData[state.page].music;
-        let audio = new Audio(music);
-        audio.loop = true;
-        // console.log('new audio',audio);
-        audio.play();
+      // if (state.audio === null) {
+      //   // console.log('play music at starting app')
+      //   let music = process.env.PUBLIC_URL + '/audio/'; //+ gameData[state.page].music;
+      //   let audio = new Audio(music);
+      //   audio.loop = true;
+      //   // console.log('new audio',audio);
+      //   audio.play();
 
-        audio.style.display = "none";
-        document.body.appendChild(audio);
+      //   audio.style.display = "none";
+      //   document.body.appendChild(audio);
 
-        return { ...state, music, audio };
-      }
+      //   return { ...state, music, audio };
+      // }
 
       return state;
   }

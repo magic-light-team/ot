@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "http://magic-light-team.github.io/ot",
   "dependencies": {
-    "@types/jest": "24.0.11",
+    "@types/jest": "24.0.12",
     "@types/node": "11.13.8",
-    "@types/react": "16.8.14",
+    "@types/react": "16.8.15",
     "@types/react-dom": "16.8.4",
-    "@types/react-redux": "^7.0.8",
+    "axios": "^0.18.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
@@ -44,6 +44,7 @@
     }
   },
   "devDependencies": {
+    "@types/react-redux": "^7.0.8",
     "@types/redux-thunk": "^2.1.0"
   }
 }

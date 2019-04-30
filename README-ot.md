@@ -86,3 +86,9 @@
 
 * pesarak 2 -> 2d -> platformer
 * pesarak 3 -> 3d
+
+## Typescript
+
+* [Microsoft TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter)
+* [react-redux](https://react-redux.js.org/)
+* [using-react-with-redux-and-typescript](https://blog.usejournal.com/using-react-with-redux-and-typescript-c7ec48c211f6)
