@@ -1,4 +1,4 @@
-import { appPage, level, StageType, DialogType } from './interfaces';
+import { appPage, level, StageType, DialogType } from './data.interfaces';
 
 let startPage: appPage = {
     backgroundPic: "/img/levels/s1-1.jpg",

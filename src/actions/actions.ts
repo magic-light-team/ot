@@ -1,4 +1,5 @@
 import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/actionTypes';
+import { Dispatch } from 'redux';
 
 // export const scorePage = () => dispatch => {
 //     //...
@@ -8,7 +9,7 @@ import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/a
 //     })
 // }
 
-export const changePage = (event, newPage, levelId) => dispatch => {
+export const changePage = (event:Event, newPage:string, levelId:number) => (dispatch:Dispatch) => {
 
     event.stopPropagation();
     console.log('changePage actions', event, newPage, levelId);
@@ -19,7 +20,7 @@ export const changePage = (event, newPage, levelId) => dispatch => {
     })
 }
 
-export const changeStage = (stageId, score, backgroundPic) => dispatch => {
+export const changeStage = (stageId:string, score:number, backgroundPic:string) => (dispatch:Dispatch) => {
 
     dispatch({
         type: CHANGE_STAGE,
@@ -27,7 +28,7 @@ export const changeStage = (stageId, score, backgroundPic) => dispatch => {
     })
 }
 
-export const pauseGame = (event, show = true) => dispatch => {
+export const pauseGame = (event:Event, show:boolean = true) => (dispatch:Dispatch) => {
     //...
     
     event.stopPropagation();

@@ -38,13 +38,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "devDependencies": {
-      "gh-pages": "^2.0.1"
-    }
+    ]
   },
   "devDependencies": {
     "@types/react-redux": "^7.0.8",
-    "@types/redux-thunk": "^2.1.0"
+    "@types/redux-thunk": "^2.1.0",
+    "gh-pages": "^2.0.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

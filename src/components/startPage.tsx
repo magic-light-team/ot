@@ -4,7 +4,7 @@ import BigButton from './bigbutton';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { changePage } from '../actions/actions';
+// import { changePage } from '../actions/actions';
 import { appPage } from '../info/interfaces';
 
 //import Transition from 'react-transition-group/Transition';
@@ -16,7 +16,7 @@ export interface Props { //StateFromProps
 }
 
 export interface State { // DispatchFromProps
-    changePage: () => void;
+    // changePage: () => void;
 }
 
 class StartPage extends Component<Props, State> {
@@ -47,7 +47,7 @@ const mapStateToProps = (state: any) => ({
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
-    changePage: () => dispatch()
+    // changePage: () => dispatch()
 });
 
 export default connect<any, any, void>(mapStateToProps, mapDispatchToProps)(StartPage);
