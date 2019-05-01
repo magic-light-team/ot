@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode,ReactElement } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import StartPage from './components/startPage'
@@ -37,14 +37,15 @@ class App extends React.Component<StateProps & DispatchProps,any> {
   render() {
     return (
       <div className="App">
-        {this.pageContent("new")}
+        {/* {this.pageContent("new")} */}
+
       </div>
     );
   }
   // :DetailedHTMLProps<HtmlAttributes<HTMLDivElement>,HTMLDivElement>
   // :React.ReactElement
   // :React.ReactNode
-  pageContent: React.ReactElement = (page:string) => {
+  pageContent: ReactElement = (page:string) => {
     switch (page) {
        case "startPage":
          // return <StartPage backgroundPic='' />;

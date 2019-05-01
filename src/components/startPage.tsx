@@ -5,7 +5,7 @@ import BigButton from './bigbutton';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 // import { changePage } from '../actions/actions';
-import { appPage } from '../info/interfaces';
+import { appPage } from '../info/data.interfaces';
 
 //import Transition from 'react-transition-group/Transition';
 
