@@ -10,6 +10,8 @@ import gameData from '../info/data';
 
 
 export default function MainReducer(state = initialState, action: { type: any; payload: any }) {
+  console.log(state,action);
+  
   switch (action.type) {
 
     case CHANGE_PAGE:

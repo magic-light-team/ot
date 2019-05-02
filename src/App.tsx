@@ -1,7 +1,6 @@
-import React, { ReactNode,ReactElement } from 'react';
+import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import StartPage from './components/startPage'
 
 // const App: React.FC = () => {
 //   return (
@@ -25,7 +24,7 @@ import StartPage from './components/startPage'
 // }
 
 interface StateProps {
-  // page: string,
+  page:string
 }
 
 interface DispatchProps {
@@ -33,46 +32,35 @@ interface DispatchProps {
 
 class App extends React.Component<StateProps & DispatchProps,any> {
   
+  renderPage =(page:string):React.ReactNode =>{
+    switch (page) {
+      case "new":
+      return <div></div>
+        break;
+    
+      default:
+      return <div></div>
+        break;
+    }
+    return <div></div>
+  }
   
   render() {
     return (
       <div className="App">
+      state:
+      {this.props.page}
+      {this.renderPage("")}
         {/* {this.pageContent("new")} */}
 
       </div>
     );
   }
-  // :DetailedHTMLProps<HtmlAttributes<HTMLDivElement>,HTMLDivElement>
-  // :React.ReactElement
-  // :React.ReactNode
-  pageContent: ReactElement = (page:string) => {
-    switch (page) {
-       case "startPage":
-         // return <StartPage backgroundPic='' />;
-         return <div></div>
-         // break;
 
-      // case "chapterPage":
-      //   return <ChapterPage />;
-
-      // case "gamePage":
-      //   return <GamePage />;
-
-      // case "sourcePage":
-      //   return <SourcePage />;
-      // case "aboutPage":
-      //   return <AboutPage />;
-
-      default:
-      return <div></div>;
-        // return <StartPage />;
-        // break;
-    }
-  }
 }
 
-const mapStateToProps = (state: any) => ({
-  page: state.state.page
+const mapStateToProps = (allState: any) => ({
+  page: allState.gameState.page
 });
 
 export default connect(mapStateToProps)(App);

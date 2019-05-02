@@ -1,5 +1,5 @@
 import gameData from '../info/data';
-import { level, stage } from '../info/interfaces';
+import { level, stage } from '../info/data.interfaces';
 
 // initialState
 const init: IState = {
@@ -26,7 +26,7 @@ const init: IState = {
 
 export default init;
 
-interface IState {
+export interface IState {
   score: number,
   backgroundPic: string,
 
