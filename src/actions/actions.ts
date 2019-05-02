@@ -1,4 +1,4 @@
-import { CHANGE_STAGE, CHANGE_PAGE, PAUSE_GAME, RESUME_PAGE } from '../actions/actionTypes';
+import { ActionTypes } from '../actions/actionTypes';
 import { Dispatch } from 'redux';
 
 // export const scorePage = () => dispatch => {
@@ -9,13 +9,13 @@ import { Dispatch } from 'redux';
 //     })
 // }
 
-export const changePage = (event:Event, newPage:string, levelId:number) => (dispatch:Dispatch) => {
+export const changePage = (event: React.MouseEvent<HTMLButtonElement>, newPage:string, levelId:number) => (dispatch:Dispatch) => {
 
     event.stopPropagation();
     console.log('changePage actions', event, newPage, levelId);
 
     dispatch({
-        type: CHANGE_PAGE, // newPage,
+        type: ActionTypes.CHANGE_PAGE, // newPage,
         payload: { levelId, newPage },
     })
 }
@@ -23,17 +23,17 @@ export const changePage = (event:Event, newPage:string, levelId:number) => (disp
 export const changeStage = (stageId:string, score:number, backgroundPic:string) => (dispatch:Dispatch) => {
 
     dispatch({
-        type: CHANGE_STAGE,
+        type: ActionTypes.CHANGE_STAGE,
         payload: { stageId, score,backgroundPic }
     })
 }
 
-export const pauseGame = (event:Event, show:boolean = true) => (dispatch:Dispatch) => {
+export const pauseGame = (event:React.MouseEvent<HTMLButtonElement>, show:boolean = true) => (dispatch:Dispatch) => {
     //...
     
     event.stopPropagation();
     dispatch({
-        type: show ? PAUSE_GAME : RESUME_PAGE,
+        type: show ? ActionTypes.PAUSE_GAME : ActionTypes.RESUME_PAGE,
         payload: { isPaused: show }
     })
 }

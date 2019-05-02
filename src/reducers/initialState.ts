@@ -1,30 +1,17 @@
 import gameData from '../info/data';
-import { level, stage } from '../info/data.interfaces';
+import { level, stage, appPage } from '../info/data.interfaces';
 
-// initialState
-const init: IState = {
+export class chapters {
+  levelId: number;
+  levelName: string;
+  levelPic: string;
 
-  score: 0,
-  backgroundPic: '',
-
-  music: '',// gameData.startPage.music,//'',
-  // restartMusic:true,
-  audio: undefined, // use component instead of that
-
-  currentLevel: undefined,
-  currentStage: undefined,
-
-  gameData: gameData, // can delete and import and use only on reducer
-  achievment: {},
-  saveChoise: [],
-
-  page: "startPage",
-  isPaused: false,
-  // muteMusic: false,
-
+  constructor(levelId: number, levelName: string, levelPic: string) {
+    this.levelId = levelId;
+    this.levelName = levelName;
+    this.levelPic = levelPic;
+  }
 }
-
-export default init;
 
 export interface IState {
   score: number,
@@ -33,13 +20,56 @@ export interface IState {
   music: string,
   audio?: HTMLAudioElement,
 
-  currentLevel?: level,
-  currentStage?: stage,
+  currentLevel?: level,// number
+  currentStage?: stage,// number
 
-  gameData: any,
+  // gameData: any,
   achievment: any,
-  saveChoise: any,
+  saveChoise: any[],
 
-  page: string,
+  pageName: string,
+  pageSetting: appPage,
+
   isPaused: boolean,
+
+  chaptersInfo: chapters[],
 }
+
+// initialState
+const init: IState = {
+
+  score: 0,
+  backgroundPic: gameData.startPage.backgroundPic,// ''
+
+  music: gameData.startPage.music,//'',
+  // restartMusic:true,
+  audio: undefined, // use component instead of that
+
+  currentLevel: undefined,
+  currentStage: undefined,
+
+  // gameData: gameData, // can delete and import and use only on reducer
+  achievment: {},
+  saveChoise: [],
+
+  pageName: "startPage",
+  pageSetting: gameData.startPage,
+  isPaused: false,
+  // muteMusic: false,
+
+  //chaptersInfo: gameData.levels.map(level=>{ levelId:level.levelId, levelName:level.levelName, levelName:level.levelPic })
+  chaptersInfo: gameData.levels.map(level => new chapters(level.levelId, level.levelName, level.levelPic))
+}
+
+export default init;
+
+
+
+// export interface chapters{
+//   levelId:number,
+//   levelName:string,
+//   levelPic:string,
+// }
+
+
+

@@ -1,25 +1,23 @@
 import initialState from './initialState';
 
 import {
-  CHANGE_PAGE,
-  CHANGE_STAGE,
-  PAUSE_GAME,
-  RESUME_PAGE
+  ActionTypes
 } from '../actions/actionTypes';
 import gameData from '../info/data';
+import { appPage } from '../info/data.interfaces';
 
 
 export default function MainReducer(state = initialState, action: { type: any; payload: any }) {
-  console.log(state,action);
   
   switch (action.type) {
 
-    case CHANGE_PAGE:
+    case ActionTypes.CHANGE_PAGE:
       // console.log('change page reducer');//, action.payload);
 
       if (!action.payload.levelId) {
 
         let newPage = action.payload.newPage;
+        let pageSetting = (gameData as any)[newPage] as appPage ;
         //console.log('new page --- ',newPage ,gameData[newPage] , gameData[newPage].music)
         // if(gameData[newPage] && gameData[newPage].music){
 
@@ -42,10 +40,11 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
         return {
           ...state,
-          page: newPage,
+          pageName: newPage,
+          pageSetting,
           // restartMusic: true, // temp
           saveChoise: [...state.saveChoise, {
-            action: CHANGE_PAGE,
+            action: ActionTypes.CHANGE_PAGE,
             page: newPage
           }],
           isPaused: false,
@@ -81,13 +80,13 @@ export default function MainReducer(state = initialState, action: { type: any; p
         // restartMusic: true,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
         saveChoise: [...state.saveChoise, {
-          action: CHANGE_PAGE,
+          action: ActionTypes.CHANGE_PAGE,
           page: action.payload.newPage,
           levelId: action.payload.levelId
         }],
       }
 
-    case CHANGE_STAGE:
+    case ActionTypes.CHANGE_STAGE:
       //  console.log('change stage reducer');
 
       let stageId = action.payload.stageId;
@@ -107,7 +106,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
           ...state,
           page: 'chapterPage', // or end stage score page
           saveChoise: [...state.saveChoise, {
-            action: CHANGE_STAGE,
+            action: ActionTypes.CHANGE_STAGE,
             stage: 'cannot find stage. maybe end of stage'
           }],
         }
@@ -129,12 +128,12 @@ export default function MainReducer(state = initialState, action: { type: any; p
         score,
         backgroundPic,
         saveChoise: [...state.saveChoise, {
-          action: CHANGE_STAGE,
+          action: ActionTypes.CHANGE_STAGE,
           stageId: stageId
         }],
       }
 
-    case PAUSE_GAME:
+    case ActionTypes.PAUSE_GAME:
       console.log('pause game reducer');
       return {
         ...state,
@@ -142,7 +141,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
         //items: action.payload
       }
 
-    case RESUME_PAGE:
+    case ActionTypes.RESUME_PAGE:
       console.log('resume game reducer');
       return {
         ...state,

@@ -1,66 +1,60 @@
 import React from 'react';
 import './App.css';
-import { connect } from 'react-redux';
 
-// const App: React.FC = () => {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+import { connect } from 'react-redux';
+import { IState } from './reducers/initialState';
+
+import { AppPages } from './info/pages';
+import StartPage from './components/startPage';
+import ChapterPage from './components/chapterPage';
+import SourcePage from './components/sourcePage';
+import AboutPage from './components/aboutPage';
 
 interface StateProps {
-  page:string
+  pageName: string,
 }
 
 interface DispatchProps {
 }
 
-class App extends React.Component<StateProps & DispatchProps,any> {
-  
-  renderPage =(page:string):React.ReactNode =>{
-    switch (page) {
-      case "new":
-      return <div></div>
-        break;
-    
+class App extends React.Component<StateProps & DispatchProps, any> {
+
+  renderPage = (pageName: string): React.ReactNode => {
+    // console.log('app.tsx pageName',pageName);
+    switch (pageName) {
+      case AppPages.START_PAGE:
+        return <StartPage />
+
+      case AppPages.Chapter_PAGE:
+        return <ChapterPage />;
+
+      // case "gamePage":
+      //   return <GamePage />;
+
+      case AppPages.SOURCE_PAGE:
+        return <SourcePage />;
+
+      case AppPages.ABOUT_PAGE:
+        return <AboutPage />;
+        
       default:
-      return <div></div>
-        break;
+        return <StartPage />
     }
-    return <div></div>
   }
-  
+
   render() {
     return (
       <div className="App">
-      state:
-      {this.props.page}
-      {this.renderPage("")}
-        {/* {this.pageContent("new")} */}
-
+        {this.renderPage(this.props.pageName)}
+        {/* <AudioPlayer /> */}
       </div>
     );
   }
 
 }
 
-const mapStateToProps = (allState: any) => ({
-  page: allState.gameState.page
+const mapStateToProps = (allState: { gameState: IState }) => ({
+  pageName: allState.gameState.pageName
 });
 
 export default connect(mapStateToProps)(App);

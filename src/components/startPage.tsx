@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import './startPage.css'
-import BigButton from './bigbutton';
 
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-// import { changePage } from '../actions/actions';
+import { IState } from '../reducers/initialState';
 import { appPage } from '../info/data.interfaces';
+import { changePage } from '../actions/actions';
+import BigButton from './bigbutton'
 
 //import Transition from 'react-transition-group/Transition';
 
 export interface Props { //StateFromProps
-    backgroundPic: string,
     pageSetting: appPage,
     changePage: Function;
 }
@@ -22,34 +21,30 @@ export interface State { // DispatchFromProps
 class StartPage extends Component<Props, State> {
     render() {
         return (
-
-            <div id="start-screen" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
+            <div id="start-screen" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
                 <div id="inner-screen">
                     <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
-                    {this.props.pageSetting && this.props.pageSetting.pageButtons && this.props.pageSetting.pageButtons.map(op =>
-                        <BigButton key={op.id} id={op.id} text={op.title} arg={op.page} clickHandle={this.props.changePage} color={op.id} />
-                        // <BigButton key={op.id} id={op.id} text={op.title} arg={op.page} color={op.id} />
-                    )}
+                    {
+                        this.props.pageSetting.pageButtons && this.props.pageSetting.pageButtons.map(btn =>
+                            <BigButton  key={btn.id} id={btn.id} text={btn.title} arg={btn.page} clickHandle={this.props.changePage} color={btn.id} />)
+                    }
                 </div>
             </div>
-
         );
     }
 
-    public static propTypes = {changePage: PropTypes.func.isRequired}
 }
 
 // StartPage.propTypes = { changePage: PropTypes.func.isRequired };
 
-const mapStateToProps = (state: any) => ({
-    backgroundPic: state.state.backgroundPic,
-    pageSetting: state.state.gameData.startPage,
+const mapStateToProps = (allState: { gameState: IState }) => ({
+    pageSetting: allState.gameState.pageSetting,
 });
 
-const mapDispatchToProps = (dispatch: any) => ({
-    // changePage: () => dispatch()
+const mapDispatchToProps = ({
+    changePage: changePage
 });
 
-export default connect<any, any, void>(mapStateToProps, mapDispatchToProps)(StartPage);
+export default connect(mapStateToProps, mapDispatchToProps)(StartPage);
 
 // export default StartPage;

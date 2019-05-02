@@ -1,29 +1,31 @@
 import { appPage, level, StageType, DialogType } from './data.interfaces';
+import { AppPages } from './pages';
+
 
 let startPage: appPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
-    pageButtons: 
-    [{
-        id: "start-new-btn",
-        title: "شروع",
-        color: "start-new-btn",
-        page: "chapterPage"
-    },
-    // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
-    {
-        id: "source-btn",
-        title: "منابع",
-        color: "source-btn",
-        page: "sourcePage"
-    },
-    {
-        id: "about-btn",
-        title: "درباره ما",
-        color: "about-btn",
-        page: "aboutPage"
-    },
-    ]
+    pageButtons:
+        [{
+            id: "start-new-btn",
+            title: "شروع",
+            color: "start-new-btn",
+            page: "chapterPage"
+        },
+        // {id:"achivement-btn", title:"دستاورد ها",color:"achivement-btn", page:"achivement-page"},
+        {
+            id: "source-btn",
+            title: "منابع",
+            color: "source-btn",
+            page: "sourcePage"
+        },
+        {
+            id: "about-btn",
+            title: "درباره ما",
+            color: "about-btn",
+            page: "aboutPage"
+        },
+        ]
 }
 
 let chapterPage: appPage = {
@@ -1460,10 +1462,10 @@ let levels: level[] = [
 ];
 
 const gameData = {
-    startPage,
-    chapterPage,
-    aboutPage,
-    sourcePage,
+    [AppPages.START_PAGE]: startPage,
+    [AppPages.Chapter_PAGE]: chapterPage,
+    [AppPages.ABOUT_PAGE]: aboutPage,
+    [AppPages.SOURCE_PAGE]: sourcePage,
     levels
 }
 
