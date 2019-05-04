@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './pageHeader.css'
 
 import { connect } from 'react-redux';
-import { changePage } from '../actions/actions';
+import { changePage, pauseGame } from '../actions/actions';
 import { IState } from '../reducers/initialState';
 
 export interface Props { //StateFromProps
-    headerTitle:string,
-    score:number,
+    headerTitle: string,
+    score: number,
     changePage: Function;
+    pauseGame: Function;
+    page: boolean,
 }
 
 export interface State { // DispatchFromProps
@@ -16,19 +18,32 @@ export interface State { // DispatchFromProps
 }
 
 class PageHeader extends Component<Props> {
-    render() { 
-        return ( 
+    render() {
+        return (
             <div id="score-board">
-                <div id="menu">
-                </div>
+                {
+                    this.props.page ?
+                        <div id="menu"></div> :
+                        <div id="menu" onClick={event => this.props.pauseGame(event, true)}>
+                            <img src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu icon" />
+                        </div>
+                }
+
                 <div id="stage">{this.props.headerTitle}</div>
                 <div id="score">
-                <a href="#" onClick={event => this.props.changePage(event,"startPage") }>
-                    &gt;&gt;                
-                </a>
+                {
+                    this.props.page ?
+                    <a href="#" onClick={event => this.props.changePage(event, "startPage")}>
+                        &gt;&gt;</a> 
+                :
+                    <span>
+                        <span id="score-text">امتیاز</span>
+                        <span id="score-num">{this.props.score}</span>
+                    </span> 
+                }
                 </div>
             </div>
-         );
+        );
     }
 }
 
@@ -39,7 +54,8 @@ const mapStateToProps = (allState: { gameState: IState }) => ({
 });
 
 const mapDispatchToProps = ({
-    changePage: changePage
+    changePage: changePage,
+    pauseGame: pauseGame,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PageHeader);
