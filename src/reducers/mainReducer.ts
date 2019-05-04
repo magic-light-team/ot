@@ -18,6 +18,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
         let newPage = action.payload.newPage;
         let pageSetting = (gameData as any)[newPage] as appPage ;
+        let pageTitle = pageSetting.pageTitle;
         //console.log('new page --- ',newPage ,gameData[newPage] , gameData[newPage].music)
         // if(gameData[newPage] && gameData[newPage].music){
 
@@ -42,6 +43,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
           ...state,
           pageName: newPage,
           pageSetting,
+          headerTitle:pageTitle,
           // restartMusic: true, // temp
           saveChoise: [...state.saveChoise, {
             action: ActionTypes.CHANGE_PAGE,
@@ -55,7 +57,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
       let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId) || gameData.levels[0];
 
       let music = process.env.PUBLIC_URL + '/audio/' + thisLevel.backgroundMusic;
-      let audio = state.audio;
+      // let audio = state.audio;
 
       // if (audio === null) {
       //   // console.log('new audio');
@@ -76,7 +78,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
         backgroundPic: thisLevel.levelPic,
         // music: thisLevel.backgroundMusic,
         music,
-        audio,
+        // audio,
         // restartMusic: true,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
         saveChoise: [...state.saveChoise, {
@@ -99,7 +101,11 @@ export default function MainReducer(state = initialState, action: { type: any; p
         score += action.payload.score;
       }
 
-      let currentStage = state.currentLevel? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
+      //let currentStage = state.currentLevel? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
+      //let currentStage = state.currentLevelId? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
+      let currentlevel= gameData.levels.find(level=>level.levelId==state.currentLevelId);
+      let currentStage = currentlevel && currentlevel.stages.find(stage => stage.stageId === stageId);
+
       if (!currentStage) {
         console.log('can not find');
         return {
@@ -117,7 +123,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
         backgroundPic = action.payload.backgroundPic;
       }
 
-      if (currentStage.optionSection && currentStage.backgroundPic && currentStage.backgroundPic !== '') {
+      if (currentStage.optionsSection && currentStage.backgroundPic && currentStage.backgroundPic !== '') {
         console.log("change");
         backgroundPic = currentStage.backgroundPic;
       }
