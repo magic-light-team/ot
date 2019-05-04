@@ -11,7 +11,7 @@ export interface Props { //StateFromProps
     dialog:string,
     dialogType?:DialogType,
     options:option[],
-    changeStage: Function;
+    changeStage: Function,
 }
 
 export interface State { // DispatchFromProps
