@@ -4,6 +4,7 @@ import { AppPages } from './pages';
 
 let startPage: appPage = {
     backgroundPic: "/img/levels/s1-1.jpg",
+    pageTitle:"صفحه اول",
     music: "bensound-tenderness-0.mp3",
     pageButtons:
         [{
@@ -29,16 +30,19 @@ let startPage: appPage = {
 }
 
 let chapterPage: appPage = {
+    pageTitle:"انتخاب مرحله",
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
 }
 
 let aboutPage: appPage = {
+    pageTitle: "درباره ما",
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
 }
 
 let sourcePage: appPage = {
+    pageTitle:"منابع",
     backgroundPic: "/img/levels/s1-1.jpg",
     music: "bensound-tenderness-0.mp3",
 }
@@ -63,7 +67,7 @@ let levels: level[] = [
             dialog: "چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟",
             backgroundPic: "",
             dialogType: DialogType.center, // dialogType: "center",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه واقعا سخت نیست",
                 color: "",
@@ -107,7 +111,7 @@ let levels: level[] = [
             dialogType: DialogType.left,//dialogType: "left",,
             backgroundPic: "",
 
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "دوست داشتم اینجوری باشه",
                 color: "",
@@ -135,7 +139,7 @@ let levels: level[] = [
             dialog: "بعضی وقت ها",
             backgroundPic: "",
             dialogType: DialogType.left,//dialogType: "left",,
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "وسط راهرو با دستاش بهم تیر میزنه",
                 color: "",
@@ -180,7 +184,7 @@ let levels: level[] = [
             dialog: "ولی من",
             backgroundPic: "",
             dialogType: DialogType.left,//dialogType: "left",,
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "با تمام وجود از برادرم محافظت می کنم",
                 color: "",
@@ -217,7 +221,7 @@ let levels: level[] = [
             dialog: "سینا دوست داری بریم...",
             backgroundPic: "/img/levels/l1-1.jpg",
             dialogType: DialogType.right, // dialogType: "right",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "خونه بازی کنیم",
                 color: "",
@@ -271,7 +275,7 @@ let levels: level[] = [
             dialog: "و اون موقع",
             backgroundPic: "",
             dialogType: DialogType.right, // dialogType: "right",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "داد زدم و گفتم اون بهتر میشه",
                 color: "",
@@ -316,7 +320,7 @@ let levels: level[] = [
             dialog: "این باعث میشه من ...",
             backgroundPic: "",
             dialogType: DialogType.right, // dialogType: "right",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "هم خوشحال بشم و آدم بهتری باشم",
                 color: "",
@@ -438,7 +442,7 @@ let levels: level[] = [
             dialog: "میای؟",
             dialogType: DialogType.right, // dialogType: "right",
             backgroundPic: "", //"برادر اول"
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "آره چرا که نه",
                 color: "",
@@ -548,7 +552,7 @@ let levels: level[] = [
             dialog: "میدونی دیگه کجا باید بریم؟",
             backgroundPic: "",
             // dialogType: DialogType.right, // dialogType: "right",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "کجا",
                 color: "",
@@ -645,7 +649,7 @@ let levels: level[] = [
             dialog: "من اون موقع ...",
             dialogType: DialogType.right, // dialogType: "right",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "منم با کف صابون حباب درست کردم و حسابی همه جا رو بهم ریختیم",
                 color: "",
@@ -694,7 +698,7 @@ let levels: level[] = [
             dialog: "بعدش",
             backgroundPic: "",
             dialogType: DialogType.center, // dialogType: "center",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "من با دستام هر چی رو میز بود رو جمع کردم ",
                 color: "",
@@ -788,7 +792,7 @@ let levels: level[] = [
             dialog: "چون اوتیسم...",
             backgroundPic: "",
             dialogType: DialogType.up, // dialogType: "up",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "یک طیف از اختلالاته",
                 color: "",
@@ -845,7 +849,7 @@ let levels: level[] = [
             stageType: StageType.Question, // stageType: 1,
             dialog: "میشه گفت امروزه در حد ...",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "یک در 88 کودک",
                 color: "",
@@ -920,7 +924,7 @@ let levels: level[] = [
             stageType: StageType.Question, // stageType: 1,
             dialog: "نسبت بین دختر ها به پسر ها  ...",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "یک به یک",
                 color: "",
@@ -986,7 +990,7 @@ let levels: level[] = [
             stageType: StageType.Question, // stageType: 1,
             dialog: "حدود ...",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "یک ژن",
                 color: "",
@@ -1088,7 +1092,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "؟به خاطر واکسنی که تو بچگی بهش زدیمه",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1126,7 +1130,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "سن باباش زیاده شندیم تو این موضوع تاثیر داره",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1155,7 +1159,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "موقع بارداری به خاطر بیماریم دارو مصرف میکردم",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1184,7 +1188,7 @@ let levels: level[] = [
             dialog: "ویتامین و فولیک اسید مصرف میکردم",
             backgroundPic: "",
             stageType: StageType.Question, // stageType: 1,
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1213,7 +1217,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "چون صرع داشتم ، والپروات مصرف میکنم",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1242,7 +1246,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "من خیلی نگرانم ...",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "ممکنه خواهر کوچیکترش هم اینطور بشه",
                 color: "",
@@ -1286,7 +1290,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "یعنی ممکنه به خاطر جهش ژنتیکی اتفاق افتاده باشه",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",
@@ -1324,7 +1328,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "خواهرش رو کی بیارم برای معاینه",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "هجده ماهگی",
                 color: "",
@@ -1373,7 +1377,7 @@ let levels: level[] = [
             stageType: StageType.Question, // stageType: 1,
             dialog: "احساس می کنم زندگیم تموم شده.چکار می تونم بکنم؟",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "ممکنه بزرگ بشه درمان بشه؟",
                 color: "",
@@ -1424,7 +1428,7 @@ let levels: level[] = [
             dialogType: DialogType.up_right, // dialogType: "up-right",
             dialog: "گفتار درمانی و کار در مانی باعث بهبود توانایی هاش میشه",
             backgroundPic: "",
-            optionSection: [{
+            optionsSection: [{
                 optionId: 1,
                 title: "نه فکر نکنم",
                 color: "",

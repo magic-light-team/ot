@@ -6,7 +6,7 @@ import { pauseGame } from '../actions/actions';
 import { IState } from '../reducers/initialState';
 
 export interface Props { //StateFromProps
-    levelName:string,
+    headerTitle:string,
     score:number,
     pauseGame: Function;
 }
@@ -22,7 +22,7 @@ class PageHeader extends Component<Props> {
                 <div id="menu" onClick={event => this.props.pauseGame(event,true) }>
                     <img src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu icon" />
                 </div>
-                <div id="stage">{this.props.levelName}</div>
+                <div id="stage">{this.props.headerTitle}</div>
                 <div id="score">
                     <span id="score-text">امتیاز</span>
                     <span id="score-num">{this.props.score}</span>
@@ -34,7 +34,7 @@ class PageHeader extends Component<Props> {
 
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    levelName: allState.gameState.levelName,
+    headerTitle: allState.gameState.headerTitle,
     score: allState.gameState.score
 });
 

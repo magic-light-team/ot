@@ -20,8 +20,8 @@ export interface IState {
   music: string,
   // audio?: HTMLAudioElement,
 
+  headerTitle: string,
   currentLevelId: number,// number
-  levelName: string,
   currentStage?: stage,// number
 
   // gameData: any,
@@ -46,8 +46,8 @@ const init: IState = {
   // restartMusic:true,
   // audio: undefined, // use component instead of that
 
+  headerTitle:"",
   currentLevelId: 0,
-  levelName:"",
   currentStage: undefined,
 
   // gameData: gameData, // can delete and import and use only on reducer

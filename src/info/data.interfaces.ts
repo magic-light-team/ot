@@ -1,6 +1,7 @@
 
 export interface appPage {
     backgroundPic: string,
+    pageTitle:string,
     music: string,
     pageButtons?: pageButton[]
 }
@@ -27,7 +28,7 @@ export interface stage {
 
     stageType: StageType,
     //dialogSection?:any,
-    optionSection?: option[],
+    optionsSection?: option[],
 
     // dialog
     person?: string,
@@ -49,7 +50,7 @@ export enum StageType {
 // }
 
 export enum DialogType {
-    left, right, center, up, up_right
+    left="left", right="right", center="center", up="up", up_right="up_right"
 }
 
 export interface option {

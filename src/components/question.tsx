@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { changeStage } from '../actions/actions';
 import { IState } from '../reducers/initialState';
-import { DialogType } from '../info/data.interfaces';
+import { changeStage } from '../actions/actions';
+import { option, DialogType } from '../info/data.interfaces';
+
+//import Transition from 'react-transition-group/Transition';
 
 export interface Props { //StateFromProps
-    stageDialog:string,
+    dialog:string,
     dialogType?:DialogType,
-    
+    options:option[],
     changeStage: Function;
 }
 
@@ -16,13 +18,12 @@ export interface State { // DispatchFromProps
     // changePage: () => void;
 }
 
-class Questions extends Component {
-    state = {}
+class Question extends Component<Props, State> {
     render() {
         return (
             <div>
                 <div className={"description-wrapper dialog " + (this.props.dialogType || '')} style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + '/img/dialog/'+(this.props.dialogType || 'left')+'.png)'}}>
-                    {this.props.desc}</div>
+                    {this.props.dialog}</div>
                 <div className="btn-wrapper">
                     {this.props.options.map(op =>
                         <button
@@ -35,19 +36,19 @@ class Questions extends Component {
             </div>
         );
     }
+
 }
 
-
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    options: allState.gameState.currentStage && allState.gameState.currentStage.optionSection.options,
-    desc: allState.gameState.currentStage && allState.gameState.currentStage.optionSection.desc,
-    dialogType: allState.gameState.currentStage && allState.gameState.currentStage.optionSection.dialogType,
+    dialog: allState.gameState.currentStage && allState.gameState.currentStage.dialog || '',
+    dialogType: allState.gameState.currentStage && allState.gameState.currentStage.dialogType || undefined,
+    options: allState.gameState.currentStage && allState.gameState.currentStage.optionsSection || [],
 });
 
 const mapDispatchToProps = ({
     changeStage: changeStage
 });
 
-export default connect(mapStateToProps, { changeStage })(Questions);
+export default connect(mapStateToProps, mapDispatchToProps)(Question);
 
-// export default Options;
+// export default StartPage;
