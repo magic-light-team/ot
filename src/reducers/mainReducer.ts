@@ -103,7 +103,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
       //let currentStage = state.currentLevel? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
       //let currentStage = state.currentLevelId? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
-      let currentlevel= gameData.levels.find(level=>level.levelId==state.currentLevelId);
+      let currentlevel= gameData.levels.find(level=>level.levelId===state.currentLevelId);
       let currentStage = currentlevel && currentlevel.stages.find(stage => stage.stageId === stageId);
 
       if (!currentStage) {

@@ -1,5 +1,5 @@
 import gameData from '../info/data';
-import { level, stage, appPage } from '../info/data.interfaces';
+import { stage, appPage } from '../info/data.interfaces';
 
 export class chapters {
   levelId: number;
