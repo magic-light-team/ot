@@ -12,16 +12,17 @@ import { Dispatch } from 'redux';
 export const changePage = (event: React.MouseEvent<HTMLButtonElement>, newPage:string, levelId:number) => (dispatch:Dispatch) => {
 
     event.stopPropagation();
-    console.log('changePage actions', event, newPage, levelId);
-
+    // console.log('changePage actions', event, newPage, levelId);
     dispatch({
         type: ActionTypes.CHANGE_PAGE, // newPage,
         payload: { levelId, newPage },
     })
 }
 
-export const changeStage = (stageId:string, score:number, backgroundPic:string) => (dispatch:Dispatch) => {
-
+export const changeStage = (event: React.MouseEvent<HTMLButtonElement>,stageId:string, score:number, backgroundPic:string) => (dispatch:Dispatch) => {
+    
+    event.stopPropagation();
+    // console.log('changeStage actions', event, stageId, score,backgroundPic);
     dispatch({
         type: ActionTypes.CHANGE_STAGE,
         payload: { stageId, score,backgroundPic }

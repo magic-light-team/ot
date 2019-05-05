@@ -1,3 +1,4 @@
+
 #score-board {
 	display: flex;
 	background: rgba(255, 255, 255, 0.85);
@@ -7,40 +8,47 @@
     top: 0;
 }
 
-#menu {
+#score-board #menu {
 	padding: 10px;
 	flex: 0 0 20%;
 }
 
-#menu img {
+#score-board #menu img ,#score-board #backlink img{
 	max-width: 100%;
 	height: 100%;
 	cursor: pointer;
 }
 
-#stage {
+#score-board #stage {
 	flex: 0 0 60%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#score {
+#score-board #score {
 	display: flex;
 	flex: 0 0 20%;
 	flex-direction: column;
 }
 
-#score-text {
+#score-board #score-text {
 	display: flex;
 	flex-basis: 100%;
 	justify-content: center;
 	align-items: center;
 }
 
-#score-num {
+#score-board #score-num {
 	display: flex;
 	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#score-board #backlink{
+	display: flex;
+	flex: 0 0 20%;
 	justify-content: center;
 	align-items: center;
 }

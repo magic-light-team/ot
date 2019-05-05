@@ -8,7 +8,7 @@ import { appPage } from '../info/data.interfaces';
 
 
 export default function MainReducer(state = initialState, action: { type: any; payload: any }) {
-  
+
   switch (action.type) {
 
     case ActionTypes.CHANGE_PAGE:
@@ -17,83 +17,64 @@ export default function MainReducer(state = initialState, action: { type: any; p
       if (!action.payload.levelId) {
 
         let newPage = action.payload.newPage;
-        let pageSetting = (gameData as any)[newPage] as appPage ;
+        let pageSetting = (gameData as any)[newPage] as appPage;
         let pageTitle = pageSetting.pageTitle;
-        //console.log('new page --- ',newPage ,gameData[newPage] , gameData[newPage].music)
-        // if(gameData[newPage] && gameData[newPage].music){
-
-        //   let newMusic = process.env.PUBLIC_URL+'/audio/'+gameData[newPage].music;
-        //   if(newMusic !== state.music){
-
-        //     let audio = state.audio;
-        //     if(audio === null) {
-        //       // console.log('new audio');
-        //       audio = new Audio(newMusic);
-        //       audio.play();
-        //     }else{
-        //       audio.pause();
-        //       audio.src = newMusic;
-        //       console.log('have audio',audio,audio.src);
-        //       // audio.play();
-        //     }
-        //   }
-        // }
 
         return {
           ...state,
-          pageName: newPage,
-          pageSetting,
-          headerTitle:pageTitle,
-          // restartMusic: true, // temp
+
+          backgroundPic: pageSetting.backgroundPic,
+          music: pageSetting.music,
+          
+          headerTitle: pageTitle,
+          // currentLevelId:
+          //currentStage
+
           saveChoise: [...state.saveChoise, {
             action: ActionTypes.CHANGE_PAGE,
             page: newPage
           }],
+
+          pageName: newPage,
+          pageSetting,
+
           isPaused: false,
-          //items: action.payload
+          //chaptersInfo:
         }
       }
 
       let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId) || gameData.levels[0];
-
       let music = process.env.PUBLIC_URL + '/audio/' + thisLevel.backgroundMusic;
-      // let audio = state.audio;
-
-      // if (audio === null) {
-      //   // console.log('new audio');
-      //   audio = new Audio(music);
-      //   audio.play();
-      // } else {
-      //   audio.pause();
-
-      //   audio.src = music;
-      //   console.log('have audio', audio, audio.src, 'is paused', audio.paused, ' readyState:', audio.readyState);
-      //   // audio.play();
-      // }
 
       return {
         ...state,
-        pageName: action.payload.newPage,
-        currentLevel: thisLevel,
+
         backgroundPic: thisLevel.levelPic,
-        // music: thisLevel.backgroundMusic,
         music,
-        // audio,
-        // restartMusic: true,
+        
+        headerTitle: thisLevel.levelName,
+        currentLevelId: thisLevel.levelId,
         currentStage: thisLevel.stages.find(stage => stage.stageId === 1),
+
         saveChoise: [...state.saveChoise, {
           action: ActionTypes.CHANGE_PAGE,
           page: action.payload.newPage,
           levelId: action.payload.levelId
         }],
+
+        pageName: action.payload.newPage,
+        // pageSetting,
+
+        isPaused: false,
+        //chaptersInfo:
       }
 
     case ActionTypes.CHANGE_STAGE:
-      //  console.log('change stage reducer');
+      //console.log('change stage reducer');
 
       let stageId = action.payload.stageId;
       if (!stageId) {
-        stageId = state.currentStage? state.currentStage.stageId:0 + 1;
+        stageId = (state.currentStage ? state.currentStage.stageId : 0 )+ 1;
       }
 
       let score = state.score;
@@ -103,13 +84,14 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
       //let currentStage = state.currentLevel? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
       //let currentStage = state.currentLevelId? state.currentLevel.stages.find(stage => stage.stageId === stageId):null;
-      let currentlevel= gameData.levels.find(level=>level.levelId===state.currentLevelId);
+      let currentlevel = gameData.levels.find(level => level.levelId === state.currentLevelId);
       let currentStage = currentlevel && currentlevel.stages.find(stage => stage.stageId === stageId);
 
       if (!currentStage) {
-        console.log('can not find');
+        console.log('can not find stage'); // TODO: Score Page
         return {
           ...state,
+
           pageName: 'chapterPage', // or end stage score page
           saveChoise: [...state.saveChoise, {
             action: ActionTypes.CHANGE_STAGE,
@@ -156,21 +138,6 @@ export default function MainReducer(state = initialState, action: { type: any; p
       }
 
     default:
-      // start audio at first
-      // if (state.audio === null) {
-      //   // console.log('play music at starting app')
-      //   let music = process.env.PUBLIC_URL + '/audio/'; //+ gameData[state.page].music;
-      //   let audio = new Audio(music);
-      //   audio.loop = true;
-      //   // console.log('new audio',audio);
-      //   audio.play();
-
-      //   audio.style.display = "none";
-      //   document.body.appendChild(audio);
-
-      //   return { ...state, music, audio };
-      // }
-
       return state;
   }
 }

@@ -30,18 +30,17 @@ class PageHeader extends Component<Props> {
                 }
 
                 <div id="stage">{this.props.headerTitle}</div>
-                <div id="score">
                 {
                     this.props.page ?
-                    <a href="#" onClick={event => this.props.changePage(event, "startPage")}>
-                        &gt;&gt;</a> 
-                :
-                    <span>
-                        <span id="score-text">امتیاز</span>
-                        <span id="score-num">{this.props.score}</span>
-                    </span> 
+                        <div id="backlink" onClick={event => this.props.changePage(event, "startPage")}>
+                            <img src={process.env.PUBLIC_URL + "/img/backwards_arrow.png"} alt="backwards arrow icon" />
+                        </div>
+                        :
+                        <div id="score">
+                            <span id="score-text">امتیاز</span>
+                            <span id="score-num">{this.props.score}</span>
+                        </div>
                 }
-                </div>
             </div>
         );
     }

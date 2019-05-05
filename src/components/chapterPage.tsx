@@ -6,6 +6,8 @@ import { IState, chapters } from '../reducers/initialState';
 import { appPage } from '../info/data.interfaces';
 import { changePage } from '../actions/actions';
 
+import PageHeader from './pageHeader';
+
 export interface Props { //StateFromProps
     pageSetting: appPage,
     chaptersInfo:chapters[],
@@ -21,6 +23,8 @@ class ChapterPage extends Component<Props,State> {
     render() {
         return (
             <div id="chapter-wrapper" className="chapter-selector" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
+            <PageHeader page={true} />
+            <div className="chapters">
                 {this.props.chaptersInfo.map(chapter =>
                     <div key={chapter.levelId}
                         id={"chapter-" + chapter.levelId}
@@ -28,6 +32,8 @@ class ChapterPage extends Component<Props,State> {
                         style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + chapter.levelPic + ')' }}
                         onClick={event => this.props.changePage(event,"gamePage", chapter.levelId)}>{chapter.levelName}</div>)}
             </div>
+            </div>
+                
         );
     }
 }
