@@ -40,9 +40,9 @@ class Question extends Component<Props, State> {
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    dialog: allState.gameState.currentStage && allState.gameState.currentStage.dialog || '',
-    dialogType: allState.gameState.currentStage && allState.gameState.currentStage.dialogType || undefined,
-    options: allState.gameState.currentStage && allState.gameState.currentStage.optionsSection || [],
+    dialog: (allState.gameState.currentStage && allState.gameState.currentStage.dialog) || '',
+    dialogType: (allState.gameState.currentStage && allState.gameState.currentStage.dialogType) || undefined,
+    options: (allState.gameState.currentStage && allState.gameState.currentStage.optionsSection) || [],
 });
 
 const mapDispatchToProps = ({

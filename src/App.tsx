@@ -9,6 +9,7 @@ import StartPage from './components/startPage';
 import ChapterPage from './components/chapterPage';
 import SourcePage from './components/sourcePage';
 import AboutPage from './components/aboutPage';
+import GamePage from './components/gamePage';
 
 interface StateProps {
   pageName: string,
@@ -25,11 +26,11 @@ class App extends React.Component<StateProps & DispatchProps, any> {
       case AppPages.START_PAGE:
         return <StartPage />
 
-      case AppPages.Chapter_PAGE:
+      case AppPages.CHAPTER_PAGE:
         return <ChapterPage />;
 
-      // case "gamePage":
-      //   return <GamePage />;
+      case AppPages.GAME_PAGE:
+        return <GamePage />;
 
       case AppPages.SOURCE_PAGE:
         return <SourcePage />;

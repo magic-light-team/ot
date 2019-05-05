@@ -73,7 +73,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
 
       return {
         ...state,
-        page: action.payload.newPage,
+        pageName: action.payload.newPage,
         currentLevel: thisLevel,
         backgroundPic: thisLevel.levelPic,
         // music: thisLevel.backgroundMusic,
@@ -110,7 +110,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
         console.log('can not find');
         return {
           ...state,
-          page: 'chapterPage', // or end stage score page
+          pageName: 'chapterPage', // or end stage score page
           saveChoise: [...state.saveChoise, {
             action: ActionTypes.CHANGE_STAGE,
             stage: 'cannot find stage. maybe end of stage'

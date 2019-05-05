@@ -1467,7 +1467,7 @@ let levels: level[] = [
 
 const gameData = {
     [AppPages.START_PAGE]: startPage,
-    [AppPages.Chapter_PAGE]: chapterPage,
+    [AppPages.CHAPTER_PAGE]: chapterPage,
     [AppPages.ABOUT_PAGE]: aboutPage,
     [AppPages.SOURCE_PAGE]: sourcePage,
     levels

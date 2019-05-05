@@ -28,7 +28,7 @@ class Dialog extends Component<Props, State> {
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    stageDialog: allState.gameState.currentStage &&  allState.gameState.currentStage.dialog || '',
+    stageDialog: (allState.gameState.currentStage &&  allState.gameState.currentStage.dialog) || '',
     dialogType: allState.gameState.currentStage && allState.gameState.currentStage.dialogType
 });
 

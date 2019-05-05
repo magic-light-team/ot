@@ -47,7 +47,7 @@ const mapStateToProps = (allState: { gameState: IState }) => ({
     isPaused: allState.gameState.isPaused,
     stageType: allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType,
     backgroundPic: allState.gameState && allState.gameState.backgroundPic,
-    nextDialogId: allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType === 0 && allState.gameState.currentStage.nextDialogId || undefined
+    nextDialogId: (allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType === 0 && allState.gameState.currentStage.nextDialogId) || undefined
 });
 
 const mapDispatchToProps = ({

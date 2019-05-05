@@ -59,19 +59,9 @@ const init: IState = {
   isPaused: false,
   // muteMusic: false,
 
-  //chaptersInfo: gameData.levels.map(level=>{ levelId:level.levelId, levelName:level.levelName, levelName:level.levelPic })
   chaptersInfo: gameData.levels.map(level => new chapters(level.levelId, level.levelName, level.levelPic))
 }
 
 export default init;
-
-
-
-// export interface chapters{
-//   levelId:number,
-//   levelName:string,
-//   levelPic:string,
-// }
-
 
 
