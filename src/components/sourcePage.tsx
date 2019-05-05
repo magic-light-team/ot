@@ -6,6 +6,8 @@ import { changePage } from '../actions/actions';
 import { IState } from '../reducers/initialState';
 import { appPage } from '../info/data.interfaces';
 
+import PageHeader from './pageHeader';
+
 export interface Props { //StateFromProps
     pageSetting: appPage,
     changePage: Function;
@@ -16,11 +18,14 @@ class SourcePage extends Component<Props> {
     render() {
         return (
             <div id="sourcePage" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
-                <div className="header-info">
+                
+                <PageHeader page={true} subTitle={"لیست منابع مورد استفاده در طراحی این بازی"} />
+                
+                {/* <div className="header-info">
                     <h4> منابع </h4>
-                    <p> لیست منابع مورد استفاده در طراحی این بازی </p>
+                    <p>  </p>
                     <div id="sourcePage-back-btn" onClick={event => this.props.changePage(event, "startPage")}><h1>&gt;&gt;</h1></div>
-                </div>
+                </div> */}
                 <div className="body">
 
                     <div className="team-card">

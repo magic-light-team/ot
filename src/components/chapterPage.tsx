@@ -10,7 +10,7 @@ import PageHeader from './pageHeader';
 
 export interface Props { //StateFromProps
     pageSetting: appPage,
-    chaptersInfo:chapters[],
+    chaptersInfo: chapters[],
     changePage: Function;
 }
 
@@ -18,28 +18,28 @@ export interface State { // DispatchFromProps
     // changePage: () => void;
 }
 
-class ChapterPage extends Component<Props,State> {
+class ChapterPage extends Component<Props, State> {
     state = {}
     render() {
         return (
             <div id="chapter-wrapper" className="chapter-selector" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
-            <PageHeader page={true} />
-            <div className="chapters">
-                {this.props.chaptersInfo.map(chapter =>
-                    <div key={chapter.levelId}
-                        id={"chapter-" + chapter.levelId}
-                        className={"chapter chapter-" + chapter.levelId}
-                        style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + chapter.levelPic + ')' }}
-                        onClick={event => this.props.changePage(event,"gamePage", chapter.levelId)}>{chapter.levelName}</div>)}
+                <PageHeader page={true} />
+                <div className="chapters">
+                    {this.props.chaptersInfo.map(chapter =>
+                        <div key={chapter.levelId}
+                            id={"chapter-" + chapter.levelId}
+                            className={"chapter chapter-" + chapter.levelId}
+                            style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + chapter.levelPic + ')' }}
+                            onClick={event => this.props.changePage(event, "gamePage", chapter.levelId)}>{chapter.levelName}</div>)}
+                </div>
             </div>
-            </div>
-                
+
         );
     }
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    pageSetting: allState.gameState.pageSetting, 
+    pageSetting: allState.gameState.pageSetting,
     chaptersInfo: allState.gameState.chaptersInfo
 });
 

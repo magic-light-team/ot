@@ -10,7 +10,9 @@ export interface Props { //StateFromProps
     score: number,
     changePage: Function;
     pauseGame: Function;
+
     page: boolean,
+    subTitle?: string,
 }
 
 export interface State { // DispatchFromProps
@@ -29,7 +31,10 @@ class PageHeader extends Component<Props> {
                         </div>
                 }
 
-                <div id="stage">{this.props.headerTitle}</div>
+                <div id="stage">
+                    <span>{this.props.headerTitle}</span>
+                    {this.props.subTitle && <span>{this.props.subTitle}</span>}
+                </div>
                 {
                     this.props.page ?
                         <div id="backlink" onClick={event => this.props.changePage(event, "startPage")}>

@@ -29,6 +29,7 @@
     align-items: flex-end !important;
     flex: 1 1 auto;
     padding: 1.25rem;
+    margin-top: 60px;
 }
 
 #aboutPage .team-card {
@@ -94,4 +95,30 @@
     left: 10px;
     top: 60px;
     cursor: pointer;
+}
+
+#aboutPage #info-cart {
+    display: flex;
+    /* width: 100%; */
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    min-height: auto;
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 1em;
+}
+#aboutPage #info-cart .img-div{
+    flex: 0 0 35%;
+	flex-direction: column;
+}
+#aboutPage #info-cart .img-div img{
+    width:100%;
+}
+#aboutPage #info-cart .desc-div{
+    flex: 0 0 65%;
+	flex-direction: column;
+}
+#aboutPage #info-cart .desc-div h3{
+    margin-bottom: .5em;
 }

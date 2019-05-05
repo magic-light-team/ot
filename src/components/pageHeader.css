@@ -5,7 +5,8 @@
 	width: 100%;
 	height: 60px;
 	position: absolute;
-    top: 0;
+	top: 0;
+	color: black;
 }
 
 #score-board #menu {
@@ -24,6 +25,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 #score-board #score {
@@ -32,14 +34,8 @@
 	flex-direction: column;
 }
 
-#score-board #score-text {
-	display: flex;
-	flex-basis: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-#score-board #score-num {
+#score-board #score span,
+#score-board #stage span{
 	display: flex;
 	flex-basis: 100%;
 	justify-content: center;
