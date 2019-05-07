@@ -10,9 +10,11 @@ import ChapterPage from './components/chapterPage';
 import SourcePage from './components/sourcePage';
 import AboutPage from './components/aboutPage';
 import GamePage from './components/gamePage';
+import AudioPlayer from './components/audioPlayer';
 
 interface StateProps {
   pageName: string,
+  music:string,
 }
 
 interface DispatchProps {
@@ -37,7 +39,7 @@ class App extends React.Component<StateProps & DispatchProps, any> {
 
       case AppPages.ABOUT_PAGE:
         return <AboutPage />;
-        
+
       default:
         return <StartPage />
     }
@@ -47,7 +49,7 @@ class App extends React.Component<StateProps & DispatchProps, any> {
     return (
       <div className="App">
         {this.renderPage(this.props.pageName)}
-        {/* <AudioPlayer /> */}
+        <AudioPlayer key={11} music={this.props.music} /> 
       </div>
     );
   }
@@ -55,7 +57,8 @@ class App extends React.Component<StateProps & DispatchProps, any> {
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-  pageName: allState.gameState.pageName
+  pageName: allState.gameState.pageName,
+  music: allState.gameState.music,
 });
 
 export default connect(mapStateToProps)(App);
