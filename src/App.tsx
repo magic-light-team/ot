@@ -49,7 +49,7 @@ class App extends React.Component<StateProps & DispatchProps, any> {
     return (
       <div className="App">
         {this.renderPage(this.props.pageName)}
-        <AudioPlayer music={this.props.music} />
+        <AudioPlayer music={this.props.music} mute={false} />
         {/*<AudioPlayer key={new Date} music={this.props.music} /> */}
       </div>
     );

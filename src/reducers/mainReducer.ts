@@ -44,7 +44,7 @@ export default function MainReducer(state = initialState, action: { type: any; p
       }
 
       let thisLevel = gameData.levels.find(level => level.levelId === action.payload.levelId) || gameData.levels[0];
-      let music = process.env.PUBLIC_URL + '/audio/' + thisLevel.backgroundMusic;
+      let music = thisLevel.backgroundMusic;
 
       return {
         ...state,
