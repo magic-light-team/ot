@@ -41,7 +41,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ music, mute }) => {
   return (
     <audio
       className="player"
-      autoPlay
+      autoPlay={true}
       preload="auto"
       controls={false}
       loop={true}

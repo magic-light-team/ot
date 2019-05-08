@@ -94,5 +94,3 @@
 * [react-redux](https://react-redux.js.org/)
 * [using-react-with-redux-and-typescript](https://blog.usejournal.com/using-react-with-redux-and-typescript-c7ec48c211f6)
 * [Redux DevTools Extension](https://extension.remotedev.io/#usage)
-* [Using Typescript with modern React (i.e. hooks, context, suspense)](https://www.youtube.com/watch?v=BnIhk4igd8I)
-* [TypeScript com ReactJS, Redux e Redux Saga | Diego Fernandes](https://www.youtube.com/watch?v=OXxul6AvXNs)

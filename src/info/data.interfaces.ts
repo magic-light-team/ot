@@ -39,7 +39,7 @@ export interface stage {
 }
 
 export enum StageType {
-    Intro, Dialog, Question, Score
+    Intro, Dialog, Question, Score //,Sorting, TrueFalse
 }
 
 // export interface dialogDesc{
