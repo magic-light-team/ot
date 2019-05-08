@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './sorting.css'
 
 import { connect } from 'react-redux';
-import { IState } from '../reducers/initialState';
+import { IState } from '../../reducers/initialState';
 
 export interface Props { //StateFromProps
     // stageDialog:string,

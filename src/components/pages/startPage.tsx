@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './startPage.css'
 
 import { connect } from 'react-redux';
-import { IState } from '../reducers/initialState';
-import { appPage } from '../info/data.interfaces';
-import { changePage } from '../actions/actions';
-import BigButton from './bigbutton'
+import { IState } from '../../reducers/initialState';
+import { appPage } from '../../info/data.interfaces';
+import { changePage } from '../../actions/actions';
+import BigButton from '../tools/bigbutton'
 
 //import Transition from 'react-transition-group/Transition';
 

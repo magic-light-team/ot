@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './sourcePage.css'
 
 import { connect } from 'react-redux';
-import { changePage } from '../actions/actions';
-import { IState } from '../reducers/initialState';
-import { appPage } from '../info/data.interfaces';
+import { changePage } from '../../actions/actions';
+import { IState } from '../../reducers/initialState';
+import { appPage } from '../../info/data.interfaces';
 
-import PageHeader from './pageHeader';
+import PageHeader from '../tools/pageHeader';
 
 export interface Props { //StateFromProps
     pageSetting: appPage,

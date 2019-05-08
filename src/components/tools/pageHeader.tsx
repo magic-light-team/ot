@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './pageHeader.css'
 
 import { connect } from 'react-redux';
-import { changePage, pauseGame } from '../actions/actions';
-import { IState } from '../reducers/initialState';
+import { changePage, pauseGame } from '../../actions/actions';
+import { IState } from '../../reducers/initialState';
 
 export interface Props { //StateFromProps
     headerTitle: string,

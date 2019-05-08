@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './dialog.css'
 
 import { connect } from 'react-redux';
-import { IState } from '../reducers/initialState';
-import { DialogType } from '../info/data.interfaces';
+import { IState } from '../../reducers/initialState';
+import { DialogType } from '../../info/data.interfaces';
 
 export interface Props { //StateFromProps
     stageDialog:string,

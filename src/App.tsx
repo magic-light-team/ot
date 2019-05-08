@@ -5,12 +5,12 @@ import { connect } from 'react-redux';
 import { IState } from './reducers/initialState';
 
 import { AppPages } from './info/pages';
-import StartPage from './components/startPage';
-import ChapterPage from './components/chapterPage';
-import SourcePage from './components/sourcePage';
-import AboutPage from './components/aboutPage';
-import GamePage from './components/gamePage';
-import AudioPlayer from './components/audioPlayer';
+import StartPage from './components/pages/startPage';
+import ChapterPage from './components/pages/chapterPage';
+import SourcePage from './components/pages/sourcePage';
+import AboutPage from './components/pages/aboutPage';
+import GamePage from './components/game/gamePage';
+import AudioPlayer from './components/tools/audioPlayer';
 
 interface StateProps {
   pageName: string,

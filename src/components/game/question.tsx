@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { IState } from '../reducers/initialState';
-import { changeStage } from '../actions/actions';
-import { option, DialogType } from '../info/data.interfaces';
+import { IState } from '../../reducers/initialState';
+import { changeStage } from '../../actions/actions';
+import { option, DialogType } from '../../info/data.interfaces';
 
 //import Transition from 'react-transition-group/Transition';
 

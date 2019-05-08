@@ -3,13 +3,13 @@ import './gamePage.css'
 
 import Dialog from './dialog';
 import Querstion from './question';
-import PageHeader from './pageHeader';
-import Modal from './modal';
+import PageHeader from '../tools/pageHeader';
+import Modal from '../tools/modal';
 
 import { connect } from 'react-redux';
-import { changePage, changeStage, pauseGame } from '../actions/actions';
-import { IState } from '../reducers/initialState';
-import { StageType } from '../info/data.interfaces';
+import { changePage, changeStage, pauseGame } from '../../actions/actions';
+import { IState } from '../../reducers/initialState';
+import { StageType } from '../../info/data.interfaces';
 
 export interface Props { //StateFromProps
     stageType?:StageType,
