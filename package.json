@@ -26,7 +26,14 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -43,6 +50,7 @@
   "devDependencies": {
     "@types/react-redux": "^7.0.8",
     "@types/redux-thunk": "^2.1.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "gh-pages": "^2.0.1",
     "redux-devtools-extension": "^2.13.8"
   }

@@ -1,5 +1,5 @@
 
-import React,{useEffect} from 'react';
+import React, { useState,useEffect } from 'react';
 import './audioPlayer.css';
 
 interface AudioPlayerProps {
@@ -8,40 +8,45 @@ interface AudioPlayerProps {
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ music, mute }) => {
-
-  let audio:HTMLAudioElement;
-
+  
+  const [audio, setAudio] = useState();
+  // let audio: HTMLAudioElement | null;
+  
   useEffect(() => {
-    audio.pause();
-    audio.load();
-    audio.play();
-    
-    // return () => {
-    //   effect
-    // };
-  }, [music]);
-
-  useEffect(() => {
-    if(mute)
-    {
-      console.log("mute music")
-    }else{
-      console.log("play music")
+    if (audio) {
+      audio.pause();
+      audio.load();
+      audio.play();
     }
     // return () => {
     //   effect
     // };
-  }, [mute])
+  }, [music,audio]);
+
+  useEffect(() => {
+    if (audio) {
+      if (mute) {
+        audio.pause();
+        // console.log("mute music")
+      } else {
+        audio.play();
+        // console.log("play music")
+      }
+    }
+    // return () => {
+    //   effect
+    // };
+  }, [mute,audio])
 
   return (
-    <audio 
-      className="player" 
-      autoPlay 
-      preload="auto" 
+    <audio
+      className="player"
+      autoPlay
+      preload="auto"
       controls={false}
       loop={true}
       muted={mute}
-      ref={(audioref)=>{audio = audioref || new Audio()}}
+      ref={(audioref) => { setAudio(audioref) }}
     >
       <source src={process.env.PUBLIC_URL + "/audio/" + music} type="audio/mpeg" />
       Your browser does not support the audio tag.
@@ -49,6 +54,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ music, mute }) => {
   );
 };
 
-export default React.memo(AudioPlayer,(prevProps, nextProps)=>{
-  return prevProps.music === nextProps.music
+export default React.memo(AudioPlayer, (prevProps, nextProps) => {
+  return prevProps.music === nextProps.music && prevProps.mute === nextProps.mute
 });
