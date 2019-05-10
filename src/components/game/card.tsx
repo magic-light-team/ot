@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useRef } from 'react'
+import React, { useImperativeHandle, useRef } from 'react';
 import {
   DragSource,
   DropTarget,
@@ -8,9 +8,9 @@ import {
   DropTargetConnector,
   DragSourceConnector,
   DragSourceMonitor,
-} from 'react-dnd'
-import ItemTypes from './ItemTypes'
-import { XYCoord } from 'dnd-core'
+} from 'react-dnd';
+import ItemTypes from './ItemTypes';
+import { XYCoord } from 'dnd-core';
 
 const style = {
   border: '1px dashed gray',
@@ -35,25 +35,22 @@ interface CardInstance {
   getNode(): HTMLDivElement | null
 }
 
-const Card: React.RefForwardingComponent<
-  HTMLDivElement,
-  CardProps
-> = React.forwardRef(
+const Card: React.ForwardRefExoticComponent<CardProps> = React.forwardRef(
   ({ text, isDragging, connectDragSource, connectDropTarget }, ref) => {
-    const elementRef = useRef(null)
-    connectDragSource(elementRef)
-    connectDropTarget(elementRef)
+    const elementRef = useRef(null);
+    connectDragSource(elementRef);
+    connectDropTarget(elementRef);
 
-    const opacity = isDragging ? 0 : 1
+    const opacity = isDragging ? 0 : 1;
     useImperativeHandle<{}, CardInstance>(ref, () => ({
       getNode: () => elementRef.current,
-    }))
+    }));
     return (
       <div ref={elementRef} style={{ ...style, opacity }}>
         {text}
       </div>
-    )
-  },
+    );
+  }
 )
 
 export default DropTarget(

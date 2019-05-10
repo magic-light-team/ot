@@ -3,19 +3,20 @@ import './gamePage.css'
 
 import Dialog from './dialog';
 import Querstion from './question';
+import Sorting from './sorting';
 import PageHeader from '../tools/pageHeader';
 import Modal from '../tools/modal';
 
 import { connect } from 'react-redux';
 import { changePage, changeStage, pauseGame } from '../../actions/actions';
 import { IState } from '../../reducers/initialState';
-import { StageType,DialogType, option } from '../../info/data.interfaces';
+import { StageType, DialogType, option } from '../../info/data.interfaces';
 
 export interface Props { //StateFromProps
-    stageType?:StageType,
-    nextDialogId?:number,
-    isPaused:boolean,
-    backgroundPic:string,
+    stageType?: StageType,
+    nextDialogId?: number,
+    isPaused: boolean,
+    backgroundPic: string,
 
     dialog: string,
     dialogType?: DialogType,
@@ -32,13 +33,15 @@ export interface State { // DispatchFromProps
 
 class GamePage extends Component<Props> {
     state = {}
-    
-    renderStage = (stage?:StageType) =>{
+
+    renderStage = (stage?: StageType) => {
         switch (stage) {
             case StageType.Dialog:
-                return <Dialog dialog={this.props.dialog} dialogType={this.props.dialogType} /> ;
+                return <Dialog dialog={this.props.dialog} dialogType={this.props.dialogType} />;
             case StageType.Question:
-                return <Querstion dialog={this.props.dialog} dialogType={this.props.dialogType} options={this.props.options} changeStage={this.props.changeStage} /> ;
+                return <Querstion dialog={this.props.dialog} dialogType={this.props.dialogType} options={this.props.options} changeStage={this.props.changeStage} />;
+            case StageType.Sorting:
+                return <Sorting />;
             default:
                 return <div></div>
         }
@@ -47,7 +50,7 @@ class GamePage extends Component<Props> {
     render() {
         return (
             <div id="game"
-                onClick={(this.props.stageType===StageType.Question || this.props.isPaused) ? undefined : event => this.props.changeStage(event,this.props.nextDialogId)}
+                onClick={(this.props.stageType === StageType.Question || this.props.isPaused) ? undefined : event => this.props.changeStage(event, this.props.nextDialogId)}
                 style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
                 <PageHeader page={false} />
                 {this.renderStage(this.props.stageType)}
@@ -61,8 +64,8 @@ const mapStateToProps = (allState: { gameState: IState }) => ({
     isPaused: allState.gameState.isPaused,
     stageType: allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType,
     backgroundPic: allState.gameState && allState.gameState.backgroundPic,
-    nextDialogId: (allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType === 0 && allState.gameState.currentStage.nextDialogId) || undefined,
-    dialog: (allState.gameState.currentStage &&  allState.gameState.currentStage.dialog) || '',
+    nextDialogId: (allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.nextDialogId) || undefined,
+    dialog: (allState.gameState.currentStage && allState.gameState.currentStage.dialog) || '',
     dialogType: allState.gameState.currentStage && allState.gameState.currentStage.dialogType,
     options: (allState.gameState.currentStage && allState.gameState.currentStage.optionsSection) || [],
 });

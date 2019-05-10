@@ -1,17 +1,17 @@
 
 export interface appPage {
     backgroundPic: string,
-    pageTitle:string,
+    pageTitle: string,
     music: string,
     pageButtons?: pageButton[]
 }
 
-export interface pageButton{
-    id:string,
-    title:string,
-    page:string,
-    clickHandle?:Function,
-    color?:string
+export interface pageButton {
+    id: string,
+    title: string,
+    page: string,
+    clickHandle?: Function,
+    color?: string
 }
 
 export interface level {
@@ -39,7 +39,12 @@ export interface stage {
 }
 
 export enum StageType {
-    Intro, Dialog, Question, Score //,Sorting, TrueFalse
+    Intro = "Intro",
+    Dialog = "Dialog",
+    Question = "Question",
+    Score = "Score",
+    Sorting = "Sorting",
+    TrueFalse = "TrueFalse"
 }
 
 // export interface dialogDesc{
@@ -50,15 +55,19 @@ export enum StageType {
 // }
 
 export enum DialogType {
-    left="left", right="right", center="center", up="up", up_right="up_right"
+    left = "left",
+    right = "right",
+    center = "center",
+    up = "up",
+    up_right = "up_right"
 }
 
 export interface option {
     optionId: number,
     title: string,
     color?: string,
-    score: number,
+    score?: number,
     nextDialogId?: number,
     // change background
-    backgroundPic?:string
+    backgroundPic?: string
 }

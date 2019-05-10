@@ -27,6 +27,7 @@ export interface IState {
   // gameData: any,
   achievment: any,
   saveChoise: any[],
+  // thisLevelChoises:any[]
 
   pageName: string,
   pageSetting: appPage,
