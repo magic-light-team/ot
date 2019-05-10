@@ -49,6 +49,20 @@ let sourcePage: appPage = {
 
 let levels: level[] = [
     {
+        levelId: 5,
+        levelName: "تست",
+        levelPic: "/img/levels/l1-0.jpg",
+        backgroundMusic: "bensound-memories-1.mp3",
+        stages: [{
+            stageId: 1,
+            stageType: StageType.Sorting, // stageType: 0,
+            person: "سپهر",
+            personPic: "",
+            dialogType: DialogType.left,//dialogType: "left",,
+            dialog: "سلام من سپهرم و برادر بزرگ ترم سینا مبتلا به اوتیسمه. مردم از من میپرسن که چه حسی داره برادرت اوتیسم داره؟ سخته؟ خسته کنندس؟چقدر فرق داره؟"
+        }]
+    },
+    {
         levelId: 1,
         levelName: "برادر بزرگتر من",
         levelPic: "/img/levels/l1-0.jpg",

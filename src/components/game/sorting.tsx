@@ -49,11 +49,10 @@ const Sorting: React.FC<SortingProps> = ({ }) => {
   ])
 
   const moveCard = (dragIndex: number, hoverIndex: number) => {
-    const dragCard = cards[dragIndex];
-    const hoverCard = cards[hoverIndex];
-    cards[dragIndex] = hoverCard;
-    cards[hoverIndex] = dragCard;
-    setCards(cards);
+    let newCards = [...cards];
+    newCards[dragIndex] = cards[hoverIndex];
+    newCards[hoverIndex] = cards[dragIndex];
+    setCards(newCards);
   }
 
   return (
