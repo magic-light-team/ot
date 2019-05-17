@@ -13,13 +13,6 @@ import { XYCoord } from 'dnd-core';
 enum ItemTypes{
   CARD="cart"
 }
-const style = {
-  border: '1px dashed gray',
-  padding: '0.5rem 1rem',
-  marginBottom: '.5rem',
-  backgroundColor: 'white',
-  cursor: 'move',
-}
 
 export interface CardProps {
   id: any
@@ -47,7 +40,8 @@ const Card: React.ForwardRefExoticComponent<CardProps> = React.forwardRef(
       getNode: () => elementRef.current,
     }));
     return (
-      <div ref={elementRef} style={{ ...style, opacity }}>
+      <div ref={elementRef} className="card-class" style={{ opacity }}>
+        <img src={process.env.PUBLIC_URL + "/img/move_arrow.png"} alt="move-arrow" />
         {text}
       </div>
     );

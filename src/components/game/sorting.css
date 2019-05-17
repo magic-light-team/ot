@@ -1,0 +1,15 @@
+.card-class{
+    border: '1px dashed gray';
+    padding: '0.5rem 1rem';
+    margin-bottom: '.5rem';
+    background-color: 'white';
+    cursor: 'move';
+    display: flex;
+}
+
+
+.card-class img{
+    display: flex;
+    flex: 0 0 20%;
+    flex-direction: column;
+}
