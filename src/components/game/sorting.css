@@ -1,15 +1,27 @@
 .card-class{
-    border: '1px dashed gray';
-    padding: '0.5rem 1rem';
-    margin-bottom: '.5rem';
-    background-color: 'white';
-    cursor: 'move';
+    border: 1px dashed gray;
+    padding: 0.5rem 1rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    cursor: move;
     display: flex;
 }
 
-
-.card-class img{
+.card-class span.card-img{
     display: flex;
-    flex: 0 0 20%;
+    flex: 0 0 10%;
     flex-direction: column;
+}
+
+.card-class span.card-img img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-class span.card-text{
+    display: flex;
+    flex: 0 0 80%;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -10,8 +10,8 @@ import {
   DragSourceMonitor,
 } from 'react-dnd';
 import { XYCoord } from 'dnd-core';
-enum ItemTypes{
-  CARD="cart"
+enum ItemTypes {
+  CARD = "cart"
 }
 
 export interface CardProps {
@@ -41,8 +41,10 @@ const Card: React.ForwardRefExoticComponent<CardProps> = React.forwardRef(
     }));
     return (
       <div ref={elementRef} className="card-class" style={{ opacity }}>
-        <img src={process.env.PUBLIC_URL + "/img/move_arrow.png"} alt="move-arrow" />
-        {text}
+        <span className="card-img">
+          <img src={process.env.PUBLIC_URL + "/img/move_arrow.png"} alt="move-arrow" />
+        </span>
+        <span className="card-text">{text}</span>
       </div>
     );
   }

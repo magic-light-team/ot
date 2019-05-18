@@ -72,7 +72,7 @@ const Sorting: React.FC<SortingProps> = ({options }) => {
   const checkCards = () =>{
     let isSorted = true;
     for (let index = 0; index < cards.length-1; index++) {
-      if(cards[index].id>cards[index].id)
+      if(cards[index].id>cards[index+1].id)
       {
         isSorted=false;
         break;
