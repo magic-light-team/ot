@@ -17,7 +17,7 @@ class SourcePage extends Component<Props> {
     state = {}
     render() {
         return (
-            <div id="sourcePage" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
+            <div id="sourcePage" className="cover-pic" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
                 
                 <PageHeader page={true} subTitle={"لیست منابع مورد استفاده در طراحی این بازی"} />
                 

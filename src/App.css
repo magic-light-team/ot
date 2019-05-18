@@ -79,6 +79,7 @@ button {
   .App,
   .App>div {
     width: 640px !important;
+    height: calc(100% - 3px);
   }
 
 }
@@ -91,15 +92,16 @@ button {
 	overflow: hidden;
 } */
 
-.App>div {
+.App div.cover-pic {
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 3px);
+  height: 100%;
   border-radius: 10px;
   display: flex;
   background-size: cover;
   width: 100%;
 }
+
 
 .hidden {
   visibility: hidden;

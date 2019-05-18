@@ -17,7 +17,7 @@ class AboutPage extends Component<Props> {
     state = {}
     render() {
         return (
-            <div id="aboutPage" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
+            <div id="aboutPage" className="cover-pic" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
 
                 <PageHeader page={true} subTitle={"درباره تیم توسعه بازی"} />
 

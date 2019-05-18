@@ -22,7 +22,7 @@ class ChapterPage extends Component<Props, State> {
     state = {}
     render() {
         return (
-            <div id="chapter-wrapper" className="chapter-selector" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
+            <div id="chapter-wrapper" className="cover-pic chapter-selector" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
                 <PageHeader page={true} />
                 <div className="chapters">
                     {this.props.chaptersInfo.map(chapter =>

@@ -15,7 +15,7 @@ import { StageType, DialogType, option } from '../../info/data.interfaces';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 export interface Props { //StateFromProps
-    // stageId: number,
+    stageId: number,
 
     stageType?: StageType,
     nextDialogId?: number,
@@ -51,20 +51,30 @@ class GamePage extends Component<Props> {
     }
 
     render() {
+        console.log(this.props.stageId);
         return (
-            <div id="game"
-                onClick={(this.props.stageType === StageType.Question || this.props.isPaused) ? undefined : event => this.props.changeStage(event, this.props.nextDialogId)}
-                style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
-                <PageHeader page={false} />
-                {this.renderStage(this.props.stageType)}
-                {this.props.isPaused && <Modal pauseGame={this.props.pauseGame} changePage={this.props.changePage} />}
-            </div>
+            <TransitionGroup>
+                <CSSTransition
+                    key={this.props.stageId}
+                    timeout={1400}
+                    classNames="fade">
+                    <div id="game" className="cover-pic"
+                        onClick={(this.props.stageType === StageType.Question || this.props.isPaused) ? undefined : event => this.props.changeStage(event, this.props.nextDialogId)}
+                        style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
+
+                        <PageHeader page={false} />
+                        {this.renderStage(this.props.stageType)}
+                        {this.props.isPaused && <Modal pauseGame={this.props.pauseGame} changePage={this.props.changePage} />}
+
+                    </div>
+                </CSSTransition>
+            </TransitionGroup>
         );
     }
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
-    // stageId: allState.gameState.currentStage ? allState.gameState.currentStage.stageId : 0,
+    stageId: allState.gameState.currentStage ? allState.gameState.currentStage.stageId : 0,
     isPaused: allState.gameState.isPaused,
     stageType: allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType,
     backgroundPic: allState.gameState && allState.gameState.backgroundPic,

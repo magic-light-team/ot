@@ -21,7 +21,7 @@ export interface State { // DispatchFromProps
 class StartPage extends Component<Props, State> {
     render() {
         return (
-            <div id="start-screen" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
+            <div id="start-screen" className="cover-pic" style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.pageSetting.backgroundPic + ')' }}>
                 <div id="inner-screen">
                     <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
                     {
