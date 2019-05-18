@@ -20,3 +20,26 @@
         background-position: bottom;
     }
 }
+
+.fade2-appear{
+    opacity: 0;
+    margin-left: -10%;
+  }
+  .fade2-appear.fade2-appear-active{
+    opacity: 1;
+    margin-left: auto;
+    transition: opacity 500ms linear 500ms,margin 500ms linear 500ms;
+  }
+  
+  .fade2-exit{
+    opacity: 1;
+    margin-left: auto;
+  }
+  .fade2-exit.fade2-exit-active{
+    opacity: 0;
+    margin-right: -10%;
+    transition: opacity 500ms linear,margin 500ms linear;
+  }
+  .fade2-exit-done{
+    opacity: 0;
+  }

@@ -56,8 +56,8 @@ class GamePage extends Component<Props> {
             <TransitionGroup>
                 <CSSTransition
                     key={this.props.stageId}
-                    timeout={1400}
-                    classNames="fade">
+                    timeout={1000}
+                    classNames="fade2">
                     <div id="game" className="cover-pic"
                         onClick={(this.props.stageType === StageType.Question || this.props.isPaused) ? undefined : event => this.props.changeStage(event, this.props.nextDialogId)}
                         style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + this.props.backgroundPic + ')' }}>
