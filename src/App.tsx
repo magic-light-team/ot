@@ -11,10 +11,11 @@ import SourcePage from './components/pages/sourcePage';
 import AboutPage from './components/pages/aboutPage';
 import GamePage from './components/game/gamePage';
 import AudioPlayer from './components/tools/audioPlayer';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 interface StateProps {
   pageName: string,
-  music:string,
+  music: string,
 }
 
 interface DispatchProps {
@@ -47,11 +48,21 @@ class App extends React.Component<StateProps & DispatchProps, any> {
 
   render() {
     return (
-      <div className="App">
-        {this.renderPage(this.props.pageName)}
+      <TransitionGroup className="App">
+
+        <CSSTransition
+          key={this.props.pageName}
+          in={true}
+          appear={true}
+          timeout={1200}
+          classNames="fade"
+        >
+          {this.renderPage(this.props.pageName)}
+        </CSSTransition>
+
         <AudioPlayer music={this.props.music} mute={false} />
         {/*<AudioPlayer key={new Date} music={this.props.music} /> */}
-      </div>
+      </TransitionGroup>
     );
   }
 

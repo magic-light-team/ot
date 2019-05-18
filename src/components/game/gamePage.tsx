@@ -12,7 +12,11 @@ import { changePage, changeStage, pauseGame } from '../../actions/actions';
 import { IState } from '../../reducers/initialState';
 import { StageType, DialogType, option } from '../../info/data.interfaces';
 
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 export interface Props { //StateFromProps
+    // stageId: number,
+
     stageType?: StageType,
     nextDialogId?: number,
     isPaused: boolean,
@@ -32,7 +36,6 @@ export interface State { // DispatchFromProps
 }
 
 class GamePage extends Component<Props> {
-    state = {}
 
     renderStage = (stage?: StageType) => {
         switch (stage) {
@@ -61,6 +64,7 @@ class GamePage extends Component<Props> {
 }
 
 const mapStateToProps = (allState: { gameState: IState }) => ({
+    // stageId: allState.gameState.currentStage ? allState.gameState.currentStage.stageId : 0,
     isPaused: allState.gameState.isPaused,
     stageType: allState.gameState && allState.gameState.currentStage && allState.gameState.currentStage.stageType,
     backgroundPic: allState.gameState && allState.gameState.backgroundPic,

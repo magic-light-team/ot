@@ -152,7 +152,7 @@ button {
 }
 .fade-appear.fade-appear-active{
   opacity: 1;
-  transition: opacity 300ms linear;
+  transition: opacity 700ms linear 700ms;
 }
 
 .fade-exit{
@@ -160,7 +160,7 @@ button {
 }
 .fade-exit.fade-exit-active{
   opacity: 0;
-  transition: opacity 300ms linear;
+  transition: opacity 700ms linear;
 }
 .fade-exit-done{
   opacity: 0;
