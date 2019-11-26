@@ -31,6 +31,7 @@
 - [ ] play sound
 - [ ] sorting option answer -> otism fact -> https://react-dnd.github.io/react-dnd/examples/sortable/simple
 - [ ] true/false question -> otism fact
+- [ ] multi lingual with `react-i18next` or `react-intl`
 
 ## Suggestion
 
